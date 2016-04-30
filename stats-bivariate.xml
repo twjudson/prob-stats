@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+<!-- This file is part of the book    							-->
+<!--                                               				-->
+<!--   Inquiries into Probability and Statistics - Math S–304	-->
+<!--                                                			-->
+<!-- Copyright (C) 2016  Thomas W. Judson      					-->
+
+<chapter xml:id="stats-bivariate" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Examining Bivariate Data</title>
+
+    <introduction>
+        <p>Introduction here.</p>
+    </introduction>
+
+    <section xml:id="section-stats-bivariate">
+        <title>Examining Bivariate Data</title>
+
+        <p>This is a section.</p>
+
+    </section>
+
+    <exercises>
+		<title>Exercises</title>
+
+		<exercise number="1">
+			<statement>
+				<p>This is an exercise.</p>
+			</statement>
+			<hint>
+				<p>This is a hint.</p>
+			</hint>
+			<solution>
+				<p>This is a solution.</p>
+			</solution>
+		</exercise>
+	</exercises>
+
+</chapter>
