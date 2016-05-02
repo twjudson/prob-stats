@@ -28,7 +28,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 
     <!-- Prefix to enhance Sage notebook contents -->
-    <initialism>AATA</initialism>
 
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
     <!-- \notdivide replaces \notmid to avoid conflict with tikz - TWJ 5/6/2010 -->
