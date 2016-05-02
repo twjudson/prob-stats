@@ -29,15 +29,45 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Introduction to Probability</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a seven a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
+        	<ul>
+        		<li><p>A list of all possible outcomes.</p></li>
+
+        		<li><p>A probability for each outcome.</p></li>
+        	</ul>
+       	These two items provide a basis for all probability models.</p>
     </introduction>
 
     <section xml:id="section-prob-intro">
         <title>Introduction to Probability</title>
 
-        <p>This is a section.</p>
+        <p>We will need some basic vocabulary.</p>
+
+        <example>
+        	<title>Flipping a fair coin</title>
+        	<p>Coin flipping.</p>
+        </example>
+
+        <example>
+        	<title>Rolling a pair of dice</title>
+        	<p>Rolling a pair of dice.</p>
+        </example>
 
     </section>
+
+    <section xml:id="section-prob-rules">
+    	<title>Probability Rules</title>
+    </section>
+
+    <section xml:id="section-prob-finite">
+    	<title>Finite Sample Spaces</title>
+    </section>
+
+    <section xml:id="section-prob-infinite">
+    	<title>Infinite Sample Spaces</title>
+    </section>
+
+
 
     <exercises>
 		<title>Exercises</title>
