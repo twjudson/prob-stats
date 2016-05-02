@@ -25,11 +25,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Copyright (C) 2016  Thomas W. Judson                       -->
 <docinfo>
 
-
-
-    <!-- Prefix to enhance Sage notebook contents -->
-    <initialism>AATA</initialism>
-
     <!-- Math-related macros from "macros.tex" in previous LaTeX version -->
     <!-- \notdivide replaces \notmid to avoid conflict with tikz - TWJ 5/6/2010 -->
     <!-- Added operator \gf  - TWJ 2/26/2013 -->
