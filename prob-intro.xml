@@ -38,23 +38,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
        	These two items provide a basis for all probability models.</p>
     </introduction>
 
-      <section xml:id="section-prob-intro-tikz">
-        <title>Sample TikZ</title>
-
-        <p>We will need some basic vocabulary.  The code <image width="4%"><latex-image-code><![CDATA[\tikz \draw (0pt,0pt) -- (20pt,6pt);]]></latex-image-code></image> yields and <image width="4%"><latex-image-code><![CDATA[\tikz \fill[orange] (0,0) circle (1ex);]]></latex-image-code></image> provides inline graphics.</p>
-
-        <example>
-            <title>Flipping a fair coin</title>
-            <p>Coin flipping.</p>
-        </example>
-
-        <example>
-            <title>Rolling a pair of dice</title>
-            <p>Rolling a pair of dice.</p>
-        </example>
-
-    </section>
-
     <section xml:id="section-prob-intro">
         <title>Introduction to Probability</title>
 
