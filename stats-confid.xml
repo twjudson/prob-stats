@@ -31,7 +31,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>Introduction here.</p>
     </introduction>
 
-    <section xml:id="section-sstats-confid">
+    <section xml:id="section-stats-confid">
         <title>Estimating with Confidence</title>
 
         <p>This is a section.</p>
