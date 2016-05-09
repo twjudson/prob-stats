@@ -29,7 +29,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Combinatorics and Counting Problems</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>If we pose the question, <q>How may ways can we flip three coins?</q> we can simply list all of the possibilities by exhaustion.  In fact, there are eight:
+        	<me>\{ HHH, HHT, HTH, THH, HTT, THT, TTH, TTT \}.</me>
+        However, the problem is far more difficult if we ask how many ways are there to flip 1000 coins.  In fact, there are <m>2^{1000}</m> ways. Since <m>2^{1000}</m> is a 302 digit number, it really isn't feasible to list all of the possibilities.  We need to be a lot more clever.  In order to compute probabilities of equally likely events in a sample space, we need to learn how to count things.</p>
     </introduction>
 
     <section xml:id="section-prob-combinatorics-counting">
@@ -37,12 +39,43 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>This is a section.</p>
 
+        <principle number="no">
+			<title>The Fundamental Principle of Counting</title>
+			<statement>
+				<p>If an event <m>A</m> can occur in <m>m</m> ways and an even <m>B</m> can occur in <m>n</m> ways, then the event <m>A</m> followed by the event <m>B</m> can occur in <m>mn</m> ways.</p>
+			</statement>
+		</principle>		
+
     </section>
 
     <section xml:id="section-prob-combinatorics-comb">
         <title>Combinatorics</title>
 
-        <p>This is a section.</p>
+        <p>An order or arrangement of people or objects is called a <term>permutation</term>.</p>
+
+        <example>
+        	<p>Suppose that we with to elect two officers, a president and a vice-president, from 10 members of a club.  The club members will first elect a president from the 10 club members and will then choose a vice-president from the remaining 9 members. Using the Fundamental Principle of Counting, there are <m>10 \cdot 9 = 90</m> ways to elect a president followed by electing a vice-president.</p>
+        </example>
+
+        <p>If <m>n</m> objects are chose <m>r</m> at a time, the number of possible permutations (ordered arrangements) is 
+        <me>{}_n P_r = n(n-1)(n-2) \cdot \cdots \cdot (n - r + 1).</me></p>
+
+
+        <p>The <term>factorial</term> of a positive integer <m>n</m> is defined to be
+    		<me>n! = n(n-1)(n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1.</me>
+    	We define <m>0! = 1</m>.</p>
+
+    	<p>A <term>combination</term> is an arrnagement of people or objects where order is not important.</p>
+
+    	<p>If <m>n</m> objects are chose <m>r</m> at a time, the number of possible combinations (order does not matter) is 
+        <me>{}_n C_r = \frac{{}_n P_r }{r!} = \frac{n!}{r!(n-r)!}.</me></p>
+
+        <example>
+        	<p>Suppose that we with to elect a committee of 3 people, from 10 members of a club.  If we were electing officers, then the number of possible ways to select three officers is
+        		<me>{}_{10} P_3 = 10 \cdot 9 \cdot 8.</me>
+        	We could chose a committee of 3 people and then select the officers from the committee.  If we proceed in this manner, then we know that there are exactly <m>3! = 3 \cdot 2 \cdot 1</m> ways of selecting 3 officers from a committee of 3.  Therefore,
+        		<me>{}_{10} P_3 = 3! {}_{10} C_3.</me></p>
+        </example>
 
     </section>
 
@@ -51,13 +84,20 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 		<exercise number="1">
 			<statement>
-				<p>This is an exercise.</p>
+				<p>Four couples are sitting together in a movie theater.  How may ways can the 8 people be seated without a couple being broken up?</p>
 			</statement>
 			<hint>
-				<p>This is a hint.</p>
+				<p>Try answering the following questions.
+					<ol>
+
+						<li><p>How may choices are there for the aisle seat?</p></li>
+
+						<li><p>Once the aisle seat is filled, how many choices are there for the seat next to it?</p></li>
+
+					</ol></p>
 			</hint>
 			<solution>
-				<p>This is a solution.</p>
+				<p>This is the solution.</p>
 			</solution>
 		</exercise>
 	</exercises>

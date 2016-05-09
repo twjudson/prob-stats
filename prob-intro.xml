@@ -29,31 +29,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Introduction to Probability</title>
 
     <introduction>
-        <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a seven a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
+
+        <p>Although probability has its origins in gambling, the grading of evidence and testimony in medieval law, and estimating risk for maritime insurance premiums, applications of probability have become far more reaching today.  Probability can be used to describe traffic on the Internet, the best course of a medical treatment, the energy states of subatomic particles, and much more.  In addition, a knowledge of probability is essential when we study statistics.  In addition, probability is an active area of mathematical research.</p>
+
+        <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a 7 a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
         	<ul>
         		<li><p>A list of all possible outcomes.</p></li>
 
         		<li><p>A probability for each outcome.</p></li>
         	</ul>
        	These two items provide a basis for all probability models.</p>
+
     </introduction>
-
-      <section xml:id="section-prob-intro-tikz">
-        <title>Sample TikZ</title>
-
-        <p>We will need some basic vocabulary.  The code <image width="4%"><latex-image-code><![CDATA[\tikz \draw (0pt,0pt) -- (20pt,6pt);]]></latex-image-code></image> yields and <image width="4%"><latex-image-code><![CDATA[\tikz \fill[orange] (0,0) circle (1ex);]]></latex-image-code></image> provides inline graphics.</p>
-
-        <example>
-            <title>Flipping a fair coin</title>
-            <p>Coin flipping.</p>
-        </example>
-
-        <example>
-            <title>Rolling a pair of dice</title>
-            <p>Rolling a pair of dice.</p>
-        </example>
-
-    </section>
 
     <section xml:id="section-prob-intro">
         <title>Introduction to Probability</title>
