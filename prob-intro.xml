@@ -61,6 +61,28 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <section xml:id="section-prob-rules">
     	<title>Probability Rules</title>
+
+        <subsection>
+            <title>The Rules of Probability</title>
+
+            <p><ol>
+
+                <li><p>For any event <m>A</m>, <m>0 \lt P(A) \lt 1</m>.</p></li>
+
+                <li><p>For a sample space <m>S</m>, <m>P(S) = 1</m>.</p></li>
+
+                <li><p>For any event <m>A</m>,
+                    <me>P(\text{<m>A</m> does not occur}) = 1 - P(A).</me></p></li>
+
+                <li><p>If <m>A</m> and <m>B</m> are disjoint events, then 
+                    <me>P(A \cup B) = P(A) + P(B)</me></p></li>
+
+                </ol></p>
+
+            </subsection>
+
+            
+
     </section>
 
     <section xml:id="section-prob-finite">
