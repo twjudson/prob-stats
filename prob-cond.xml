@@ -38,6 +38,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     </section>
 
+        <section xml:id="section-prob-bayes">
+        <title>Bayes Rule</title>
+
+        <p>This is a section.</p>
+
+    </section>
+
     <exercises>
 		<title>Exercises</title>
 
