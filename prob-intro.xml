@@ -45,45 +45,162 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-prob-intro">
         <title>Introduction to Probability</title>
 
-        <p>We will need some basic vocabulary.</p>
+        <p>Tossing a coin or rolling a pair of dice are examples of <term>random processes</term>. In other words, we have no knowledge of how the coin or the pair of dice will land prior to each toss or roll.  The possible <term>outcomes</term> for tossing a coin are heads or tails, and the outcomes for rolling a pair of dice are getting a two through twleve.  We define the <term>probability</term> of an outcome of a random process to be the proportion of times that the outcome would occur if we could do an infinite number of observations.  Thus, the probability of obtaining a heads on any particular toss of a coin is <m>1/2</m>, provided the coin is fair.</p>
 
-        <example>
-        	<title>Flipping a fair coin</title>
-        	<p>Coin flipping.</p>
-        </example>
+        <exercise>
+            <statement>
+                <p>Assume that we have a pair of dice and that it is equally likely that a one through six will occur on each die for any particular roll.
+                    <ol>
+                        <li><p>What is the probability of rolling a 3 if you roll only one die?</p></li>
 
-        <example>
-        	<title>Rolling a pair of dice</title>
-        	<p>Rolling a pair of dice.</p>
-        </example>
+                        <li><p>What is the probability of rolling a 3 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 7 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 7 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of not rolling a 7 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of not rolling a 7 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 if you roll a pair of dice and one of the dice is a 1?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 if you roll a pair of dice and one of the dice is not a 1?</p></li>
+
+                     </ol></p>
+             </statement>
+         </exercise>
+
+         <p>Usually, we assign numbers between 0 and 1 for probabilites, although we will sometimes using percentages.</p>
+
+         <p>To understand why probability works, we must understand the Law of Large Numbers.  Suppose the we toss a fair coin <m>n</m> times.  We will denote the proportion of heads that occur by <m>\hat{p}_n</m>.  If we toss a coin 100 times and it comes up heads 52 times, then <m>\hat{p}_{100} = 0.52</m>.  The Law of Large Numbers says that <m>\hat{p}_n \to p</m> as <m>n \to \infty</m>.  Although <m>\hat{p}_n</m> may deviate from <m>p</m> even as <m>n</m> grows large, these deviations become smaller and smaller.  The actual Law of Large Numbers needs to be stated a bit more carefully, and can be proven using advanced calculus, but our arguement here catches the essence.<fn>See <url href="https://en.wikipedia.org/wiki/Law_of_large_numbers" />.</fn></p>
+
+         <exercise>
+            <statement>
+                <p>Find several examples of random processes and processes that are not random.  Are there examples of processes that are not random but can be modeled by random processes?</p>
+             </statement>
+         </exercise>
 
     </section>
 
     <section xml:id="section-prob-rules">
     	<title>Probability Rules</title>
 
-        <subsection>
-            <title>The Rules of Probability</title>
 
-            <p><ol>
+        <p>A <term>sample space</term> is the set of all possible outcomes for a random process.  We will usually denote the sample space by <m>S</m>.  An <term>event</term> is any possible outcome.  For example, we can have the following events for rolling a pair of dice,
+            <md>
+                <mrow>A \amp = \{ \text{rolling a 7}\}</mrow>
+                <mrow>B \amp = \{ \text{rolling an even number}\}</mrow>
+                <mrow>C \amp = \{ \text{rolling a 17}\}.</mrow>
+            </md>
+        We will designate the probability of an event <m>A</m> by <m>P(A)</m>.</p>
 
-                <li><p>For any event <m>A</m>, <m>0 \lt P(A) \lt 1</m>.</p></li>
+        <exercise>
+            <statement>
+                <p>Find <m>P(A)</m>, <m>P(B)</m>, and <m>P(C)</m>.</p>
+             </statement>
+         </exercise>
 
-                <li><p>For a sample space <m>S</m>, <m>P(S) = 1</m>.</p></li>
+
+        <p>We have the following rules that govern probability.
+            <ol>
+                <li><p>For any event <m>A</m>, <m>0 \leq P(A) \leq 1</m></p></li>
+
+                <li><p><m>P(S) = 1</m></p></li>
 
                 <li><p>For any event <m>A</m>,
-                    <me>P(\text{<m>A</m> does not occur}) = 1 - P(A).</me></p></li>
+                    <me>P(A \text{ does not occur}) = 1 - P(A)</me></p></li>
 
-                <li><p>If <m>A</m> and <m>B</m> are disjoint events, then 
-                    <me>P(A \cup B) = P(A) + P(B)</me></p></li>
+                <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
+                    <me>P(A \text{ or } B) = P(A) + P(B)</me></p></li>
 
-                </ol></p>
+                </ol>
+            We sometimes say that disjoint events are <term>mutually exclusive</term>.</p>
 
-            </subsection>
+        <exercise>
+            <statement>
+                <p>Suppose that you roll a pair of dice.  List at least five pairs of events that are disjoint.</p>
+             </statement>
+         </exercise>
 
-            
+                 <exercise>
+            <statement>
+                <p>Assume that we have a pair of dice and that it is equally likely that a one through six will occur on each die for any particular roll.
+                    <ol>
+                        <li><p>What is the probability of rolling a 3 or a 5 if you roll only one die?</p></li>
 
-    </section>
+                        <li><p>What is the probability of rolling a 3 or a 5 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 or a 7 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 or a 7 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll a pair of dice?</p></li>
+
+                     </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose have events <m>A</m> and <m>B</m> that are not necessarily disjoint. Can you devise a law for determining <m>P(A \text{ or } B)</m>?</p>
+             </statement>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
+                    <ol>
+                        <li><p>What is the probability that the date will be successful?</p></li>
+
+                        <li><p>Alice calls you right after the date and tells you that she is absolutely enamoured with Bob.  What is the probability that the date was successful?</p></li>
+
+                    </ol></p>
+             </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
+             </statement>
+         </exercise>
+
+
+
+         <p>This last exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
+            <me>P(A \text{ and } B) = P(A) P(B).</me></p>
+
+        <exercise>
+            <statement>
+                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that both coins are heads?  If I show you that the penny came up heads, does this change the probability of both coins being heads?</p>
+             </statement>
+         </exercise>
+
+         <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
+            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \text{ and } B)}{P(B)}</me>
+        or equivalently
+            <me>P(A \text{ and } B)= P(B) P(A|B).</me>
+        If event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
+
+        <exercise>
+            <statement>
+                <p>Explain why <m>P(A \text{ and } B)= P(B) P(A|B)</m>.</p>
+             </statement>
+         </exercise>
+
+
+
+     </section>
+
+
+
+>>>>>>> prob
 
     <section xml:id="section-prob-finite">
     	<title>Finite Sample Spaces</title>
@@ -95,20 +212,5 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-    <exercises>
-		<title>Exercises</title>
-
-		<exercise number="1">
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
 
 </chapter>
