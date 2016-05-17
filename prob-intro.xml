@@ -77,7 +77,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
          <p>Usually, we assign numbers between 0 and 1 for probabilites, although we will sometimes using percentages.</p>
 
-         <p>To understand why probability works, we must understand the Law of Large Numbers.  Suppose the we toss a fair coin <m>n</m> times.  We will denote the proportion of heads that occur by <m>\hat{p}_n</m>.  If we toss a coin 100 times and it comes up heads 52 times, then <m>\hat{p}_{100} = 0.52</m>.  The Law of Large Numbers says that <m>\hat{p}_n \to p</m> as <m>n \to \infty</m>.  Although <m>\hat{p}_n</m> may deviate from <m>p</m> even as <m>n</m> grows large, these deviations become smaller and smaller.  The actual Law of Large Numbers needs to be stated a bit more carefully, and can be proven using advanced calculus, but our arguement here catches the essence.<fn>See <url href="https://en.wikipedia.org/wiki/Law_of_large_numbers" />.</fn></p>
+         <p>To understand why probability works, we must understand the Law of Large Numbers.  Suppose the we toss a fair coin <m>n</m> times.  We will denote the proportion of heads that occur by <m>\hat{p}_n</m>.  If we toss a coin 100 times and it comes up heads 52 times, then <m>\hat{p}_{100} = 0.52</m>.  The Law of Large Numbers says that <m>\hat{p}_n \to p</m> as <m>n \to \infty</m>.  Although <m>\hat{p}_n</m> may deviate from <m>p</m> even as <m>n</m> grows large, these deviations become smaller and smaller.  The actual Law of Large Numbers needs to be stated a bit more carefully, and can be proven using advanced calculus, but our discussion here catches the essence.<fn>See <url href="https://en.wikipedia.org/wiki/Law_of_large_numbers" />.</fn></p>
 
          <exercise>
             <statement>
@@ -151,6 +151,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <statement>
                 <p>Suppose have events <m>A</m> and <m>B</m> that are not necessarily disjoint. Can you devise a law for determining <m>P(A \text{ or } B)</m>?</p>
              </statement>
+             <hint>
+             	<p><m>P(A \cup B ) = P(A) + P(B) - P(A \cap B)</m></p>
+             </hint>
          </exercise>
 
          <exercise>
@@ -195,12 +198,47 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
          </exercise>
 
 
+        <exercise>
+            <statement>
+                <p>Explain why <m>P(A \text{ and } B)= P(B) P(A|B)</m>.</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>In recent decades, home pregnancy tests have become quite popular.  The tests have become very accurate, but occassionally these tests give wrong results.  The test could come back negative while a woman is actually pregnant or postive if a woman is not pregant.    Suppose a particular brand of home pregnancy test kits has a rate of 3 per cent of false negatives.  That is, there is  probability of 0.03 that a woman could have a negative test and actually be pregnant.  Suppose 150 women are tested and all the results come up negative.  What is the probability that at least one of the women is actually pregnant?
+                	<ol>
+
+                		<li><p>What is the probability that one woman will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that two women will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that all 150 women will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that there will be at least one of 150 women will have a false negative?</p></li>
+
+                		<li><p>What are we assuming for this problem?</p></li>
+
+                	</ol>
+                </p>
+             </statement>
+             <hint>
+             	<p><m>P(\text{at least one pregnancy}) = 1 - P(\text{no pregnancies}) = 1 - (0.97)^150 \approx 0.98963</m></p>
+             </hint>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>What is the probability that two people in our class have the same birthday?</p>
+             </statement>
+             <hint>
+             	<p>The probability that three people will have different birthdays is <m>365/365 \cdot 364/365 \cdot 363/365</m>.</p>
+             </hint>
+         </exercise>
 
      </section>
 
 
-
->>>>>>> prob
 
     <section xml:id="section-prob-finite">
     	<title>Finite Sample Spaces</title>
