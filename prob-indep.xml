@@ -39,20 +39,115 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     </section>
 
-    <exercises>
-		<title>Exercises</title>
 
 		<exercise number="1">
 			<statement>
 				<p>This is an exercise.</p>
 			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
 		</exercise>
-	</exercises>
+
+		<!--
+			\question
+If $A$ is the set of students taking Math 128 at SFA and $B$ is the set of students taking FRE 435 (French Film) at SFA, describe in words what is meant by each of the following.
+\begin{multicols}{3}
+\begin{parts}
+
+\part 
+$P(A \cup B)$
+
+\part 
+$P(A \cap B)$
+
+\part 
+$1 - P(B)$
+
+\end{parts}
+\end{multicols}
+
+\question
+A fair coin is tossed twice.  Tell whether each pair of events below is independent or dependent.
+\begin{eqnarray*}
+A & = &  \text{heads on the first toss} \\
+B & = &  \text{heads on the second toss} \\
+C & = & \text{heads on both tosses} \\
+\end{eqnarray*}
+\begin{multicols}{3}
+\begin{parts}
+
+\part 
+$A$ and $B$
+
+\part
+$A$ and $C$
+
+\part
+$B$ and $C$
+
+\end{parts}
+\end{multicols}
+
+\clearpage
+
+\question 
+\begin{parts}
+
+\part 
+Your sock drawer contains three red socks and two black socks.  A sock is chosen at random from the drawer and not replaced.  Then a second sock is chosen.  Draw a tree diagram for this experiment and find the probability that you do not choose a matching pair of socks.
+
+\vfill
+
+\part
+Suppose that you replace the first sock, and then chose a second sock.  Draw a tree diagram for this experiment, and find the probability that you do not choose a matching pair of socks.
+
+\vfill
+
+\part
+What is the probability in (a) and (b) that you chose a matching pair of socks?
+
+\vfill
+
+\end{parts}
+
+\question
+An executive committee consisted of 10 members: 4 women and 6 men.  Three members were selected at random to be sent to a meeting in Hawaii.  A blindfolded woman drew 3 names of the 10 names from a hat.  Three women were chosen.  What is the probability of such luck?
+
+\vfill
+
+\question
+Three boxes contain a number of black and/or white balls.  
+\begin{itemize}
+
+\item
+Box 1 contains 4 white balls and 1 black ball.
+
+\item
+Box 2 contains 2 white balls and 2 black balls.
+
+\item
+Box 3 contains 2 white balls and 0 black balls.
+
+\end{itemize}
+Draw a ball from Box 1 and place it in Box 2.  Then draw a ball from Box 2 and place it in Box 3.  Finally, draw a ball from Box 3.  What is the probability that the last ball drawn from Box 3 is white?
+
+\vfill
+
+\question
+A drawer has three black socks and two red socks.  A sock is drawn at random and not replaced.  Then a second sock is drawn.  
+\begin{parts}
+
+\part
+If the first sock was black, what is the probability that the second sock is red?
+
+\vfill
+
+\part
+If the first sock was red, what is the probability that the second sock is red?
+
+\vfill
+
+\end{parts}
+
+-->
+
 
 </chapter>

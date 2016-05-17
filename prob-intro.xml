@@ -238,16 +238,259 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
      </section>
 
-
-
     <section xml:id="section-prob-finite">
-    	<title>Finite Sample Spaces</title>
-    </section>
+    	<title>Finite and Infinite Sample Spaces</title>
 
-    <section xml:id="section-prob-infinite">
-    	<title>Infinite Sample Spaces</title>
-    </section>
 
+        <p>Sample spaces may either be finite or infinite.  For example, if we toss a single die, there are only 6 possible outcomes.  We must roll a 1, 2, 3, 4, 5, or 6.  Of course, there are many more possible events for rolling a single die.  We could have the event of rolling an even number or the event of rolling a 2 or a 5.  However, there are still only a finite number of events.</p>
+
+        <exercise>
+            <statement>
+                <p>Suppose we roll a single 6-sided die.  Suppose  <m>A = \{ \text{rolling a 3} \}</m> and <m>B = \{\text{rolling an even number}\}.</m>
+                    <ol>
+
+                        <li><p>What is the event <m>A \cup B</m>?</p></li>
+
+                        <li><p>What is the event <m>A \cap B</m>?</p></li>
+
+                        <li><p>List all possible events for rolling a single die.</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+         <paragraphs>
+            <title>Probability with Equally Likely Outcomes</title>
+
+            <p>Let <m>S</m> be a sample space with a finite number of outcomes.  If all outcomes in <m>S</m> are equally likely, then the probability of an event <m>A</m> is
+                <me>P(A) = \frac{\text{number of outcomes in }A}{\text{number of outcomes in }S}.</me></p>
+        </paragraphs>
+
+        <exercise>
+            <statement>
+                <p>Which of the following are equally likely events?
+                    <ol>
+
+                        <li><p>You go to MATH S<ndash />304.  Yoiu are on time or late.</p></li>
+
+                        <li><p>You guess on a true-false question.  Your answer is right or wrong.</p></li>
+
+                        <li><p>You shot a basketball free throw.  You either make or miss the shot.</p></li>
+
+                        <li><p>A baby is born.  It is either a boy or a girl.</p></li>
+
+                        <li><p>You catch a flight from Boston to Boise.  The plane is on time or late.</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>You roll a 6-sided die six times.  Which is more likely?
+                    <ol>
+
+                        <li><p>1 2 3 4 5 6</p></li>
+
+                        <li><p>1 1 1 1 1 1</p></li>
+
+                        <li><p>Both events are equally likely.</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Jane, one of your students, says, <q>Out of Canada, Mexico, and the U.S., the probability of being born in Canada is 1/3, since there are three countries.</q>  Is Jane correct?  If not, what would you tell her?</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>You roll a 6-sided die six times.  Which is more likely?
+                    <ol>
+
+                        <li><p>1 2 3 4 5 6</p></li>
+
+                        <li><p>1 1 1 1 1 1</p></li>
+
+                        <li><p>Both events are equally likely.</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>An experiment consists of selecting the last digit of a telephone number.  Assume that each of the ten digits is equally likely to appear as the last digit.
+                    <ol>
+
+                        <li><p>What is the sample space?</p></li>
+
+                        <li><p>What is the event consisting of outcomes that the digit is less than 5?</p></li>
+
+                        <li><p>What is the event consisting of outcomes where the digit is odd?</p></li>
+
+                        <li><p>What is the event consisting of outcomes that this digit is not 2?</p></li>
+
+                        <li><p>Find the probability of each of the events in (b) through (d).</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>A box contains three red balls, five black balls, and four white balls.  Suppose that one ball is drawn at random.  Find the probability of each of the following events.
+                    <ol>
+
+                        <li><p>A black ball is drawn.</p></li>
+
+                        <li><p>A black or a white ball is drawn.</p></li>
+
+                        <li><p>Neither a red ball or a white ball is drawn.</p></li>
+
+                        <li><p>A red ball is not drawn.</p></li>
+
+                        <li><p>A black ball and a white ball are drawn.</p></li>
+
+                        <li><p>A black ball or a red ball or a white ball is drawn.</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>A pair of fair dice is rolled and we observe the sum of the two dice.
+                    <ol>
+
+                        <li><p>What is the sample space?</p></li>
+
+                        <li><p>What is the probability of rolling a 7?</p></li>
+
+                        <li><p>What is the probability of rolling a 7 or an 11?</p></li>
+
+                        <li><p>What is the probability of rolling a 2, 3, or 12?</p></li>
+
+                        <li><p>What is the probability of rolling a 4, 5, 6, 8, 9, or 10?</p></li>
+
+                        <li><p>What is the probability of rolling a 1?</p></li>
+
+                        <li><p>What is the probability of rolling a sum less than 6?</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose that an object is dropped at random on the area shown below.
+                    <ol>
+
+                        <li><p>What is the sample space?</p></li>
+
+                        <li><p>What is the probability that the object will land in the circle?</p></li>
+
+                        <li><p>What is different about this exercise?</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <figure xml:id="figure-prob-intro-1">
+
+            <image width="80%" xml:id="prob-intro-1">
+                <latex-image-code><![CDATA[\begin{tikzpicture}[scale=1.5]
+                        \draw (0,0) -- (0, 2) -- (3, 2) -- (3,0) -- (0, 0);
+                        \draw (1,1) -- (2,1);
+                        \draw (1.5,1) circle (0.5);
+                        \node [above] at (1.5, 2) {3 ft};
+                        \node [above] at (1.5, 1) {1 ft};
+                        \node [left] at (0, 1) {2 ft};
+                        \end{tikzpicture}]]>
+                </latex-image-code>                
+            </image>
+        </figure>
+
+        <exercise>
+            <statement>
+                <p>Suppose that you flip a coin once.  Name two events, $A$ and $B$, that are mutually exclusive.</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>The probability that a person has black hair is 22\%, and the probability that a person has brown eyes is 72\%.  Nick, who is one of your students, says that the probability that a person has either black hair or brown eyes is 94\%.  Is Nick correct?  If not, what would you say to the student?</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Assume that the probability is $1/2$ that a child will be born a boy.  If a family has 4 children, what is the probability that they are all boys?</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose the chance of rain for each of the next three days is 50<percent />.  You are planning an outdoor activity and want to estimate the chance that it will not rain on at least one of these three days.
+                    <ol>
+
+                        <li><p>What is the probability that it will not rain at least one of these three days.</p></li>
+
+                        <li><p>Use a coin to simulate the weather each day.  Make 20 sets of three days and record your results.</p></li>
+
+                        <li><p>Make a histogram of the frequency of 0, 1, 2, 3, days with rain.</p></li>
+
+                        <li><p>What is the experimental probability that it will not rain at least one of the three days?</p></li>
+
+                    </ol></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose that we spin the following spinner with the first spin giving the numerator of a fraction and the second spin giving the denominator of a fraction.  What is the probability that the fraction will be greater than <m>1/2</m>?</p>
+             </statement>
+        </exercise>
+
+
+        <figure xml:id="figure-prob-intro-2">
+
+            <image width="80%" xml:id="prob-intro-2">
+                <latex-image-code><![CDATA[\begin{tikzpicture}[scale=0.9]
+                    \draw (0,0) circle (3);
+                    \filldraw[fill=green!20!white, draw=black]
+                    (0,0) -- (0,3) arc (90:150:3) -- cycle;
+                    \filldraw[fill=red!20!white, draw=black]
+                    (0,0) -- (150:3) arc (150:210:3) -- cycle;
+                    \filldraw[fill=blue!20!white, draw=black]
+                    (0,0) -- (210:3) arc (210:270:3) -- cycle;
+                    \filldraw[fill=yellow!20!white, draw=black]
+                    (0,0) -- (270:3) arc (270:330:3) -- cycle;
+                    \filldraw[fill=cyan!20!white, draw=black]
+                    (0,0) -- (30:3) arc (30:90:3) -- cycle;
+                    \node at (0: 1.5) {1};
+                    \node at (60: 1.5) {2};
+                    \node at (120: 1.5) {3};
+                    \node at (180: 1.5) {4};
+                    \node at (240: 1.5) {5};
+                    \node at (300: 1.5) {6};
+                    \draw[->,black,very thick] (120:1) -- (300:1);
+                    \end{tikzpicture}]]>
+                </latex-image-code>                
+            </image>
+        </figure>
+
+        <exercise>
+            <statement>
+                <p>At a certain hospital, 40 patients have lung cancer, 30 patients smoke, and 25 have lung cancer and smoke.  Suppose the hospital has 200 patients.  If a patient chosen at random is known to smoke, what is the probability that the patient has lung cancer?</p>
+             </statement>
+         </exercise>
+
+
+    </section>
 
 
 

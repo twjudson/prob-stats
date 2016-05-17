@@ -77,29 +77,96 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         		<me>{}_{10} P_3 = 3! {}_{10} C_3.</me></p>
         </example>
 
+        <exercise>
+            <statement>
+                <p>Four couples are sitting together in a movie theater.
+                    <ol>
+
+                        <li><p>How may choices are there for the aisle seat?</p></li>
+
+                        <li><p>Once the aisle seat is filled, how many choices are there for the seat next to it?</p></li>
+
+                        <li><p>How may ways can the 8 people be seated without a couple being broken up?</p></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>If a coin is tossed 5 times, how many different ways can the sequence of heads and tails appear?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>The eight-grade class at a middle school has 16 girls and 14 boys.  How many different boy-girl dates can be arranged?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Three Aces Pizza offers 3 kinds of salads, 15 kinds of pizza, and 4 kinds of dessert.  How many different three-course meals can be ordered?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>In how many ways can the letters in the word <em>SCRAMBLE</em> be arranged?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Assume that a class has 30 members.
+                    <ol>
+
+                        <li><p>How many ways can a president, a vice president, and a secretary be elected?</p></li>
+
+                        <li><p>How many committees of 3 people can be chosen?</p></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>In a certain lottery game, 54 numbers are randomly mixed and 6 are selected.  A person must pick all 6 numbers to win.
+                    <ol>
+
+                        <li><p>What is the probability of winning if order is not important?</p></li>
+
+                        <li><p>What is the probability of winning if order is important?</p></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>A true/false quiz has five questions.  What is the probability of getting at least four correct answers by guessing.</p>
+            </statement>
+        </exercise>
+
+                <exercise>
+            <statement>
+                <p>A quiz has four multiple-choice questions.  Each question has five choices and only one choice is the correct answer.  Suppose that you guess on all four questions.
+                    <ol>
+
+                        <li><p>If you got at least three correct answers, how many questions could you have gotten right?</p></li>
+
+                        <li><p>What is the probability that you answered at least three questions correctly?</p></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+
     </section>
 
-    <exercises>
-		<title>Exercises</title>
 
-		<exercise number="1">
-			<statement>
-				<p>Four couples are sitting together in a movie theater.  How may ways can the 8 people be seated without a couple being broken up?</p>
-			</statement>
-			<hint>
-				<p>Try answering the following questions.
-					<ol>
 
-						<li><p>How may choices are there for the aisle seat?</p></li>
 
-						<li><p>Once the aisle seat is filled, how many choices are there for the seat next to it?</p></li>
 
-					</ol></p>
-			</hint>
-			<solution>
-				<p>This is the solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
 
 </chapter>
