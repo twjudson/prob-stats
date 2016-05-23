@@ -44,7 +44,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     
     <book xml:id="prob-stats">
         <title>Inquiries into Probability and Statistics</title>
-        <subtitle>MATH S<ndash />104</subtitle>
+        <subtitle>MATH S<ndash />304</subtitle>
 
         <xi:include href="./frontmatter.xml" /> 			<!-- Title Page, Preface, etc. -->
 
