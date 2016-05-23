@@ -62,7 +62,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Each paragraph gets centered and has some vertical separatation -->
     <!-- A line break may be used here to aid with intended formatting   -->
     <dedication>
-        <p>To students everywhere<ndash />they are the reason. And to those who teach them.</p>
+        <p>To students and teachers everywhere.</p>
     </dedication>
 
     <preface>
