@@ -105,18 +105,17 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </exercise>
 
+        <subsection>
+            <title>Probability Axioms</title>
 
         <p>We have the following rules that govern probability.
             <ol>
-                <li><p>For any event <m>A</m>, <m>0 \leq P(A) \leq 1</m></p></li>
+                <li><p>For any event <m>A</m>, <m>P(A) \geq 0</m>.</p></li>
 
                 <li><p><m>P(S) = 1</m></p></li>
 
-                <li><p>For any event <m>A</m>,
-                    <me>P(A \text{ does not occur}) = 1 - P(A)</me></p></li>
-
                 <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
-                    <me>P(A \text{ or } B) = P(A) + P(B)</me></p></li>
+                    <me>P(A \text{ or } B) = P(A) + P(B).</me></p></li>
 
                 </ol>
             We sometimes say that disjoint events are <term>mutually exclusive</term>.</p>
@@ -147,14 +146,61 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </exercise>
 
+     </subsection>
+
+     <subsection>
+        <title>Some Theorems for Probability</title>
+
+        <p>Suppose that we have a sample space <m>S</m>.  If <m>A</m> and <m>B</m> are events in <m>S</m>, prove each of the following theorems.</p>
+
         <exercise>
             <statement>
-                <p>Suppose have events <m>A</m> and <m>B</m> that are not necessarily disjoint. Can you devise a law for determining <m>P(A \text{ or } B)</m>?</p>
+                <p>If <m>A \subseteq B</m>, then <m>P(A) \leq P(B)</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>If <m>A \subseteq B</m>, then <m>P(B) - P(A) = P(B - A)</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>For every event <m>A</m>, <m>0 \leq P(A) \leq 1</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p><m>P(\emptyset) = 0</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>If <m>A'</m> is the complement of an event <m>A</m>, then
+                    <me>P(A') = 1 - P(A).</me></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>For any two events <m>A</m> and <m>B</m> (not necessarily disjoint),
+                    <me>P(A \cup B ) = P(A) + P(B) - P(A \cap B).</me></p>
              </statement>
-             <hint>
-             	<p><m>P(A \cup B ) = P(A) + P(B) - P(A \cap B)</m></p>
-             </hint>
          </exercise>
+
+        <exercise>
+            <statement>
+                <p>For any two events <m>A</m> and <m>B</m>,
+                    <me>P(A) = P(A \cap B) + P(A \cap B').</me></p>
+             </statement>
+        </exercise>
+
+        <p>Several of these theorems can be generalized to <m>n</m> events. For example, ...</p>
+
+     </subsection>
 
          <exercise>
             <statement>
