@@ -43,7 +43,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     </introduction>
 
     <section xml:id="section-prob-intro">
-        <title>Introduction to Probability</title>
+        <title>Probability and Random Processes</title>
 
         <p>Tossing a coin or rolling a pair of dice are examples of <term>random processes</term>. In other words, we have no knowledge of how the coin or the pair of dice will land prior to each toss or roll.  The possible <term>outcomes</term> for tossing a coin are heads or tails, and the outcomes for rolling a pair of dice are getting a two through twleve.  We define the <term>probability</term> of an outcome of a random process to be the proportion of times that the outcome would occur if we could do an infinite number of observations.  Thus, the probability of obtaining a heads on any particular toss of a coin is <m>1/2</m>, provided the coin is fair.</p>
 
@@ -108,17 +108,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <subsection>
             <title>Probability Axioms</title>
 
-        <p>We have the following rules that govern probability.
-            <ol>
-                <li><p>For any event <m>A</m>, <m>P(A) \geq 0</m>.</p></li>
+            <p>We have the following rules that govern probability.
+                <ol>
+                    <li><p>For any event <m>A</m>, <m>P(A) \geq 0</m>.</p></li>
 
-                <li><p><m>P(S) = 1</m></p></li>
+                    <li><p><m>P(S) = 1</m></p></li>
 
-                <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
-                    <me>P(A \text{ or } B) = P(A) + P(B).</me></p></li>
+                    <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
+                        <me>P(A \text{ or } B) = P(A) + P(B).</me></p></li>
 
                 </ol>
             We sometimes say that disjoint events are <term>mutually exclusive</term>.</p>
+        </subsection>
 
         <exercise>
             <statement>
@@ -126,7 +127,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </exercise>
 
-                 <exercise>
+        <exercise>
             <statement>
                 <p>Assume that we have a pair of dice and that it is equally likely that a one through six will occur on each die for any particular roll.
                     <ol>
@@ -146,12 +147,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </exercise>
 
-     </subsection>
-
-     <subsection>
-        <title>Some Theorems for Probability</title>
-
-        <p>Suppose that we have a sample space <m>S</m>.  If <m>A</m> and <m>B</m> are events in <m>S</m>, prove each of the following theorems.</p>
+        <p>To understand the structure of any proposed mathematical object, we should engage in formulating and proving theorems.  Suppose that we have a sample space <m>S</m>.  If <m>A</m> and <m>B</m> are events in <m>S</m>, prove each of the following theorems.</p>
 
         <exercise>
             <statement>
@@ -198,11 +194,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
         </exercise>
 
-        <p>Several of these theorems can be generalized to <m>n</m> events. For example, ...</p>
+        <p>Several of these axioms and theorems can be generalized to <m>n</m> events. For example, if <m>A_1, A_2, \ldots, A_n</m> are disjoint sets, then
+            <m>P(A_1 \cup A_2 \cup \cdots \cup A_n) = P(A_1) + P(A_2) + \cdots + P(A_n).</m></p>
 
-     </subsection>
+    </section>
 
-         <exercise>
+     <section>
+        <title>Independent Events and Conditional Probability</title>
+
+        <exercise>
+            <statement>
+                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
+             </statement>
+         </exercise>
+
+         <p>This exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
+            <me>P(A \text{ and } B) = P(A) P(B).</me>
+        For three events to be independent, they must be <term>pairwise independent</term>.  That is, for <m>A_1, A_2, A_3</m> to be independent, it must be the case that
+            <me>P(A_i \cap A_j) = P(A_i)P(A_j)</me>
+        for <m>i \neq j</m>, where <m>i, j = 1, 2, 3</m>.</p>
+
+        <exercise>
             <statement>
                 <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
                     <ol>
@@ -214,39 +226,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
         </exercise>
 
-        <exercise>
-            <statement>
-                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
-             </statement>
-         </exercise>
-
-
-
-         <p>This last exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
-            <me>P(A \text{ and } B) = P(A) P(B).</me></p>
-
-        <exercise>
-            <statement>
-                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that both coins are heads?  If I show you that the penny came up heads, does this change the probability of both coins being heads?</p>
-             </statement>
-         </exercise>
-
          <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
-            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \text{ and } B)}{P(B)}</me>
+            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \cap B)}{P(B)}</me>
         or equivalently
-            <me>P(A \text{ and } B)= P(B) P(A|B).</me>
-        If event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
+            <me>P(A \cap B)= P(B) P(A|B).</me>
+        In other words, if event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
 
         <exercise>
             <statement>
-                <p>Explain why <m>P(A \text{ and } B)= P(B) P(A|B)</m>.</p>
-             </statement>
-         </exercise>
-
-
-        <exercise>
-            <statement>
-                <p>Explain why <m>P(A \text{ and } B)= P(B) P(A|B)</m>.</p>
+                <p>For any three events <m>A</m>, <m>B</m>, and <m>C</m>, prove that 
+                    <me>P(A \cap B \cap C) = P(A) P(B|A) P(C|A \cap B).</me></p>
              </statement>
          </exercise>
 
@@ -281,6 +270,26 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              	<p>The probability that three people will have different birthdays is <m>365/365 \cdot 364/365 \cdot 363/365</m>.</p>
              </hint>
          </exercise>
+
+         <exercise>
+            <statement>
+                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 red balls.  If a ball is drawn at random, what is the probability that
+                    <ol>
+                        <li>The ball is white?</li>
+
+                        <li>The ball is red?</li>
+
+                        <li>The ball is blue?</li>
+
+                        <li>The ball is not blue?</li>
+
+                        <li>The ball is red or white?</li>
+
+                    </ol></p>
+
+                <p>If three balls are drawn at random, what is the probability that that they drawn in the order of red, white, and blue, if replacment is allowed?  What if the balls are not replace?</p>
+            </statement>
+        </exercise>
 
      </section>
 
