@@ -37,19 +37,29 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-prob-combinatorics-counting">
         <title>Counting Problems</title>
 
-        <p>This is a section.</p>
+         <exercise>
+            <statement>
+                <p>Samantha is packing for a week long trip to Paris, and deciding if she has enough different outfits to wear while touring the City of Light.  If she packs three different skirts and four different blouses, how many different skirt-blouse combinations can she make?  Draw a tree diagram to illustrate your conclusion.</p>
+            </statement>
+        </exercise>
 
         <principle number="no">
 			<title>The Fundamental Principle of Counting</title>
 			<statement>
 				<p>If an event <m>A</m> can occur in <m>m</m> ways and an even <m>B</m> can occur in <m>n</m> ways, then the event <m>A</m> followed by the event <m>B</m> can occur in <m>mn</m> ways.</p>
 			</statement>
-		</principle>		
+		</principle>
+
+         <exercise>
+          	<statement>
+                <p>A committee of three people is to be formed consisting of one representative from management, one representative from labor, and one representative from the general public.  If there are 4 possible representatives from labor, 2 from management, and 5 from the public, how many different ways can the committee be formed?</p>
+            </statement>
+        </exercise>
 
     </section>
 
-    <section xml:id="section-prob-combinatorics-comb">
-        <title>Combinatorics</title>
+    <section xml:id="section-prob-combinatorics-permute">
+        <title>Permutations</title>
 
         <p>An order or arrangement of people or objects is called a <term>permutation</term>.</p>
 
@@ -65,17 +75,45 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     		<me>n! = n(n-1)(n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1.</me>
     	We define <m>0! = 1</m>.</p>
 
-    	<p>A <term>combination</term> is an arrnagement of people or objects where order is not important.</p>
 
-    	<p>If <m>n</m> objects are chose <m>r</m> at a time, the number of possible combinations (order does not matter) is 
-        <me>{}_n C_r = \frac{{}_n P_r }{r!} = \frac{n!}{r!(n-r)!}.</me></p>
+    </section>
 
-        <example>
+    <section xml:id="section-prob-combinatorics-combinations">
+        <title>Combinations</title>
+
+
+    	<p>A <term>combination</term> is an arrangement of people or objects where order is not important.  For example, suppose that we have a club consisting of three people: Alice, Bob, and Carol.  Electing Alice, Bob, and Carol to a committee, is quite different than choosing a president, vice-president, and secretary from these three people.  There are six ways that we can elect officers but only one way that we can elect a committee of three.</p>
+
+    	<example>
         	<p>Suppose that we with to elect a committee of 3 people, from 10 members of a club.  If we were electing officers, then the number of possible ways to select three officers is
         		<me>{}_{10} P_3 = 10 \cdot 9 \cdot 8.</me>
         	We could chose a committee of 3 people and then select the officers from the committee.  If we proceed in this manner, then we know that there are exactly <m>3! = 3 \cdot 2 \cdot 1</m> ways of selecting 3 officers from a committee of 3.  Therefore,
         		<me>{}_{10} P_3 = 3! {}_{10} C_3.</me></p>
         </example>
+
+    	<p>If <m>n</m> objects are chose <m>r</m> at a time, the number of possible combinations (order does not matter) is 
+        	<me>{}_n C_r = \frac{{}_n P_r }{r!} = \frac{n!}{r!(n-r)!}.</me>
+        We sometimes write
+        	<me>\binom{n}{r} = {}_n C_r = \frac{n!}{r!(n-r)!}.</me></p>
+
+        <exercise>
+            <statement>
+                <p>Make an argument that 
+                	<me>{}_n C_r = \frac{{}_n P_r }{r!} = \frac{n!}{r!(n-r)!}</me>
+               	correctly describes the number of possible combinations of <m>r</m> objects chosen from a total number of <m>n</m> objects.</p>
+            </statement>
+        </exercise>
+
+    </section>
+
+    <section>
+    	<title>Putting Everything Together</title>
+
+    	<exercise>
+            <statement>
+                <p>If a coin is tossed 5 times, how many different ways can the sequence of heads and tails appear?</p>
+            </statement>
+        </exercise>
 
         <exercise>
             <statement>
@@ -92,11 +130,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
-        <exercise>
-            <statement>
-                <p>If a coin is tossed 5 times, how many different ways can the sequence of heads and tails appear?</p>
-            </statement>
-        </exercise>
+
 
         <exercise>
             <statement>
@@ -112,7 +146,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
             <statement>
-                <p>In how many ways can the letters in the word <em>SCRAMBLE</em> be arranged?</p>
+                <p>How many ways can the letters in the word <em>SCRAMBLE</em> be arranged?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>How many <em>different</em> ways can the letters in the word <em>MISSISSIPPI</em> be arranged?</p>
             </statement>
         </exercise>
 
@@ -148,7 +188,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
-                <exercise>
+        <exercise>
             <statement>
                 <p>A quiz has four multiple-choice questions.  Each question has five choices and only one choice is the correct answer.  Suppose that you guess on all four questions.
                     <ol>
@@ -161,8 +201,23 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>Four different mathematics books, six different physics books, and two different chemistry books are to be arranged on a shelf.
+                    <ol>
+
+                        <li><p>How many different arrangements are possible if the books in each particular subject must all stand together?</p></li>
+
+                        <li><p>How many different arrangements are possible if only the mathematics books must stand together?</p></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+
 
     </section>
+
 
 
 
