@@ -30,7 +30,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <introduction>
 
-        <p>Although probability has its origins in gambling, the grading of evidence and testimony in medieval law, and estimating risk for maritime insurance premiums, applications of probability have become far more reaching today.  Probability can be used to describe traffic on the Internet, the best course of a medical treatment, the energy states of subatomic particles, and much more.  In addition, a knowledge of probability is essential when we study statistics.  In addition, probability is an active area of mathematical research.</p>
+        <p>Although probability has its origins in gambling, the grading of evidence and testimony in medieval law, and estimating risk for maritime insurance premiums, applications of probability have become far more reaching today.  Probability can be used to describe traffic on the Internet, the best course of a medical treatment, the energy states of subatomic particles, and much more.  A knowledge of probability is essential when we study statistics.  In addition, probability is an active area of mathematical research.</p>
 
         <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a 7 a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
         	<ul>
@@ -45,7 +45,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-prob-intro">
         <title>Probability and Random Processes</title>
 
-        <p>Tossing a coin or rolling a pair of dice are examples of <term>random processes</term>. In other words, we have no knowledge of how the coin or the pair of dice will land prior to each toss or roll.  The possible <term>outcomes</term> for tossing a coin are heads or tails, and the outcomes for rolling a pair of dice are getting a two through twleve.  We define the <term>probability</term> of an outcome of a random process to be the proportion of times that the outcome would occur if we could do an infinite number of observations.  Thus, the probability of obtaining a heads on any particular toss of a coin is <m>1/2</m>, provided the coin is fair.</p>
+        <p>Tossing a coin or rolling a pair of dice are examples of <term>random processes</term>. In other words, we have no knowledge of how the coin or the pair of dice will land prior to each toss or roll.  The possible <term>outcomes</term> for tossing a coin are heads or tails, and the outcomes for rolling a pair of dice are getting a two through twleve.  We define the <term>probability</term> of an outcome of a random process to be the proportion of times that the outcome would occur if we could do an infinite number of observations.  Thus, the probability of obtaining a heads on any particular toss of a coin is <m>1/2</m>, provided the coin is fair.  Usually, we assign numbers between 0 and 1 for probabilites, although we will sometimes using percentages.</p>
 
         <exercise>
             <statement>
@@ -75,7 +75,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </exercise>
 
-         <p>Usually, we assign numbers between 0 and 1 for probabilites, although we will sometimes using percentages.</p>
+         
 
          <p>To understand why probability works, we must understand the Law of Large Numbers.  Suppose the we toss a fair coin <m>n</m> times.  We will denote the proportion of heads that occur by <m>\hat{p}_n</m>.  If we toss a coin 100 times and it comes up heads 52 times, then <m>\hat{p}_{100} = 0.52</m>.  The Law of Large Numbers says that <m>\hat{p}_n \to p</m> as <m>n \to \infty</m>.  Although <m>\hat{p}_n</m> may deviate from <m>p</m> even as <m>n</m> grows large, these deviations become smaller and smaller.  The actual Law of Large Numbers needs to be stated a bit more carefully, and can be proven using advanced calculus, but our discussion here catches the essence.<fn>See <url href="https://en.wikipedia.org/wiki/Law_of_large_numbers" />.</fn></p>
 
@@ -87,9 +87,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     </section>
 
-    <section xml:id="section-prob-rules">
-    	<title>Probability Rules</title>
-
+    <section xml:id="section-prob-finite">
+    	<title>Sample Spaces and Events</title>
 
         <p>A <term>sample space</term> is the set of all possible outcomes for a random process.  We will usually denote the sample space by <m>S</m>.  An <term>event</term> is any possible outcome.  For example, we can have the following events for rolling a pair of dice,
             <md>
@@ -104,197 +103,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Find <m>P(A)</m>, <m>P(B)</m>, and <m>P(C)</m>.</p>
              </statement>
          </exercise>
-
-        <subsection>
-            <title>Probability Axioms</title>
-
-            <p>We have the following rules that govern probability.
-                <ol>
-                    <li><p>For any event <m>A</m>, <m>P(A) \geq 0</m>.</p></li>
-
-                    <li><p><m>P(S) = 1</m></p></li>
-
-                    <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
-                        <me>P(A \text{ or } B) = P(A) + P(B).</me></p></li>
-
-                </ol>
-            We sometimes say that disjoint events are <term>mutually exclusive</term>.</p>
-        </subsection>
-
-        <exercise>
-            <statement>
-                <p>Suppose that you roll a pair of dice.  List at least five pairs of events that are disjoint.</p>
-             </statement>
-         </exercise>
-
-        <exercise>
-            <statement>
-                <p>Assume that we have a pair of dice and that it is equally likely that a one through six will occur on each die for any particular roll.
-                    <ol>
-                        <li><p>What is the probability of rolling a 3 or a 5 if you roll only one die?</p></li>
-
-                        <li><p>What is the probability of rolling a 3 or a 5 if you roll a pair of dice?</p></li>
-
-                        <li><p>What is the probability of rolling a 3 or a 7 if you roll a pair of dice?</p></li>
-
-                        <li><p>What is the probability of rolling a 3 or a 7 if you roll only one die?</p></li>
-
-                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll only one die?</p></li>
-
-                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll a pair of dice?</p></li>
-
-                     </ol></p>
-             </statement>
-         </exercise>
-
-        <p>To understand the structure of any proposed mathematical object, we should engage in formulating and proving theorems.  Suppose that we have a sample space <m>S</m>.  If <m>A</m> and <m>B</m> are events in <m>S</m>, prove each of the following theorems.</p>
-
-        <exercise>
-            <statement>
-                <p>If <m>A \subseteq B</m>, then <m>P(A) \leq P(B)</m>.</p>
-            </statement>
-        </exercise>
-
-        <exercise>
-            <statement>
-                <p>If <m>A \subseteq B</m>, then <m>P(B) - P(A) = P(B - A)</m>.</p>
-            </statement>
-        </exercise>
-
-        <exercise>
-            <statement>
-                <p>For every event <m>A</m>, <m>0 \leq P(A) \leq 1</m>.</p>
-            </statement>
-        </exercise>
-
-        <exercise>
-            <statement>
-                <p><m>P(\emptyset) = 0</m>.</p>
-            </statement>
-        </exercise>
-
-        <exercise>
-            <statement>
-                <p>If <m>A'</m> is the complement of an event <m>A</m>, then
-                    <me>P(A') = 1 - P(A).</me></p>
-            </statement>
-        </exercise>
-
-        <exercise>
-            <statement>
-                <p>For any two events <m>A</m> and <m>B</m> (not necessarily disjoint),
-                    <me>P(A \cup B ) = P(A) + P(B) - P(A \cap B).</me></p>
-             </statement>
-         </exercise>
-
-        <exercise>
-            <statement>
-                <p>For any two events <m>A</m> and <m>B</m>,
-                    <me>P(A) = P(A \cap B) + P(A \cap B').</me></p>
-             </statement>
-        </exercise>
-
-        <p>Several of these axioms and theorems can be generalized to <m>n</m> events. For example, if <m>A_1, A_2, \ldots, A_n</m> are disjoint sets, then
-            <m>P(A_1 \cup A_2 \cup \cdots \cup A_n) = P(A_1) + P(A_2) + \cdots + P(A_n).</m></p>
-
-    </section>
-
-     <section>
-        <title>Independent Events and Conditional Probability</title>
-
-        <exercise>
-            <statement>
-                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
-             </statement>
-         </exercise>
-
-         <p>This exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
-            <me>P(A \text{ and } B) = P(A) P(B).</me>
-        For three events to be independent, they must be <term>pairwise independent</term>.  That is, for <m>A_1, A_2, A_3</m> to be independent, it must be the case that
-            <me>P(A_i \cap A_j) = P(A_i)P(A_j)</me>
-        for <m>i \neq j</m>, where <m>i, j = 1, 2, 3</m>.</p>
-
-        <exercise>
-            <statement>
-                <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
-                    <ol>
-                        <li><p>What is the probability that the date will be successful?</p></li>
-
-                        <li><p>Alice calls you right after the date and tells you that she is absolutely enamoured with Bob.  What is the probability that the date was successful?</p></li>
-
-                    </ol></p>
-             </statement>
-        </exercise>
-
-         <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
-            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \cap B)}{P(B)}</me>
-        or equivalently
-            <me>P(A \cap B)= P(B) P(A|B).</me>
-        In other words, if event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
-
-        <exercise>
-            <statement>
-                <p>For any three events <m>A</m>, <m>B</m>, and <m>C</m>, prove that 
-                    <me>P(A \cap B \cap C) = P(A) P(B|A) P(C|A \cap B).</me></p>
-             </statement>
-         </exercise>
-
-        <exercise>
-            <statement>
-                <p>In recent decades, home pregnancy tests have become quite popular.  The tests have become very accurate, but occassionally these tests give wrong results.  The test could come back negative while a woman is actually pregnant or postive if a woman is not pregant.    Suppose a particular brand of home pregnancy test kits has a rate of 3 per cent of false negatives.  That is, there is  probability of 0.03 that a woman could have a negative test and actually be pregnant.  Suppose 150 women are tested and all the results come up negative.  What is the probability that at least one of the women is actually pregnant?
-                	<ol>
-
-                		<li><p>What is the probability that one woman will accurately test as negative?</p></li>
-
-                		<li><p>What is the probability that two women will accurately test as negative?</p></li>
-
-                		<li><p>What is the probability that all 150 women will accurately test as negative?</p></li>
-
-                		<li><p>What is the probability that there will be at least one of 150 women will have a false negative?</p></li>
-
-                		<li><p>What are we assuming for this problem?</p></li>
-
-                	</ol>
-                </p>
-             </statement>
-             <hint>
-             	<p><m>P(\text{at least one pregnancy}) = 1 - P(\text{no pregnancies}) = 1 - (0.97)^150 \approx 0.98963</m></p>
-             </hint>
-         </exercise>
-
-         <exercise>
-            <statement>
-                <p>What is the probability that two people in our class have the same birthday?</p>
-             </statement>
-             <hint>
-             	<p>The probability that three people will have different birthdays is <m>365/365 \cdot 364/365 \cdot 363/365</m>.</p>
-             </hint>
-         </exercise>
-
-         <exercise>
-            <statement>
-                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 red balls.  If a ball is drawn at random, what is the probability that
-                    <ol>
-                        <li>The ball is white?</li>
-
-                        <li>The ball is red?</li>
-
-                        <li>The ball is blue?</li>
-
-                        <li>The ball is not blue?</li>
-
-                        <li>The ball is red or white?</li>
-
-                    </ol></p>
-
-                <p>If three balls are drawn at random, what is the probability that that they drawn in the order of red, white, and blue, if replacment is allowed?  What if the balls are not replace?</p>
-            </statement>
-        </exercise>
-
-     </section>
-
-    <section xml:id="section-prob-finite">
-    	<title>Finite and Infinite Sample Spaces</title>
 
 
         <p>Sample spaces may either be finite or infinite.  For example, if we toss a single die, there are only 6 possible outcomes.  We must roll a 1, 2, 3, 4, 5, or 6.  Of course, there are many more possible events for rolling a single die.  We could have the event of rolling an even number or the event of rolling a 2 or a 5.  However, there are still only a finite number of events.</p>
@@ -546,6 +354,107 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 
     </section>
+
+    <section xml:id="section-prob-rules">
+        <title>Probability Rules</title>
+
+
+ 
+
+        <subsection>
+            <title>Probability Axioms</title>
+
+            <p>We have the following rules that govern probability.
+                <ol>
+                    <li><p>For any event <m>A</m>, <m>P(A) \geq 0</m>.</p></li>
+
+                    <li><p><m>P(S) = 1</m></p></li>
+
+                    <li><p>We say two events <m>A</m> and <m>B</m> are <term>disjoint</term> if <m>A \cap B = \emptyset</m>.  In this case,
+                        <me>P(A \text{ or } B) = P(A) + P(B).</me></p></li>
+
+                </ol>
+            We sometimes say that disjoint events are <term>mutually exclusive</term>.</p>
+        </subsection>
+
+        <exercise>
+            <statement>
+                <p>Suppose that you roll a pair of dice.  List at least five pairs of events that are disjoint.</p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>Assume that we have a pair of dice and that it is equally likely that a one through six will occur on each die for any particular roll.
+                    <ol>
+                        <li><p>What is the probability of rolling a 3 or a 5 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 or a 5 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 or a 7 if you roll a pair of dice?</p></li>
+
+                        <li><p>What is the probability of rolling a 3 or a 7 if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll only one die?</p></li>
+
+                        <li><p>What is the probability of not rolling a 3 or an odd number if you roll a pair of dice?</p></li>
+
+                     </ol></p>
+             </statement>
+         </exercise>
+
+        <p>To understand the structure of any proposed mathematical object, we should engage in formulating and proving theorems.  Suppose that we have a sample space <m>S</m>.  If <m>A</m> and <m>B</m> are events in <m>S</m>, prove each of the following theorems.</p>
+
+        <exercise>
+            <statement>
+                <p>If <m>A \subseteq B</m>, then <m>P(A) \leq P(B)</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>If <m>A \subseteq B</m>, then <m>P(B) - P(A) = P(B - A)</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>For every event <m>A</m>, <m>0 \leq P(A) \leq 1</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p><m>P(\emptyset) = 0</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>If <m>A'</m> is the complement of an event <m>A</m>, then
+                    <me>P(A') = 1 - P(A).</me></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>For any two events <m>A</m> and <m>B</m> (not necessarily disjoint),
+                    <me>P(A \cup B ) = P(A) + P(B) - P(A \cap B).</me></p>
+             </statement>
+         </exercise>
+
+        <exercise>
+            <statement>
+                <p>For any two events <m>A</m> and <m>B</m>,
+                    <me>P(A) = P(A \cap B) + P(A \cap B').</me></p>
+             </statement>
+        </exercise>
+
+        <p>Several of these axioms and theorems can be generalized to <m>n</m> events. For example, if <m>A_1, A_2, \ldots, A_n</m> are disjoint sets, then
+            <m>P(A_1 \cup A_2 \cup \cdots \cup A_n) = P(A_1) + P(A_2) + \cdots + P(A_n).</m></p>
+
+    </section>
+
 
 
 

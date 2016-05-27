@@ -27,38 +27,98 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <chapter xml:id="prob-cond" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Conditional Probability</title>
 
-    <introduction>
-        <p>Introduction here.</p>
-    </introduction>
+     <section>
+        <title>Independent Events and Conditional Probability</title>
 
-    <section xml:id="section-prob-cond">
-        <title>Conditional Probability</title>
+        <exercise>
+            <statement>
+                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
+             </statement>
+         </exercise>
 
-        <p>This is a section.</p>
+         <p>This exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
+            <me>P(A \text{ and } B) = P(A) P(B).</me>
+        For three events to be independent, they must be <term>pairwise independent</term>.  That is, for <m>A_1, A_2, A_3</m> to be independent, it must be the case that
+            <me>P(A_i \cap A_j) = P(A_i)P(A_j)</me>
+        for <m>i \neq j</m>, where <m>i, j = 1, 2, 3</m>.</p>
 
-    </section>
+        <exercise>
+            <statement>
+                <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
+                    <ol>
+                        <li><p>What is the probability that the date will be successful?</p></li>
 
-        <section xml:id="section-prob-bayes">
-        <title>Bayes Rule</title>
+                        <li><p>Alice calls you right after the date and tells you that she is absolutely enamoured with Bob.  What is the probability that the date was successful?</p></li>
 
-        <p>This is a section.</p>
+                    </ol></p>
+             </statement>
+        </exercise>
 
-    </section>
+         <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
+            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \cap B)}{P(B)}</me>
+        or equivalently
+            <me>P(A \cap B)= P(B) P(A|B).</me>
+        In other words, if event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
 
-    <exercises>
-		<title>Exercises</title>
+        <exercise>
+            <statement>
+                <p>For any three events <m>A</m>, <m>B</m>, and <m>C</m>, prove that 
+                    <me>P(A \cap B \cap C) = P(A) P(B|A) P(C|A \cap B).</me></p>
+             </statement>
+         </exercise>
 
-		<exercise number="1">
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
+        <exercise>
+            <statement>
+                <p>In recent decades, home pregnancy tests have become quite popular.  The tests have become very accurate, but occassionally these tests give wrong results.  The test could come back negative while a woman is actually pregnant or postive if a woman is not pregant.    Suppose a particular brand of home pregnancy test kits has a rate of 3 per cent of false negatives.  That is, there is  probability of 0.03 that a woman could have a negative test and actually be pregnant.  Suppose 150 women are tested and all the results come up negative.  What is the probability that at least one of the women is actually pregnant?
+                	<ol>
+
+                		<li><p>What is the probability that one woman will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that two women will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that all 150 women will accurately test as negative?</p></li>
+
+                		<li><p>What is the probability that there will be at least one of 150 women will have a false negative?</p></li>
+
+                		<li><p>What are we assuming for this problem?</p></li>
+
+                	</ol>
+                </p>
+             </statement>
+             <hint>
+             	<p><m>P(\text{at least one pregnancy}) = 1 - P(\text{no pregnancies}) = 1 - (0.97)^150 \approx 0.98963</m></p>
+             </hint>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>What is the probability that two people in our class have the same birthday?</p>
+             </statement>
+             <hint>
+             	<p>The probability that three people will have different birthdays is <m>365/365 \cdot 364/365 \cdot 363/365</m>.</p>
+             </hint>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 red balls.  If a ball is drawn at random, what is the probability that
+                    <ol>
+                        <li>The ball is white?</li>
+
+                        <li>The ball is red?</li>
+
+                        <li>The ball is blue?</li>
+
+                        <li>The ball is not blue?</li>
+
+                        <li>The ball is red or white?</li>
+
+                    </ol></p>
+
+                <p>If three balls are drawn at random, what is the probability that that they drawn in the order of red, white, and blue, if replacment is allowed?  What if the balls are not replace?</p>
+            </statement>
+        </exercise>
+
+     </section>
 
 </chapter>
