@@ -26,10 +26,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 <chapter xml:id="prob-indep" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<title>Probability and Independent Events</title>
+	<title>Conditional Probability and Independent Events</title>
 
-     <section>
-        <title>Independent Events and Conditional Probability</title>
+	<section xml:id="section-prob-indep-indep">
+		<title>Independent Events</title>
 
         <exercise>
             <statement>
@@ -38,39 +38,40 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
          </exercise>
 
          <p>This exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
-            <me>P(A \text{ and } B) = P(A) P(B).</me>
+            <me>P(A \cap B) = P(A) P(B).</me>
         For three events to be independent, they must be <term>pairwise independent</term>.  That is, for <m>A_1, A_2, A_3</m> to be independent, it must be the case that
             <me>P(A_i \cap A_j) = P(A_i)P(A_j)</me>
         for <m>i \neq j</m>, where <m>i, j = 1, 2, 3</m>.</p>
 
         <exercise>
             <statement>
-                <p>Assume that the probability is $1/2$ that a child will be born a boy.  If a family has 4 children, what is the probability that they are all boys?</p>
-             </statement>
-         </exercise>
-
-        <exercise>
-            <statement>
-                <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
+                <p>A fair coin is tossed twice.  
+                	<md>
+                		<mrow>A \amp =  \text{heads on the first toss}</mrow>
+                		<mrow>B \amp = \text{heads on the second toss}</mrow>
+                		<mrow>C \amp = \text{heads on both tosses}</mrow>
+                	</md>
+				Tell whether each pair of events below is independent or dependent.
                     <ol>
-                        <li><p>What is the probability that the date will be successful?</p></li>
+                        <li><m>A</m> and <m>B</m></li>
 
-                        <li><p>Alice calls you right after the date and tells you that she is absolutely enamoured with Bob.  What is the probability that the date was successful?</p></li>
+                        <li><m>A</m> and <m>C</m></li>
+
+                        <li><m>B</m> and <m>C</m></li>
 
                     </ol></p>
-             </statement>
+            </statement>
         </exercise>
 
-         <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
-            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \cap B)}{P(B)}</me>
-        or equivalently
-            <me>P(A \cap B)= P(B) P(A|B).</me>
-        In other words, if event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
+        <exercise>
+        	<statement>
+        		<p>An executive committee consisted of 10 members: 4 women and 6 men.  Three members were selected at random to be sent to a meeting in Hawaii.  A blindfolded woman drew 3 names of the 10 names from a hat.  Three women were chosen.  What is the probability of such luck?</p>
+        	</statement>
+        </exercise>
 
         <exercise>
             <statement>
-                <p>For any three events <m>A</m>, <m>B</m>, and <m>C</m>, prove that 
-                    <me>P(A \cap B \cap C) = P(A) P(B|A) P(C|A \cap B).</me></p>
+                <p>Assume that the probability is $1/2$ that a child will be born a boy.  If a family has 4 children, what is the probability that they are all boys?</p>
              </statement>
          </exercise>
 
@@ -126,7 +127,97 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
-     </section>
+	</section>
+
+	<section xml:id="section-prob-indep-conditional">
+        <title>Conditional Probability</title>
+
+        <exercise>
+            <statement>
+                <p>Suppose that I have two coins, a penny and a nickel. If I flip the two coins, what is the probability that the nickel comes up heads?  If I show you that the penny came up heads, does this change the probability of the nickel being heads?</p>
+             </statement>
+         </exercise>
+
+         <p>This exercise is an example of <term>independent events</term>.  Given two events <m>A</m> and <m>B</m>, the events are independent if have knowledge of the outcome of one gives no additional knowledge of the outcome of the other.  If <m>A</m> and <m>B</m> are independent events, then
+            <me>P(A \text{ and } B) = P(A) P(B).</me>
+        For three events to be independent, they must be <term>pairwise independent</term>.  That is, for <m>A_1, A_2, A_3</m> to be independent, it must be the case that
+            <me>P(A_i \cap A_j) = P(A_i)P(A_j)</me>
+        for <m>i \neq j</m>, where <m>i, j = 1, 2, 3</m>.</p>
+
+        <exercise>
+            <statement>
+                <p>You are playing matchmaker and set up your two friends Alice and Bob on a date.
+                    <ol>
+                        <li><p>What is the probability that the date will be successful?</p></li>
+
+                        <li><p>Alice calls you right after the date and tells you that she is absolutely enamoured with Bob.  What is the probability that the date was successful?</p></li>
+
+                    </ol></p>
+             </statement>
+        </exercise>
+
+         <p>This exercise is an example of <term>conditional probability</term>.  Given two events <m>A</m> and <m>B</m>, 
+            <me>P(A \text{ given } B) = P(A|B) = \frac{P(A \cap B)}{P(B)}</me>
+        or equivalently
+            <me>P(A \cap B)= P(B) P(A|B).</me>
+        In other words, if event <m>B</m> is known to be true, then we may say something further about the probability of <m>A</m>.</p>
+
+        <exercise>
+            <statement>
+                <p>For any three events <m>A</m>, <m>B</m>, and <m>C</m>, prove that 
+                    <me>P(A \cap B \cap C) = P(A) P(B|A) P(C|A \cap B).</me></p>
+             </statement>
+         </exercise>
+
+         <exercise>
+            <statement>
+                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 red balls.  If a ball is drawn at random, what is the probability that
+                    <ol>
+                        <li>The ball is white?</li>
+
+                        <li>The ball is red?</li>
+
+                        <li>The ball is blue?</li>
+
+                        <li>The ball is not blue?</li>
+
+                        <li>The ball is red or white?</li>
+
+                    </ol></p>
+
+                <p>If three balls are drawn at random, what is the probability that that they drawn in the order of red, white, and blue, if replacment is allowed?  What if the balls are not replace?</p>
+            </statement>
+        </exercise>
+
+    </section>
+
+	<section xml:id="section-prob-indep-bayes">
+        <title>Bayes' Theorem</title>
+
+        <theorem>
+            <statement>
+                <p>If an event <m>A</m> must result in one of the mutually exclusive events <m>A_1, A_2, \ldots, A_n</m>, then
+            		<me>P(A) = P(A_1)P(A | A_1) + P(A_2)P(A | A_2) + \cdots + P(A_n)P(A | A_n).</me></p>
+             </statement>
+        </theorem>
+
+        <theorem>
+        	<title>Bayes' Theorem</title>
+            <statement>
+                <p>Suppose that we have mutually exclusive events <m>A_1, A_2, \ldots, A_n</m> and that <m>S = A_1 \cup A_2 \cup \cdots A_n</m>, where <m>S</m> is the sample space.  If <m>A</m> is any event, then
+            		<me>P(A_k | A) = \frac{P(A_k)P(A_k| A)}{\sum_{i = 1}^n P(A_i)P(A_i| A)}.</me></p>
+             </statement>
+         </theorem>
+
+         The statement of this theorem is a bit confusing, so let's see how it works for <m>n = 2</m>.
+
+
+
+    </section>
+
+
+
+
 
 		<!--
 			\question
@@ -146,29 +237,7 @@ $1 - P(B)$
 \end{parts}
 \end{multicols}
 
-\question
-A fair coin is tossed twice.  Tell whether each pair of events below is independent or dependent.
-\begin{eqnarray*}
-A & = &  \text{heads on the first toss} \\
-B & = &  \text{heads on the second toss} \\
-C & = & \text{heads on both tosses} \\
-\end{eqnarray*}
-\begin{multicols}{3}
-\begin{parts}
 
-\part 
-$A$ and $B$
-
-\part
-$A$ and $C$
-
-\part
-$B$ and $C$
-
-\end{parts}
-\end{multicols}
-
-\clearpage
 
 \question 
 \begin{parts}
@@ -190,10 +259,6 @@ What is the probability in (a) and (b) that you chose a matching pair of socks?
 
 \end{parts}
 
-\question
-An executive committee consisted of 10 members: 4 women and 6 men.  Three members were selected at random to be sent to a meeting in Hawaii.  A blindfolded woman drew 3 names of the 10 names from a hat.  Three women were chosen.  What is the probability of such luck?
-
-\vfill
 
 \question
 Three boxes contain a number of black and/or white balls.  
