@@ -194,14 +194,36 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<section xml:id="section-prob-indep-bayes">
         <title>Bayes' Theorem</title>
 
-        <theorem>
+        <example xml:id="example-breast-cancer">
+            <p>Approximately 1<percent /> of women aged 40<ndash />50 have breast cancer. A woman with breast cancer has a 90<percent /> chance of a positive test from a mammogram, while a woman without has a 10<percent /> chance of a false positive result. What is the probability a woman has breast cancer given that she just had a positive test?
+            <ol>
+                <li>20 <percent /></li>
+
+                <li>40 <percent /></li>
+
+                <li>60 <percent /></li>
+
+                <li>80 <percent /></li>
+
+            </ol></p>
+        </example>
+
+
+        <theorem xml:id="theorem-prob-cond">
             <statement>
                 <p>If an event <m>A</m> must result in one of the mutually exclusive events <m>A_1, A_2, \ldots, A_n</m>, then
             		<me>P(A) = P(A_1)P(A | A_1) + P(A_2)P(A | A_2) + \cdots + P(A_n)P(A | A_n).</me></p>
              </statement>
         </theorem>
 
-        <theorem>
+        <exercise>
+        	<statement>
+        		<p>Prove Theorem<nbsp /><xref ref="theorem-prob-cond" /> for <m>n = 2</m>.</p>
+            </statement>
+        </exercise>
+
+
+        <theorem xml:id="theorem-prob-bayes">
         	<title>Bayes' Theorem</title>
             <statement>
                 <p>Suppose that we have mutually exclusive events <m>A_1, A_2, \ldots, A_n</m> and that <m>S = A_1 \cup A_2 \cup \cdots A_n</m>, where <m>S</m> is the sample space.  If <m>A</m> is any event, then
@@ -209,7 +231,32 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
              </statement>
          </theorem>
 
-         The statement of this theorem is a bit confusing, so let's see how it works for <m>n = 2</m>.
+         <p>The statement of this theorem is a bit confusing, so let's see how it works for <m>n = 2</m>.  Suppose that <m>S = A \cup A'</m>.  Then Bayes' Theorem says
+            <me>P(B | A) = \frac{P(B \cap A)}{P(A)} = \frac{P(B \cap A)}{P(B \cap A) + P(B' \cap A)} = \frac{P(B \cap A)}{P(B)P(A|B) + P(B') P(A|B')}.</me></p>
+
+        <exercise>
+            <statement>
+                <p>Prove Theorem<nbsp /><xref ref="theorem-prob-bayes" /> for <m>n = 2</m>.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Use Bayes' Theorem to determine the probability a woman has breast cancer given that she just had a positive test in Example<nbsp /><xref ref="example-breast-cancer" />?</p>
+            </statement>
+            <hint>
+                <p>Let <m>B</m> be the event that the woman has breast cancer and <m>A</m> the event of  a positive test and calculate <m>P(B|A)</m>.</p>
+            </hint>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Nicole Brown was murdered at her home in Los Angeles on the night of June 12, 1994. The Prime suspect was her husband 0.J.Simpson, at the time a well-known celebrity famous both as a TV actor and as a retired professional football star. This murder led to one of the most heavily publicized murder trial in U.S. during the last century. The fact that the murder suspect had previously physically abused his wife played an important role in the trial. The famous defense lawyer Alan Dershowitz, a member of the team of lawyers defending the accused, tried to belittle the relevence of the fact by stating that only 0.1<percent /> of the men who physically abuse their wives actually end up murdering them.  Was the fact that O.J.Simpson had previously physically abused his wife irrelevant to the case?</p>
+            </statement>
+            <hint>
+                <p>Let <m>E</m> be all the evidence, that Nicole Brown was murdered and was previously physically abused by her husband, and <m>G</m> be the event that O.J.Simpson is guilty. Calculate <m>P(G|E)</m>.</p>
+            </hint>
+        </exercise>
 
 
 
