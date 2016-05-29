@@ -24,20 +24,63 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--                                                			-->
 <!-- Copyright (C) 2016  Thomas W. Judson      					-->
 
-<chapter xml:id="prob-cond" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="prob-random-var" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Probability Distributions and Random Variables</title>
 
-     <section>
-        <title>Probability Distributions</title>
 
- 
-    </section>
 
     <section>
         <title>Random Variables</title>
 
-        <p>The expected value of a random variable.</p>
+        <p>A <term>random variable</term> is a function that assigns a number to each point in a sample space.  For example, suppose that we flip two coins.  Our sample space is <m>S = \{ HH, HT, TH , TT \}</m>.  We can let <m>X</m> be the number of heads for each point in the sample space.  Thus, our random variable is defined in the Table<nbsp /><xref ref="table-prob-random-var-1" />.  Random variables are usually denotes by capital lettters such as <m>X</m> or <m>Y</m>.</p>
 
+        <table xml:id="table-prob-random-var-1">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Sample Point</cell><cell>HH</cell><cell>HT</cell><cell>TH</cell><cell>TT</cell>
+                </row>
+                <row bottom="medium">
+                    <cell><m>X</m></cell><cell>2</cell><cell>1</cell><cell>1</cell><cell>0</cell>
+                </row>
+           </tabular>
+            <caption>Random variable for the number of heads</caption>
+        </table>
+
+        <p>Of course, we might define a different random variable on <m>S</m>.  Suppose that you pay <dollar />2 to play a game of chance.  You win <dollar />4 if two coins are tossed and both come up heads; otherwise, you lose your initial investment. Our random variable is now defined in the Table<nbsp /><xref ref="table-prob-random-var-2" />.</p>
+
+        <table xml:id="table-prob-random-var-2">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Sample Point</cell><cell>HH</cell><cell>HT</cell><cell>TH</cell><cell>TT</cell>
+                </row>
+                <row bottom="medium">
+                    <cell><m>X</m></cell><cell>4</cell><cell><m>-2</m></cell><cell><m>-2</m></cell><cell><m>-2</m></cell>
+                </row>
+           </tabular>
+            <caption>Random variable for the number of heads</caption>
+        </table>
+
+        <p>The question now arises whether or not you should play this game.  In other words, if you play the game over and over again, do you expect to win or lose money.  We define the <term>expected value</term> of a random variable <m>X</m> to be
+            <me>E(X) = x_1 P(X = x_1) + x_2 P(X = x_2) + \cdots + x_n P(X = x_n),</me>
+        where <m>S = \{x_1, x_2, \ldots, x_n \}</m>.  In our game of chance, our expected value is
+            <md>
+                <mrow>E(X) \amp = x_1 P(X = HH) + x_2 P(X = HT) + x_3 P(X = TH) + x_4 P(X = TT)</mrow>
+                <mrow>\amp = 4 \cdot \frac{1}{4} - 2 \cdot \frac{3}{4} = -\frac{1}{2}.</mrow>
+            </md>
+        Should your agree to play this game?  Probably not<mdash />If you play this game many times, you will lose an average of <dollar />0.50 each time you play.</p>
+
+        <exercise>
+            <statement>
+                <p>What should you pay to play this game if the game is fair?  That is, your expected value is zero.</p>
+            </statement>
+        </exercise>
+
+    </section>
+
+    <section>
+        <title>Probability Distributions</title>
+
+ 
     </section>
 
 </chapter>
