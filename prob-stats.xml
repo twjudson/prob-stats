@@ -52,9 +52,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <xi:include href="./prob-combinatorics.xml" /> 		<!-- Combinatorics and Counting Problems -->
 
-        <xi:include href="./prob-indep.xml" /> 				<!-- Probability and Independent Events -->
+        <xi:include href="./prob-indep.xml" /> 				<!-- Independent Events and Conditional Probability -->
 
-        <!--<xi:include href="./prob-cond.xml" /> -->				<!-- Conditional Probability-->
+        <xi:include href="./prob-random-var.xml" /> 		<!-- Probability Distributions, Random Variables-->
 
         <xi:include href="./stats-descript.xml" /> 			<!-- Introduction to Statistics and Descriptive Statistics -->
 
