@@ -71,7 +71,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
             <statement>
-                <p>What should you pay to play this game if the game is fair?  That is, your expected value is zero.</p>
+                <p>What should you pay to play this game if the game is fair?  That is, what should you pay so that the expected value is zero?</p>
+            </statement>
+        </exercise>
+
+
+        <exercise>
+            <statement>
+                <p>The expected value of a random variable has many real world applications.  For example, suppose that you want to insure the bicycles of college students against theft.  After careful research, you decide that there are basically four types of theft<mdash />cheap bicycles that are locked outside, cheap bicycles that kept inside, expensive bicycles that are kept locked outside, and expensive bicycles that are kept inside.  Cheap bicycles can be insured for <dollar />200 per semester and expensive bicycles can be insured for <dollar />1000.  After much research, you decide that the probability that a bicycle kept inside is stolen is 0.01.  The probability that a bicycle that is kept outside will be stolen is 0.2 if it is an inexpensive bicycle but 0.5 if it is expensive.  What is your expected payout over the course of a semester?  What should you charge if you want to make a profit of <dollar />50 per policy?</p>
             </statement>
         </exercise>
 
