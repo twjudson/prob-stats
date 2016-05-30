@@ -75,10 +75,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <example>
+            <p>Suppose that <m>X</m> denotes the number obtained in a roll of a fair die, then the expected value of <m>X</m> is 3.5. Of course, <m>X</m> will never be be 3.5, but if we roll a die 10,000 and record the value of each roll, then we can expect the average of all of these rolls to be somewhere near 3.5.</p>
+        </example>
+
+        <example>
+            <p>Suppose the premium of a home insurance policy is <dollar />300 and in case of a fire the insurance company will pay out <dollar />200,000. If <m>X</m> denotes the profit (or loss) of such a policy, then <m>X</m> is a random variable. The expected value of <m>X</m> depends on the probability of a fire <m>p</m>. If, for example, <m>p = 0.0002</m>, then <m>X = 300</m> with probability <m>1- p = 0.9998</m> when there is no fire,  and <m>X = -200,000 + 300 = -199,700</m> with probability <m>p = 0.0002</m> when there is a fire. Consequently, the expected value of <m>X</m> is 
+                <me>E(X) = 300 \cdot 0.9998 + (-199700) \cdot 0.0002 = 260.</me> 
+            This means if the insurance company issues 10000 such policies, it can expect to profit <dollar />2,600,000.</p>
+        </example>
 
         <exercise>
             <statement>
-                <p>The expected value of a random variable has many real world applications.  For example, suppose that you want to insure the bicycles of college students against theft.  After careful research, you decide that there are basically four types of theft<mdash />cheap bicycles that are locked outside, cheap bicycles that kept inside, expensive bicycles that are kept locked outside, and expensive bicycles that are kept inside.  Cheap bicycles can be insured for <dollar />200 per semester and expensive bicycles can be insured for <dollar />1000.  After much research, you decide that the probability that a bicycle kept inside is stolen is 0.01.  The probability that a bicycle that is kept outside will be stolen is 0.2 if it is an inexpensive bicycle but 0.5 if it is expensive.  What is your expected payout over the course of a semester?  What should you charge if you want to make a profit of <dollar />50 per policy?</p>
+                <p>Suppose that you want to insure the bicycles of college students against theft.  After careful research, you decide that there are basically four types of theft<mdash />cheap bicycles that are locked outside, cheap bicycles that kept inside, expensive bicycles that are kept locked outside, and expensive bicycles that are kept inside.  Cheap bicycles can be insured for <dollar />200 per semester and expensive bicycles can be insured for <dollar />1000.  After much research, you decide that the probability that a bicycle kept inside is stolen is 0.001.  The probability that a bicycle that is kept outside will be stolen is 0.2 if it is an inexpensive bicycle but 0.5 if it is expensive.  What is your expected payout over the course of a semester?  What should you charge if you want to make a profit of <dollar />30 per policy?  Should you offer two different types of policies<mdash />one for bicycles stored outside and one for bicycles stored inside?</p>
             </statement>
         </exercise>
 
@@ -86,6 +95,105 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <section>
         <title>Probability Distributions</title>
+
+        <p>The probability distribution of a random variable <m>X</m> tells us how to assign probabilities to a random variable.  More specifically, for a random variable <m>X</m> on a sample space <m>S = \{x_1, x_2, \ldots, x_n\}</m>, a <term>probability distribution</term> is a function
+            <me>f(x_i) = P(X = x_i)</me>
+        such that 
+            <ol>
+                <li><m>f(x_i) \geq 0</m></li>
+
+                <li><m>\displaystyle\sum_{i = 1}^n f(x_1) = 1</m></li>
+
+            </ol>
+        </p>
+
+        <exercise>
+            <statement>
+                <p>Suppose that we flip four coins and let <m>X</m> be the number of heads.  What is the probability distribution of <m>X</m>?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>We also have the notion of a continuous random variable, or a random variable that can take on an infinite number of values.  For example, suppose that <m>S</m> is all of the numbers between zero and one.  We define a random variable <m>X</m> on <m>S</m> just to be the value of the number in the interval <m>0 \leq x \leq 1</m>.
+                    <ol>
+                        <li>What is <m>P(X \leq 0.5)</m>?</li>
+
+                        <li>What is <m>P(0.4 \leq X \leq 0.5)</m>?</li>
+
+                        <li>What is <m>P(0.49 \leq X \leq 0.5)</m>?</li>
+
+                        <li>What is <m>P(0.499 \leq X \leq 0.5)</m>?</li>
+
+                        <li>What is <m>P(0.4999 \leq X \leq 0.5)</m>?</li>
+
+                        <li>What is <m>P(X = 0.5)</m>?</li>
+
+                    </ol>
+                </p>
+            </statement>
+        </exercise>
+
+        <p>For the definition of a continuous random variable, we replace the axiom
+            <me>\sum_{i = 1}^n f(x_1) = 1</me>
+        with a calculus integral
+            <me>\int_{-\infty}^\infty f(x) \, dx = 1.</me>
+        For those who have studied calculus, you will begin to see how everything works.  If you haven't studied calculus, you will not need it for this course.  However, this course may provide some motivation to study the subject.</p>
+
+    </section>
+
+    <section>
+        <title>Normal Distributions</title>
+
+        <p>Continuous probability distributions are important, since we can use them to model many real world situations.  For example, a very important class of continuous probability distribution is the <term>normal distribution</term>.  The normal distribution has probability function
+            <men xml:id="equation-prob-random-var-normal">f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-(x - \mu)^2/2 \sigma^2},</men>
+        and its graph is a symmetric, bell-shaped curve (Figure<nbsp /><xref ref="figure-prob-random-var-normal" />).  The parameter <m>\mu</m> is called the <term>mean</term> of the distribution and tells us where the curve is centered.  The parameter <m>\sigma</m> is the <term>standard deviation</term> of the distribution and tells us how spread out the curve is.  Changing <m>\mu</m> just moves the curve back and forth along the horizontal axis without changing the shape of the curve.  Remember that the area between the curve and the horizontal axis will always be 1 no matter how we change <m>\mu</m> or <m>\sigma</m>.  The parameter <m>\sigma</m> must be a positive number.  Small values of <m>\sigma</m> will give us a comapct curve with a high peak.  Larger values will result in a curve that is more spread out. The good news is that we do not have to remember the complicated function <xref ref="equation-prob-random-var-normal" /> for our course.</p>
+
+        <figure xml:id="figure-prob-random-var-normal">
+            <caption>Normal distributions</caption>
+            <image width="250" source="images/normal-dist.png" />
+        </figure>
+
+        <exercise>
+            <statement>
+                <p>Find examples of populations that are approximately normally distributed.  Find some examples of populations that are not normally distributed.</p>
+            </statement>
+        </exercise>
+
+        <paragraphs>
+            <title>The 68<ndash />95<ndash />99.7 Rule</title>
+
+          <p>All normal distributions satisfy the following rule.  For a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>:
+                <ul>
+
+                    <li>68<percent /> of the observations fall within <m>\sigma</m> of the mean <m>\mu</m>.</li>
+
+                    <li>95<percent /> of the observations fall within <m>2\sigma</m> of the mean <m>\mu</m>.</li>
+
+                    <li>99.7<percent /> of the observations fall within <m>3\sigma</m> of the mean <m>\mu</m>.</li>
+
+                </ul></p>
+        </paragraphs>
+
+        <example>The distribution of heights of American women between the ages of 18 and 24 is approximately normal with mean <m>\mu = 64.5</m> inches and standard deviation <m>\sigma = 2.5</m> inches. The 68<ndash />95<ndash />99.7 rule tells us that 68<percent /> of American women between the ages of 18 and 24 will be between 62 inches tall and 67 inches tall.</example>
+
+        <exercise>
+            <statement>
+                <p><ol>
+
+                    <li>What percentage of women are taller than 67 inches?</li>
+
+                    <li>What percentage of women are shorter than 62 inches?</li>
+
+                    <li>What percentage of women are between 59.5 and 69.5 inches tall?</li>
+
+                    <li>What percentage of women are taller than 72 inches?</li>
+
+                </ol></p>
+            </statement>
+        </exercise>
+
+
 
  
     </section>
