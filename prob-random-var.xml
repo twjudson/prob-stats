@@ -210,6 +210,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>A tire company tests a particular tire and finds the tires to be normally distributed with respect to wear.  The mean is 28,000 miles and the standard deviation is 2500 miles.  If 2000 tires are tested, use 68<ndash />95<ndash />99.7 rule to determine how many tires will wear out before 23,000 miles.</p>
+            </statement>
+        </exercise>
+
         <p>Suppose that <m>x</m> is an observed value from a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>.  The <term>standardized value</term> of <m>x</m> is
             <me>z = \frac{x - \mu}{\sigma}.</me>
         The standardized value is sometimes called the <term><m>z</m>-score</term>.  A <m>z</m>-score tells us how many standard deviations the observation <m>x</m> is away from the mean.  Positive <m>z</m>-scores are larger than the mean and negative <m>z</m>-score are smaller than the mean.</p>

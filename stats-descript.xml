@@ -34,24 +34,54 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stat-descript">
         <title>Descriptive Statistics</title>
 
-        <p>This is a section.</p>
 
-    </section>
-
-    <exercises>
-		<title>Exercises</title>
-
-		<exercise number="1">
+		<exercise>
 			<statement>
-				<p>This is an exercise.</p>
+				<p>For each of the following data sets, determine whether the best choice to represent the data graphically is a line graph, a bar graph, or a circle graph (pie chart).
+					<ol>
+
+						<li>The average trade-in value of a 2000 Honda Civic for the years 2000<ndash />2014 as a percentage of the original purchase price of the car.</li>
+
+						<li>Car sales by percentage of vehicle type (small, midsize, large, and luxury) in 2011.</li>
+
+						<li>The lengths of selected rivers in the U.S. (Arkansas, Columbia, Mississippi, Missouri, Ohio, and Yukon).</li>
+
+					</ol></p>
 			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
 		</exercise>
-	</exercises>
+
+
+
+		<exercise>
+			<statement>
+				<p>The data below show the number of car thefts in Central City for a period of 20 days.</p>
+				
+				<p>29 48 49 50 52 53 53 55 56 62 65 66 66 69 72 72 75 78 78 82</p>
+
+				<p><ol>
+
+					<li>Construct a stem-and-leaf plot of the data.</li>
+
+					<li>Are there any outliers?</li>
+
+					<li>What is the five-number summary of the data?</li>
+
+					<li>The five-number summary of data for car thefts in Starling City over the same 20 day period is 
+						<me>(\min = 30, Q_1 = 40, \text{median} = 55, Q_3 = 70, \max = 90).</me>
+					Compare the number of car thefts in the two cities drawing two box-and-whisker plots.</li>
+
+					<li>How do car thefts compare in the two cities?</li>
+
+				</ol></p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>Jill was 80th in a class of 200, whereas Nathan, who is in the same class, has a percentile rank of 80.  Which student has the higher standing in the class?</p>
+			</statement>
+		</exercise>
+
+	</section>
 
 </chapter>

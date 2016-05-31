@@ -41,24 +41,12 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-measures-spread">
         <title>Measuring Spread</title>
 
-        <p>This is a section.</p>
+        <exercise>
+			<statement>
+				<p>Jack and Jill are students in two different sections of MTH 128.  Both took exams last week on the data analysis chapter, although the exams were different for the two sections.  In Jack's class, the mean score of all of the exams was 78 with standard deviation 8.  Jill's class did not do quite as well.  The mean score in her class was only 70 with standard deviation 5.  If Jack scored an 90 and Jill scored an 80, who did better on the exam compared to the other students in their respective sections?</p>
+			</statement>
+		</exercise>
 
     </section>
-
-    <exercises>
-		<title>Exercises</title>
-
-		<exercise number="1">
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
 
 </chapter>
