@@ -193,7 +193,102 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>The lengths of human pregnancies are approximately normally distributed with a mean of 266 days and a standard deviation of 16 days.
+                    <ol>
 
+                        <li>What percent of pregnancies last at most 240 days?</li>
+
+                        <li>What percent of pregnancies last from 240 to 280 days?</li>
+
+                        <li>What percentage of pregnancies last longer than 298 days></li>
+
+                        <li>Why do we use the phrase <q><em>approximately</em> normally distributed?</q></li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <p>Suppose that <m>x</m> is an observed value from a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>.  The <term>standardized value</term> of <m>x</m> is
+            <me>z = \frac{x - \mu}{\sigma}.</me>
+        The standardized value is sometimes called the <term><m>z</m>-score</term>.  A <m>z</m>-score tells us how many standard deviations the observation <m>x</m> is away from the mean.  Positive <m>z</m>-scores are larger than the mean and negative <m>z</m>-score are smaller than the mean.</p>
+
+        <example>
+            <p>For the lengths of human pregnancies, <m>\mu = 266</m> days and <m>\sigma = 16</m> days. Thus, the <m>z</m>-score is given by 
+                <me>z = \frac{\text{length of pregnancy} - \mu}{\sigma} = \frac{\text{length of pregnancy} - 266}{16}.</me>
+            Suppose that the length of a pregnancy is 280 days.  Then the <m>z</m>-score for this pregnancy is
+                <me>z = \frac{280 - 266}{16} = 0.875</me>
+            or 0.875 standard deviations above the mean.  Similarly, a pregnancy of 230 days has a <m>z</m>-score
+                <me>z = \frac{230 - 266}{16} = -2.25</me>
+            or 2.25 standard deviations below the mean.</p>
+        </example>
+
+        <p>Of particular importance is the <term>standard normal distribution</term>.  This is the normal distribution where <m>\mu = 0</m> and <m>\sigma = 1</m>. Standardizing a variable of any normal distribution produces a new variable with a standard normal distribution.  In other words, if a variable <m>x</m> has a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>, then
+            <me>z = \frac{x - \mu}{\sigma}</me>
+        has the standard normal distribution.  Tables (see Figure<nbsp /><xref ref="figure-prob-random-var-z-table" />), calculators, or software will give the area under the standard normal curve for a particular value of <m>z</m>.</p>
+
+        <figure xml:id="figure-prob-random-var-z-table">
+            <caption>Standard normal distribution</caption>
+            <image width="350" source="images/z-table.jpg" />
+        </figure>
+
+        <example xml:id="example-prob-random-var-z-table">
+            <p>A pregnancy of 280 days has a <m>z</m>-score of 0.875.  Looking at the standard normal table, we can determine that approximately 81<percent /> of all pregnancies last 280 days or less.  Similarly, a pregnancy of 230 days has a <m>z</m>-score of  <m>-2.25</m>.  Consulting our table, we see that only 1.2<percent /> of all pregnancies last 230 days or less.</p>
+        </example>
+
+        <exercise>
+            <statement>
+                <p>Use the standard normal distribution table to find each of the following.
+                    <ol>
+                        <li><m>z \leq 1.25</m></li>
+
+                        <li><m>z \leq -1.25</m></li>
+
+                        <li><m>-1.25 \leq z \leq 1.25</m></li>
+
+                        <li><m>z \gt 1.25</m></li>
+
+                        <li><m>-1.34 \leq z \leq 1.75</m></li>
+
+                        <li><m>-1.34 \lt z \lt 1.75</m></li>
+
+                        <li><m>z = 1.25</m></li>
+
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Explain how the <m>z</m>-scores in Example<nbsp /><xref ref="example-prob-random-var-z-table" /> are obtained from the standard normal distribution table.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Ty Cobb's batting average was .420 in 1911, Ted Williams batted .406 in 1941, and George Brett batted .390 in 1980.  If we ask how this baseball players compared to their peers, the story is a bit more complicated than just comparing their batting averages directly.  If we look at batting averages for all players for each of these years, the distribution is approximately normal; however, the means and standard deviations vary.  See Table<nbsp /><xref ref="table-prob-random-batting-averages" />.  Which of the three players was better than his peers?</p>
+            </statement>
+        </exercise>
+
+        <table xml:id="table-prob-random-batting-averages">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Decade</cell><cell>Mean (<m>\mu</m>)</cell><cell>Standard Deviation (<m>\sigma</m>)</cell>
+                </row>
+                <row>
+                    <cell>1910s</cell><cell>.266</cell><cell>0.0371</cell>
+                </row>
+                <row>
+                    <cell>1940s</cell><cell>.267</cell><cell>0.0326</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>1970s</cell><cell>.261</cell><cell>0.0317</cell>
+                </row>
+           </tabular>
+            <caption>Distribution of batting averages</caption>
+        </table>
 
  
     </section>
