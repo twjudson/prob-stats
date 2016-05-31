@@ -220,6 +220,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>Exactly 20 horse will be entered into the 2015 Kentucky Derby.
+                    <ol>
+
+                        <li>How may ways can the first, second, and third-place horse be determined?</li>
+
+                        <li>What is the <em>probability</em> that the top three horses will be <em>Carpe Diem</em>, <em>Upstart</em>, and <em>Daredevil</em>?<fn>Assume that you don't know the results of the 2015 Kentucky Derby.</fn></li>
+                </ol></p>
+            </statement>
+        </exercise>
+
+
+
+
 
 
     </section>

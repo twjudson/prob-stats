@@ -52,7 +52,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- A section of its own in HTML, migrates to copyright-page in LaTeX (sans a title)-->
     <biography>
-        <p>Thomas W. Judson did his undergraduate work in Illinois, his graduate work in Oregon and presently teaches in Texas. He likes to ride his bicycle in France.</p>
+        <p>Thomas W. Judson did his undergraduate work in Illinois, his graduate work in Oregon and presently teaches in Texas. He likes to ride his bicycle in France during the summers to escape the East Texas heat.</p>
     </biography>
 
     <!-- The following items must be placed in the desired/required order -->
@@ -67,9 +67,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <preface>
 
-        <p>This text was written for a course </p>
+        <p>These notes were written for a <em>MATH S<ndash />304. Inquiries into Probability and Statistics</em>, a course for middle and high school teachers in the 2016 Harvard University Summer School.</p>
 
-        <p>Sage (<url href="http://sagemath.org">sagemath.org</url>) is a free, open source, software system for advanced mathematics, which is ideal for assisting with a study of abstract algebra. Sage can be used either on your own computer, a local server, or on SageMathCloud (<url href="https://cloud.sagemath.com">https://cloud.sagemath.com</url>). Robert Beezer has written a comprehensive introduction to Sage and a selection of relevant exercises that appear at the end of each chapter, including live Sage cells in the web version of the book.</p>
 
         <!-- RAB 2014/08/18 Should move flush right with some vertical spacing -->
         <attribution>

@@ -216,6 +216,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>The New York Knights baseball team finds that the attendance at its home games at Ebbets Field is normally distributed, with a mean of 10,000 and a standard deviation of 3000.  Use the 68<ndash />95<ndash />99.7 rule to answer the following questions.
+                    <ol>
+
+                        <li>What percent of home games have an attendance between 4,000 and 16,000 people?</li>
+
+                        <li>What percent of home games have an attendance of more than 13,000 people?</li>
+
+                        <li>Who are the New York Knights?</li>
+
+                </ol></p>
+            </statement>
+        </exercise>
+
         <p>Suppose that <m>x</m> is an observed value from a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>.  The <term>standardized value</term> of <m>x</m> is
             <me>z = \frac{x - \mu}{\sigma}.</me>
         The standardized value is sometimes called the <term><m>z</m>-score</term>.  A <m>z</m>-score tells us how many standard deviations the observation <m>x</m> is away from the mean.  Positive <m>z</m>-scores are larger than the mean and negative <m>z</m>-score are smaller than the mean.</p>

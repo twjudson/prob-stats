@@ -47,6 +47,43 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</statement>
 		</exercise>
 
+		<exercise>
+			<statement>
+				<p>Matilda intends to go to graduate school and just completed the GRE exam (similar to the SAT exam but for students applying to graduate school).  She scored in the 90th percentile on the GRE exam.  Which of the following is true about Matilda's performance on the GRE?
+					<ol>
+
+						<li>Matilda's score is 90<percent /> of the average score.</li>
+
+						<li>Matilda got 90<percent /> of the questions right.</li>
+
+						<li>90<percent /> of test takers scored at or below Matilda's score.</li>
+
+						<li>Matilda scored 90<percent /> better than the average student who took the GRE.</li>
+
+					</ol>
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>In the <em>2014 Michelin Guide to Pizza Restaurants in Texas</em>, each restaurant has ten of their best selling pizzas rated on a scale of 0 to 100, with 100 be a perfect score.  The <em>Michelin Guide</em> publishes the mean and standard deviation of top ten pizzas for each restaurant.  For example, <em>Three Aces Pizza</em> has a mean of 70 and a standard deviation of 15.  If your friend asks you for a recommendation, you should select a restaurant with
+					<ol>
+
+						<li>a low mean and a low standard deviation.</li>
+
+						<li>a high mean and a low standard deviation.</li>
+
+						<li>a low mean and a high standard deviation.</li>
+
+						<li>a high mean and a high standard deviation.</li>
+
+					</ol></p>
+			</statement>
+		</exercise>
+
+
+
     </section>
 
 </chapter>
