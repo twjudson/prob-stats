@@ -28,13 +28,167 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Measuring Central Tendency and Spread</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+        	<ul>
+        		<li>To understand and be able to analyze data using measures of central tendency<mdash />mean, median, and mode.</li>
+
+        		<li>To understand and be able to analyze data using percentiles and the five-number summary.</li>
+
+        	</ul></p>
     </introduction>
 
     <section xml:id="section-stats-measures-center">
         <title>Measuring the Center</title>
 
-        <p>This is a section.</p>
+        <paragraphs>
+        	<title>The Mean <m>\overline{x}</m></title>
+
+        	<p>To find the <term>mean</term> of a set of observations, add their values and divide by the number of observations.  If the <m>n</m>observations are <m>x_1, x_2, \ldots, x_n</m>, then their mean is
+        		<me>\overline{x} = \frac{x_1 + x_2 + \cdots + x_n}{n}.</me>
+			For example, the mean of the data set <m>\{ 3, 4, 6, 7\}</m> is
+				<me>\overline{x} = \frac{3 + 4 + 6 + 7}{4} = 5.</me></p>
+		</paragraphs>
+
+		<paragraphs>
+			<title>The Median <m>M</m></title>
+
+			<p>The <term>median</term> <m>M</m> is the midpoint of a distribution, the number such that half the observations are smaller and the other half are larger.  To find the median:
+				<ol>
+
+					<li>Arrange all of the observations in order of size, from smallest to largest.</li>
+
+					<li>If the number of observations <m>n</m> is odd, the median is the center observation in the list.  For example, the median of the data set <m>\{ 3, 4, 6, 7, 10\}</m> is 6.</li>
+
+					<li>If the number of observations <m>n</m> in the list is even, then the median is the average of the to center observations in the list.  For example the median of the data set <m>\{ 3, 4, 6, 7\}</m> is
+						<me>\frac{4 + 6}{2} = 5.</me></li>
+
+					</ol></p>
+
+		</paragraphs>
+
+		<exercise>
+			<statement>
+				<p>A household's <q>net worth</q> is the total value of the household's possessions and investments less the total of its debts.  In 1997, the mean and the median of net worth of American households were <dollar />51,000 and <dollar />212,000.  Which of these numbers is the median and which is the mean?  Explain your reasoning.</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>Which measure of center, the mean or the median, should you use in each of the following situations?
+					<ol>
+
+						<li>Middletown is considering imposing an income tax on its citizens.  The city government wants to know the average income of citizens so that it can estimate the total tax base.</li>
+
+						<li>In a study of the standard of living of typical families in Middletown, a sociologist estimates the average family income in that city.</li>
+
+					</ol></p>
+
+			</statement>
+		</exercise>
+
+
+\end{parts}
+
+		<paragraphs>
+			<title>The Mode</title>
+
+			<p>The <term>mode</term> of a distribution is the most frequently occurring observation.  For example, the mode of the data set <m>\{ 1, 2, 4, 5, 5, 5, 6, 6, 9\}</m> is 5.</p>
+
+		</paragraphs>
+
+		<exercise>
+        	<statement>
+        		<p>Find the mean, median, and mode of the following data sets.
+					<ol>
+
+	        			<li><m>\{0, 50, 50, 50, 50, 50, 50, 100\}</m></li>
+
+	        			<li><m>\{ 0, 50, 100000 \}</m></li>
+
+	        			<li><m>\{ 0, 50, 50, 50, 100000 \}</m></li>
+
+	        		</ol></p>
+        	</statement>
+        </exercise>
+
+
+		<paragraphs>
+			<title>Percentiles and the Five-Number Summary</title>
+
+			<p>A <term>percentile</term> is the value below which a given percentage of observations in a group of observations fall. For example, the 20th percentile is the value (or score) below which 20<percent /> of the observations may be found.  The <term>five-number summary</term> consists of the sample minimum (smallest observation) the lower quartile or first quartile (25th percentile), the median, the upper quartile or third quartile (75th percentile), and the sample maximum (largest observation).</p>
+
+		</paragraphs>
+
+		<exercise>
+        	<statement>
+        		<p>The following data set is the number of home runs that Babe Ruth hit during his 15-year career in major league baseball.</p>
+
+        		<p>22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60</p>
+
+        		<p><ol>
+
+        			<li>Find the mean number of home runs hit by  Ruth during his career.</li>
+
+        			<li>Find the median number of home runs hit by  Ruth.</li>
+
+        			<li>What is the mode of the number of home runs hit by Ruth?</li>
+
+        			<li>What is the five-number summary of home runs hit by Ruth?</li>
+
+        		</ol></p>
+        	</statement>
+        </exercise>
+
+
+		<exercise>
+			<statement>
+				<p>The data below show the number of car thefts in Central City for a period of 20 days.</p>
+				
+				<p>29 48 49 50 52 53 53 55 56 62 65 66 66 69 72 72 75 78 78 82</p>
+
+				<p><ol>
+
+					<li>Construct a stem-and-leaf plot of the data.</li>
+
+					<li>Are there any outliers?</li>
+
+					<li>What is the five-number summary of the data?</li>
+
+					<li>The five-number summary of data for car thefts in Starling City over the same 20 day period is 
+						<me>(\min = 30, Q_1 = 40, \text{median} = 55, Q_3 = 70, \max = 90).</me>
+					Compare the number of car thefts in the two cities drawing two box-and-whisker plots.</li>
+
+					<li>How do car thefts compare in the two cities?</li>
+
+				</ol></p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>The final medal standings of the top 20 countries participating in the 2008 Summer Olympics are given below:</p>
+				
+				<p>110, 100, 72, 47, 46, 41, 40, 31, 28, 27, 25, 24, 19, 18, 18, 16, 15, 14, 13, 11</p>
+
+				<p><ol>
+
+					<li>Find the five-number summary for the 2008 Summer Olympics (min, <m>Q_1</m>, median, <m>Q_3</m>, max).</li>
+
+					<li>Are there any outliers?  If so, what are they?</li>
+
+					<li>The 2012 Summer Olympics has a five-number summary of (12, 17, 24, 40, 104).  Draw side-by-side a box-and-whisker plots for these two data sets.</li>
+
+					<li>How do the 2008 and 2012 Summer Olympics compare?</li>
+
+				</ol></p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>Jill was 80th in a class of 200, whereas Nathan, who is in the same class, has a percentile rank of 80.  Which student has the higher standing in the class?</p>
+			</statement>
+		</exercise>
 
     </section>
 
