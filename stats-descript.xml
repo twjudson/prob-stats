@@ -33,6 +33,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         		<li>To understand how data collection methods differ and how they affect the nature of the data set.</li>
 
         		<li>To understand and be able to evaluate different design studies.</li>
+
+        		<li>To understand and be able to analyze data using appropriate graphs and tables.</li>
+
+        		<li>To understand how graphs and tables of data can sometimes be misleading.</li>
+
         	</ul></p>
     </introduction>
 
@@ -95,16 +100,132 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         			<ol>
         				<li>An interviewer visits a randomly selected set of homes and asks the first 50 people who answer the door whether they eat <em>Frosted-Chocolate Sugar Bombs</em> for breakfast.</li>
 
-        				<li>An interviewer goes to the local Partial Foods Market and observes what breakfast foods 50 shoppers select.</li>
+        				<li>An interviewer goes to the local Whole Paycheck Food Market and observes what breakfast foods 50 shoppers select.</li>
         				
         			</ol></p>
     		</statement>
     	</exercise>
 
+    	<exercises>
+    		<statement>
+    			<p>A school finds that 75<percent /> of the students in detention are boys even though only 45<percent /> of the students are boys.  Does this show that the school is biased against boys?  Tell why or why not.</p>
+    		</statement>
+    	</exercises>
+
+   		<exercise>
+        	<statement>
+        		<p>Tell whether each of the following is an observational study or an experiment.
+        			<ol>
+        				<li>A researcher randomly assigns 30 people to a statistics class using the lecture method and 30 students to an online statistics class.  Their average scores on the final exam are compared.</li>
+
+        				<li>A researcher finds 50 people who are overweight and 50 who are not.  She compares the average number of hours they spend each week watching television.</li>
+        				
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+
     </section>
 
-    <section xml:id="section-stat-descript">
-        <title>Descriptive Statistics</title>
+    <section xml:id="section-stat-graphs-tables">
+        <title>Analyzing Data with Graphs and Tables</title>
+
+        <exercise>
+        	<statement>
+        		<p>The following data set is the number of home runs that Babe Ruth hit during his 15-year career in major league baseball.</p>
+
+        		<p>22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60</p>
+
+        		<p><ol>
+
+        			<li>Draw a dot plot on the number of home runs that Babe Ruth hit during is career.</li>
+
+        			<li>Draw a stem-and-leaf plot of Ruth's home runs.</li>
+
+        			<li>Discuss your answers.</li>
+
+        		</ol></p>
+        	</statement>
+        </exercise>
+
+        <exercise>
+        	<statement>
+        		<p>The following data is  the number of home runs that Barry Bonds hit during his  major league career.</p>
+
+        		<p> 16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28</p>
+
+        		<p><ol>
+
+        			<li>Draw back-to-back stem-and-leaf plots of Bond's and Ruth's home runs.</li>
+
+        			<li>Who was the better home run hitter during his career?</li>
+
+        		</ol></p>
+        	</statement>
+        </exercise>
+
+        <exercise>
+        	<statement>
+        		<p>The following data is  the number of home runs that Barry Bonds hit during his  major league career.</p>
+
+        		<p> 16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28</p>
+
+        		<p><ol>
+
+        			<li>Draw back-to-back stem-and-leaf plots of Bond's and Ruth's home runs.</li>
+
+        			<li>Who was the better home run hitter during his career?</li>
+
+        		</ol></p>
+        	</statement>
+        </exercise>
+
+        <exercise>
+        	<statement>
+        		<p>The 1918 flu pandemic (commonly referred to as the Spanish flu) was an influenza pandemic that spread to nearly every part of the world.   The Spanish flu lasted from March 1918 to June 1920.  It is estimated that anywhere from 20 to 100 million people were killed worldwide.  The data on the number of new influenza cases and the number of deaths from the epidemic in San Francisco week by week from October 5, 1918 to January 25, 1919 is given in Table<nbsp /><xref ref="table-stats-descript-flu" />.  The data is given on the last day of the week.<ol>
+
+        			<li>Make a line graph of weekly new cases.  Based on your plot, describe the progress of the epidemic.</li>
+
+        			<li>We would like to compare the patterns over time of the number of new cases with the number of deaths.  To make the new variables similar in size for easier comparison, plot the number of deaths against time for October 5 to January 25, then plot the number of cases divided by 10 on the same graph using a different color.  What do you see?  In particular, how long is the lag between the changes in the number of cases and corresponding changes in deaths?</li>
+
+        			<li>Why was the 1918 flu epidemic called <q>the Spanish flu?</q></li>
+
+        		</ol></p>
+        	</statement>
+        </exercise>
+
+        <table xml:id="table-stats-descript-flu">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Date</cell><cell>Oct 5</cell><cell>Oct 12</cell><cell>Oct 19</cell><cell>Oct 26</cell><cell>Nov 2</cell><cell>Nov 9</cell>
+                </row>
+                <row>
+                    <cell>Cases</cell><cell>36</cell><cell>531</cell><cell>4233</cell><cell>8682</cell><cell>7164</cell><cell>2229</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Deaths</cell><cell>0</cell><cell>0</cell><cell>130</cell><cell>522</cell><cell>738</cell><cell>414</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Date</cell><cell>Nov 16</cell><cell>Nov 23</cell><cell>Nov 30</cell><cell>Dec 7</cell><cell>Dec 14</cell><cell>Dec 21</cell>
+                </row>
+                <row>
+                    <cell>Cases</cell><cell>600</cell><cell>164</cell><cell>57</cell><cell>722</cell><cell>1517</cell><cell>1828</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Deaths</cell><cell>198</cell><cell>90</cell><cell>56</cell><cell>50</cell><cell>71</cell><cell>137</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Date</cell><cell>Dec 28</cell><cell>Jan 4</cell><cell>Jan 11</cell><cell>Jan 18</cell><cell>Jan 25</cell><cell></cell>
+                </row>
+                <row>
+                    <cell>Cases</cell><cell>1539</cell><cell>2416</cell><cell>3148</cell><cell>3465</cell><cell>1440</cell><cell></cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Deaths</cell><cell>178</cell><cell>194</cell><cell>290</cell><cell>310</cell><cell>149</cell><cell></cell>
+                </row>
+           </tabular>
+            <caption>Data for the 1918 flu epidemic</caption>
+        </table>
 
 
 		<exercise>
