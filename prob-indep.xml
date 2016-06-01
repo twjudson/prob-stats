@@ -189,6 +189,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <exercise>
+            <statement>
+                <p>A gumball machine contains 3 red gumballs and 2 green ones.  Kaylee really wants to have a red gumball as would her little brother Connor.  One gumball is purchased at random and <em>not replaced</em>.  Then a second gumball is purchased.  
+                    <ol>
+                        <li>What is the probability that both gumballs will be red?</li>
+
+                        <li>What is the probability that both gumballs will be the same color?</li>
+
+                    </ol></p>
+            </statement>
+            <hint>
+                <p>A tree diagram might prove very helpful.</p>
+            </hint>
+        </exercise>
+
+
     </section>
 
 	<section xml:id="section-prob-indep-bayes">

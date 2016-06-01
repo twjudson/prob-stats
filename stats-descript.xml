@@ -28,8 +28,80 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Introduction to Statistics and Descriptive Statistics</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+        	<ul>
+        		<li>To understand how data collection methods differ and how they affect the nature of the data set.</li>
+
+        		<li>To understand and be able to evaluate different design studies.</li>
+        	</ul></p>
     </introduction>
+
+    <section xml:id="section-stat-populations">
+        <title>Populations and Samples</title>
+
+        <exercise>
+        	<statement>
+        		<p>Lily Robinson is running for the U.S. Senate in Utah.  In a poll of 1,400 voters, 428 voters support her.
+        			<ol>
+        				<li>What is the population for this poll?</li>
+
+        				<li>If <m>P</m> people vote in the election, what is a good prediction of the number that will vote for Ms.Robinson?</li>
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+    	<exercise>
+        	<statement>
+        		<p>A survey of shoppers shows that 20 prefer whole milk, 42 prefer low-fat milk, 28 prefer skim milk, and 10 prefer soy milk.
+        			<ol>
+        				<li>If 600 shoppers come to the store tomorrow, predict how many will buy each kind of milk.</li>
+
+        				<li>Explain how you made your prediction.</li>
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+    	<exercise>
+        	<statement>
+        		<p>Classify each of the following as simple random sampling, stratified sampling, or convenience sampling.
+        			<ol>
+        				<li>A student newspaper selects 10 names at random from the entire student body.</li>
+
+        				<li>A student newspaper interviews proportional numbers of freshmen, sophomores, juniors, and seniors.</li>
+
+        				<li>A researcher interviews all AIDS patients in the hospital closest to the researcher's home.</li>
+
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+    	<exercise>
+        	<statement>
+        		<p>Describe how to take a sample of 30 high school seniors from  300 high school seniors using
+        			<ol>
+        				<li>a simple random sample.</li>
+
+        				<li>stratified sampling.</li>
+
+        				<li>voluntary response sampling.</li>
+        				
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+    	<exercise>
+        	<statement>
+        		<p>A sample of 50 people is obtained to rate <em>Frosted-Chocolate Sugar Bombs</em>, a breakfast cereal.  Tell whether each of the following is an example of undercoverage, nonresponse, or response bias.
+        			<ol>
+        				<li>An interviewer visits a randomly selected set of homes and asks the first 50 people who answer the door whether they eat <em>Frosted-Chocolate Sugar Bombs</em> for breakfast.</li>
+
+        				<li>An interviewer goes to the local Partial Foods Market and observes what breakfast foods 50 shoppers select.</li>
+        				
+        			</ol></p>
+    		</statement>
+    	</exercise>
+
+    </section>
 
     <section xml:id="section-stat-descript">
         <title>Descriptive Statistics</title>
@@ -71,6 +143,26 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 					Compare the number of car thefts in the two cities drawing two box-and-whisker plots.</li>
 
 					<li>How do car thefts compare in the two cities?</li>
+
+				</ol></p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<statement>
+				<p>The final medal standings of the top 20 countries participating in the 2008 Summer Olympics are given below:</p>
+				
+				<p>110, 100, 72, 47, 46, 41, 40, 31, 28, 27, 25, 24, 19, 18, 18, 16, 15, 14, 13, 11</p>
+
+				<p><ol>
+
+					<li>Find the five-number summary for the 2008 Summer Olympics (min, <m>Q_1</m>, median, <m>Q_3</m>, max).</li>
+
+					<li>Are there any outliers?  If so, what are they?</li>
+
+					<li>The 2012 Summer Olympics has a five-number summary of (12, 17, 24, 40, 104).  Draw side-by-side a box-and-whisker plots for these two data sets.</li>
+
+					<li>How do the 2008 and 2012 Summer Olympics compare?</li>
 
 				</ol></p>
 			</statement>
