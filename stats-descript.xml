@@ -166,19 +166,48 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
         	<statement>
-        		<p>The following data is  the number of home runs that Barry Bonds hit during his  major league career.</p>
-
-        		<p> 16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28</p>
-
-        		<p><ol>
-
-        			<li>Draw back-to-back stem-and-leaf plots of Bond's and Ruth's home runs.</li>
-
-        			<li>Who was the better home run hitter during his career?</li>
-
-        		</ol></p>
+        		<p>Table<nbsp /><xref ref="table-stats-descript-grades" /> shows the grade distribution for the final examination in a statistics course.  Draw an appropriate graph for the data.</p>
         	</statement>
         </exercise>
+
+                <table xml:id="table-stats-descript-grades">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Grade</cell><cell>A</cell><cell>B</cell><cell>C</cell><cell>D</cell><cell>F</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Frequency</cell><cell>4</cell><cell>10</cell><cell>37</cell><cell>8</cell><cell>1</cell>
+                </row>
+           </tabular>
+            <caption>Final Exam Grades for a Statistics Course</caption>
+        </table>
+
+        <exercise>
+        	<statement>
+        		<p>A cheetah can run 70 mph, a lion can run 50 mph, and grizzly bear can run 30 mph, and a human can run 28 mph.  Draw an appropriate graph to represent this data set.</p>
+        	</statement>
+        </exercise>
+
+        <exercise>
+        	<statement>
+        		<p>The following are amounts (to the nearest dollar) paid by 25 students for textbooks during the Fall 1990 term.
+        			<me>\begin{array}{ccccc}
+					35 \amp 42 \amp 37 \amp 60 \amp 50 \\
+					42 \amp 50 \amp 16 \amp 58 \amp 39 \\
+					33 \amp 39 \amp 23 \amp 53 \amp 51 \\
+					48 \amp 41 \amp 49 \amp 62 \amp 40 \\
+					45 \amp 37 \amp 62 \amp 30 \amp 23
+					\end{array}</me>
+					<ol>
+
+						<li>Construct a grouped frequency table for the data, starting the first class at <dollar />15 with intervals <dollar />5 each.</li>
+
+						<li>Draw a histogram of the data.</li>
+						
+					</ol></p>
+        	</statement>
+        </exercise>
+
 
         <exercise>
         	<statement>
