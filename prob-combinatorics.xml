@@ -29,6 +29,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Combinatorics and Counting Problems</title>
 
     <introduction>
+
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand and be able to apply the Fundamental Counting Principle.</li>
+
+                <li>To understand and be able to apply the definition of permutation.</li>
+
+                <li>To understand and be able to apply the definition of combinations.</li>
+
+                <li>To use the Fundamental Counting Principle, permuatations, and combinations to answer questions about probability.</li>
+
+
+            </ul></p>
+
         <p>If we pose the question, <q>How may ways can we flip three coins?</q> we can simply list all of the possibilities by exhaustion.  In fact, there are eight:
         	<me>\{ HHH, HHT, HTH, THH, HTT, THT, TTH, TTT \}.</me>
         However, the problem is far more difficult if we ask how many ways are there to flip 1000 coins.  In fact, there are <m>2^{1000}</m> ways. Since <m>2^{1000}</m> is a 302 digit number, it really isn't feasible to list all of the possibilities.  We need to be a lot more clever.  In order to compute probabilities of equally likely events in a sample space, we need to learn how to count things.</p>

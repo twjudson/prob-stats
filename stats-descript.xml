@@ -170,7 +170,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         	</statement>
         </exercise>
 
-                <table xml:id="table-stats-descript-grades">
+        <table xml:id="table-stats-descript-grades">
            <tabular halign="center" top="medium">
                 <row bottom="medium">
                     <cell>Grade</cell><cell>A</cell><cell>B</cell><cell>C</cell><cell>D</cell><cell>F</cell>

@@ -34,6 +34,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         		<li>To understand and be able to analyze data using percentiles and the five-number summary.</li>
 
+        		<li>To understand and be able to analyze data using measures of spread<mdash />range, variance, and standard deviation.  To be able to compute the standard deviation:
+        			<ol>
+
+        				<li>Calculate the mean.</li>
+
+        				<li>Calculate the deviation of each data point from the mean.</li>
+
+        				<li>Square each of the deviations.</li>
+
+        				<li>Find the mean of the squares of the deviations.</li>
+
+        				<li>Take the square root to obtain the <term>standard deviation</term>.</li>
+
+        			</ol></li>
+
         	</ul></p>
     </introduction>
 
@@ -120,6 +135,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		</paragraphs>
 
 		<exercise>
+			<statement>
+				<p>Matilda intends to go to graduate school and just completed the GRE exam (similar to the SAT exam but for students applying to graduate school).  She scored in the 90th percentile on the GRE exam.  Which of the following is true about Matilda's performance on the GRE?
+					<ol>
+
+						<li>Matilda's score is 90<percent /> of the average score.</li>
+
+						<li>Matilda got 90<percent /> of the questions right.</li>
+
+						<li>90<percent /> of test takers scored at or below Matilda's score.</li>
+
+						<li>Matilda scored 90<percent /> better than the average student who took the GRE.</li>
+
+					</ol>
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
         	<statement>
         		<p>The following data set is the number of home runs that Babe Ruth hit during his 15-year career in major league baseball.</p>
 
@@ -135,10 +168,28 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         			<li>What is the five-number summary of home runs hit by Ruth?</li>
 
+        			<li>The career home run data for Barry Bonds and Joe DiMaggio are given in Table<nbsp /><xref ref="table-stats-measures-homeruns" />.  Compare the career homeruns of all three players using side-by-side box-and-wisker plots.</li>
+
+        			<li>Who was Joe DiMaggio's second wife?</li>
+
         		</ol></p>
         	</statement>
         </exercise>
 
+        <table xml:id="table-stats-measures-homeruns">
+           <tabular halign="center" top="medium">
+                <row>
+                    <cell>Barry Bonds</cell><cell>5</cell><cell>16</cell><cell>19</cell><cell>24</cell><cell>25</cell><cell>25</cell><cell>26</cell><cell>28</cell><cell>33</cell><cell>33</cell><cell>32</cell><cell>34</cell><cell>34</cell>
+                </row>
+                 <row bottom="medium">
+                    <cell></cell><cell>37</cell><cell>37</cell><cell>40</cell><cell>42</cell><cell>45</cell><cell>45</cell><cell>46</cell><cell>46</cell><cell>49</cell><cell>73</cell><cell></cell><cell></cell><cell></cell>
+                </row>
+                <row bottom="medium">
+                    <cell>Joe DiMaggio</cell><cell>12</cell><cell>14</cell><cell>20</cell><cell>21</cell><cell>25</cell><cell>29</cell><cell>30</cell><cell>30</cell><cell>31</cell><cell>32</cell><cell>32</cell><cell>39</cell><cell>46</cell>
+                </row>
+           </tabular>
+            <caption>Career homeruns for Barry Bonds and Joe DiMaggio</caption>
+        </table>
 
 		<exercise>
 			<statement>
@@ -190,10 +241,25 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</statement>
 		</exercise>
 
+
+
     </section>
 
     <section xml:id="section-stats-measures-spread">
         <title>Measuring Spread</title>
+
+        <p>The mean and median do not tell the entire story about a data set.  For example, the data sets <m>\{ 0, 50, 100 \}</m> and <m>\{49, 50, 51\}</m> both have a mean and a median of 50, yet these data sets are vey different.  The first is spread out while the second is much more compact. There are at least two ways of measuring how much a data set is spread out.  The first is the <term>range</term> of data set.  The range is simply the difference between the maximum and minimum values.  The range of the first data set is 100, while the range of the second data set is 2.</p>
+
+        <p>It might be the case that range does not adequately describe the spread of a data set.  Consider the two data sets <m>\{ 0, 1, 50, 99, 100 \}</m> and <m>\{0, 49, 50, 51, 100 \}</m>.  Both have a rangle of 100, but data in the first set is concentrated near 0 and 100, while data in the second set is concentrated near the mean of 50.  A better way to quantify the spread is to compute the standard deviation.  Given a data set <m>\{x_1, x_2, \ldots, x_n\}</m> the <term>standard deviation</term> of this data set is
+        	<me>s = \sqrt{ \frac{(x_1 - \overline{x})^2 + (x_2 - \overline{x})^2 + \cdots (x_n - \overline{x})^2}{n}}</me>
+        Essentially, we are just averaging the squares of the <term>deviations</term> <m>x_1 - \overline{x}</m> and then taking the square root of this average.  A high standard deviation means that the data is spread out.  A low standard deviation means that the data is centered around the mean.</p>
+
+        <exercise>
+			<statement>
+				<p>In our definition of standard deviation, we averaged the squares of the deviations.  Wny don't we just average the devitations?</p>
+			</statement>
+		</exercise>
+
 
         <exercise>
 			<statement>
@@ -201,23 +267,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</statement>
 		</exercise>
 
-		<exercise>
-			<statement>
-				<p>Matilda intends to go to graduate school and just completed the GRE exam (similar to the SAT exam but for students applying to graduate school).  She scored in the 90th percentile on the GRE exam.  Which of the following is true about Matilda's performance on the GRE?
-					<ol>
 
-						<li>Matilda's score is 90<percent /> of the average score.</li>
-
-						<li>Matilda got 90<percent /> of the questions right.</li>
-
-						<li>90<percent /> of test takers scored at or below Matilda's score.</li>
-
-						<li>Matilda scored 90<percent /> better than the average student who took the GRE.</li>
-
-					</ol>
-				</p>
-			</statement>
-		</exercise>
 
 		<exercise>
 			<statement>
@@ -236,7 +286,25 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			</statement>
 		</exercise>
 
+		<exercise>
+			<statement>
+				<p>Each of the following set of numbers had a mean of 50.
+					<md>
+						<mrow>\text{Set } A: 0, 20, 40, 50, 60, 80, 100</mrow>
+						<mrow>\text{Set } B:  0, 48, 49, 50, 51, 52, 100</mrow>
+						<mrow>\text{Set } C:  0, 1, 2, 50, 98, 99, 100</mrow>
+					</md>
+					<ol>
 
+						<li>Without computing the standard deviation $s$, tell which set has the largest standard deviation and which set has the smallest standard deviation.</li>
+
+						<li>How did you arrive at your answer?</li>
+
+						<li>Compute the standard deviation for each set.</li>
+
+					</ol></p>
+			</statement>
+		</exercise>
 
     </section>
 

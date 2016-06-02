@@ -27,6 +27,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <chapter xml:id="prob-random-var" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Probability Distributions and Random Variables</title>
 
+    <introduction>
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand and be able to use normal distributions and standard normal distributions.</li>
+
+                <li>To understand and be able to apply the 68<ndash />95<ndash />99.7 rule.</li>
+
+
+            </ul></p>
+    </introduction>
+
 
 
     <section>
@@ -244,6 +256,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <me>z = \frac{230 - 266}{16} = -2.25</me>
             or 2.25 standard deviations below the mean.</p>
         </example>
+
+        <exercise>
+            <statement>
+                <p>The weights of newborn babies are normally distributed with a mean of approximately 105 oz and a standard deviation of 20 oz.
+                    <ol>
+
+                        <li>What is the probability that a newborn baby selected at random weighs less than 125 oz?</li>
+
+                        <li>What is the probability that a newborn baby selected at random weighs more than 125 oz?</li>
+
+                        <li>What is the probability that a newborn baby selected at random weighs between 85 oz and 145 oz?</li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
 
         <p>Of particular importance is the <term>standard normal distribution</term>.  This is the normal distribution where <m>\mu = 0</m> and <m>\sigma = 1</m>. Standardizing a variable of any normal distribution produces a new variable with a standard normal distribution.  In other words, if a variable <m>x</m> has a normal distribution with mean <m>\mu</m> and standard deviation <m>\sigma</m>, then
             <me>z = \frac{x - \mu}{\sigma}</me>
