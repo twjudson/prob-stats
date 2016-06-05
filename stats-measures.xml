@@ -134,6 +134,54 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 		</paragraphs>
 
+		<example>
+				<p>The data in Table<nbsp /><xref ref="table-stats-measures-car-thefts" /> show the number of car thefts in Central City for a period of 20 days.  The five-number summary of the data is
+					<me>(\min = 29, Q_1 = 52.5, \text{median} = 63.5, Q_3 = 72, \max = 82),</me>
+				and it appears that 29 is an outlier.  If the five-number summary of data for car thefts in Starling City over the same 20 day period is 
+						<me>(\min = 30, Q_1 = 40, \text{median} = 55, Q_3 = 70, \max = 90),</me>
+				we can compare the number of car thefts in the two cities drawing two box-and-whisker plots (Figure<nbsp /><xref ref="figure-stats-measures-car-thefts" />). It appears that car theft is a greater problem in Central City.</p>
+		</example>
+
+		<table xml:id="table-stats-measures-car-thefts">
+           <tabular halign="center" top="medium">
+                <row>
+                    <cell>29</cell><cell>48</cell><cell>49</cell><cell>50</cell><cell>52</cell><cell>53</cell><cell>53</cell><cell>55</cell><cell>56</cell><cell>62</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>65</cell><cell>66</cell><cell>66</cell><cell>69</cell><cell>72</cell><cell>72</cell><cell>75</cell><cell>78</cell><cell>78</cell><cell>82</cell>
+                </row>
+           </tabular>
+            <caption>Car thefts in Central City</caption>
+        </table>
+
+        <figure xml:id="figure-stats-measures-car-thefts">
+
+            <image width="80%" xml:id="stats-measures-car-thefts">
+                <latex-image-code><![CDATA[\begin{tikzpicture}[scale=1]
+					\draw (4,0) -- (7,0) -- (7,1) -- (4,1)  -- cycle;
+					\draw (5.25,2) -- (7.2,2) -- (7.2,3) -- (5.25,3)  -- cycle;
+					\draw (5.5,0) -- (5.5,1);
+					\draw (6.35,2) -- (6.35,3);
+					\draw (3,0.5) -- (4,0.5);
+					\draw (7,0.5) -- (9,0.5);
+					\draw (2.9,2.5) -- (5.25,2.5);
+					\draw (7.2,2.5) -- (8.2,2.5);
+					\node [right] at (10,0.5) {Starling City};
+					\node [right] at (10,2.5) {Central City};
+					\draw (0,-1) -- (10,-1);
+					\draw (0,-1) -- (0,3);
+					\node [below] at (0,-1) {0};
+					\node [below] at (2,-1) {20};
+					\node [below] at (4,-1) {40};
+					\node [below] at (6,-1) {60};
+					\node [below] at (8,-1) {80};
+					\node [below] at (10,-1) {100};
+					\foreach \x in {0,...,10} \filldraw[fill=black, draw=black] (\x,-1) circle (0.05cm);
+                    \end{tikzpicture}]]>
+                </latex-image-code>                
+            </image>
+        </figure>
+
 		<exercise>
 			<statement>
 				<p>Matilda intends to go to graduate school and just completed the GRE exam (similar to the SAT exam but for students applying to graduate school).  She scored in the 90th percentile on the GRE exam.  Which of the following is true about Matilda's performance on the GRE?
@@ -218,6 +266,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		<exercise>
 			<statement>
 				<p>The final medal standings of the top 20 countries participating in the 2008 Summer Olympics are given below:</p>
+
+
 				
 				<p>110, 100, 72, 47, 46, 41, 40, 31, 28, 27, 25, 24, 19, 18, 18, 16, 15, 14, 13, 11</p>
 
