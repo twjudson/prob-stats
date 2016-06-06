@@ -28,7 +28,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Examining Bivariate Data</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand and be able estimate and represent relationships between explanatory variables and a response variable.</li>
+
+                <li>To understand and be able least-squares regression.</li>
+
+                <li>To understand and be able to apply the concept of correlation.</li>
+
+            </ul></p>
     </introduction>
 
     <section xml:id="section-stats-bivariate">

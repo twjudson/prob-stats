@@ -28,38 +28,45 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>State Standards and the Common Core</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand what state standards say about the teaching of probability and statistics.</li>
+
+                <li>To understand what the Common Core State Standards say about the teaching of probability and statistics.</li>
+
+            </ul></p>
     </introduction>
+
 
     <section xml:id="section-standards-state">
         <title>State Standards</title>
 
-        <p>This is a section.</p>
+        <p><ul>
+
+        	<li>Mathematics Content Standards for California Public Schools <url href="http://www.cde.ca.gov/be/st/ss/documents/mathstandards.pdf" />.</li>
+
+        	<li>Massachusetts Curriculum Framework For Mathematics <url href="http://www.doe.mass.edu/frameworks/math/0311.pdf" />.</li>
+
+        	<li>Texas Essential Knowledge and Skills for Mathematics <url href="http://ritter.tea.state.tx.us/rules/tac/chapter111/index.html" />.</li>
+
+        </ul></p>
 
     </section>
 
     <section xml:id="section-standards-common-core">
-        <title>The Common Core</title>
+        <title>The Common Core State Standards</title>
 
-        <p>This is a section.</p>
+        <p>The Common Core State Standards for probability and statistics can be found at <url href="http://www.corestandards.org/Math/Content/SP/" />.</p>
+
+        <exercise>
+			<statement>
+				<p>Compare the Common Core State Standards for probability and statistics to the state standards for a state of your choosing.</p>
+			</statement>
+		</exercise>
 
     </section>
 
 
-    <exercises>
-		<title>Exercises</title>
-
-		<exercise number="1">
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
 
 </chapter>

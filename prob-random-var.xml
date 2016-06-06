@@ -31,6 +31,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>The learning objectives for this chapter are:
             <ul>
 
+                <li>To understand and be able to use random variables.</li>
+
+                <li>To understand and be able to use probability distributions.</li>
+
                 <li>To understand and be able to use normal distributions and standard normal distributions.</li>
 
                 <li>To understand and be able to apply the 68<ndash />95<ndash />99.7 rule.</li>

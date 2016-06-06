@@ -28,7 +28,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Hypothesis Testing</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand and be able apply tests of significance.</li>
+
+                <li>To understand and be able to find confidence intervals for a population mean.</li>
+
+            </ul></p>
     </introduction>
 
     <section xml:id="section-stats-hypoth">

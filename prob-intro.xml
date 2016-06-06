@@ -29,21 +29,34 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Introduction to Probability</title>
 
     <introduction>
+        <p>The learning objectives for this chapter are:
+            <ul>
+                <li>To understand the basic ideas of probability and random processes.</li>
 
-        <p>Although probability has its origins in gambling, the grading of evidence and testimony in medieval law, and estimating risk for maritime insurance premiums, applications of probability have become far more reaching today.  Probability can be used to describe traffic on the Internet, the best course of a medical treatment, the energy states of subatomic particles, and much more.  A knowledge of probability is essential when we study statistics.  In addition, probability is an active area of mathematical research.</p>
+                <li>To understand and be able to use sample spaces and events.</li>
 
-        <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a 7 a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
-        	<ul>
-        		<li><p>A list of all possible outcomes.</p></li>
+                <li>To understand and be able to apply the probability of equally likely events.</li>
 
-        		<li><p>A probability for each outcome.</p></li>
-        	</ul>
-       	These two items provide a basis for all probability models.</p>
+                <li>To understand and be able to use the axioms of probability.</li>
+
+            </ul></p>
+
+
 
     </introduction>
 
     <section xml:id="section-prob-intro">
         <title>Probability and Random Processes</title>
+
+        <p>Although probability has its origins in gambling, the grading of evidence and testimony in medieval law, and estimating risk for maritime insurance premiums, applications of probability have become far more reaching today.  Probability can be used to describe traffic on the Internet, the best course of a medical treatment, the energy states of subatomic particles, and much more.  A knowledge of probability is essential when we study statistics.  In addition, probability is an active area of mathematical research.</p>
+
+        <p>If we consider a simple random phenomenon, such as rolling a pair of dice or flipping a coin, we do not know what will happen in advance.  However, we can make predictions.  If we flip a fair coin, it will come up heads about half the time.  If we roll a pair of dice, we can expect to roll a 7 a certain precentage of the time.  The description of either one of these to phenomena consists of the following:
+            <ul>
+                <li><p>A list of all possible outcomes.</p></li>
+
+                <li><p>A probability for each outcome.</p></li>
+            </ul>
+        These two items provide a basis for all probability models.</p>
 
         <p>Tossing a coin or rolling a pair of dice are examples of <term>random processes</term>. In other words, we have no knowledge of how the coin or the pair of dice will land prior to each toss or roll.  The possible <term>outcomes</term> for tossing a coin are heads or tails, and the outcomes for rolling a pair of dice are getting a two through twleve.  We define the <term>probability</term> of an outcome of a random process to be the proportion of times that the outcome would occur if we could do an infinite number of observations.  Thus, the probability of obtaining a heads on any particular toss of a coin is <m>1/2</m>, provided the coin is fair.  Usually, we assign numbers between 0 and 1 for probabilites, although we will sometimes using percentages.</p>
 

@@ -28,7 +28,17 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 	<title>Sampling and Using Technology</title>
 
     <introduction>
-        <p>Introduction here.</p>
+        <p>The learning objectives for this chapter are:
+            <ul>
+
+                <li>To understand and be able to use sampling.</li>
+
+                <li>To understand observations and experiments.</li>
+
+                <li>To understand and be able to use sampling distributions.</li>
+
+
+            </ul></p>
     </introduction>
 
     <section xml:id="section-stats-sampling-samples">

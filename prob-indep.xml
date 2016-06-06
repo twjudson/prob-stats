@@ -28,6 +28,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 	<title>Conditional Probability and Independent Events</title>
 
+        <introduction>
+        <p>The learning objectives for this chapter are:
+            <ul>
+                <li>To understand the basic ideas of independence.</li>
+
+                <li>To understand and be able to use conditional probability.</li>
+
+                <li>To understand and be able to apply Bayes' Theorem.</li>
+
+            </ul></p>
+        </introduction>
+
 	<section xml:id="section-prob-indep-indep">
 		<title>Independent Events</title>
 

@@ -34,20 +34,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         		<li>To understand and be able to analyze data using percentiles and the five-number summary.</li>
 
-        		<li>To understand and be able to analyze data using measures of spread<mdash />range, variance, and standard deviation.  To be able to compute the standard deviation:
-        			<ol>
-
-        				<li>Calculate the mean.</li>
-
-        				<li>Calculate the deviation of each data point from the mean.</li>
-
-        				<li>Square each of the deviations.</li>
-
-        				<li>Find the mean of the squares of the deviations.</li>
-
-        				<li>Take the square root to obtain the <term>standard deviation</term>.</li>
-
-        			</ol></li>
+        		<li>To understand and be able to analyze data using measures of spread<mdash />range, variance, and standard deviation.  To be able to compute the standard deviation.</li>
 
         	</ul></p>
     </introduction>
@@ -301,13 +288,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>The mean and median do not tell the entire story about a data set.  For example, the data sets <m>\{ 0, 50, 100 \}</m> and <m>\{49, 50, 51\}</m> both have a mean and a median of 50, yet these data sets are vey different.  The first is spread out while the second is much more compact. There are at least two ways of measuring how much a data set is spread out.  The first is the <term>range</term> of data set.  The range is simply the difference between the maximum and minimum values.  The range of the first data set is 100, while the range of the second data set is 2.</p>
 
         <p>It might be the case that range does not adequately describe the spread of a data set.  Consider the two data sets <m>\{ 0, 1, 50, 99, 100 \}</m> and <m>\{0, 49, 50, 51, 100 \}</m>.  Both have a rangle of 100, but data in the first set is concentrated near 0 and 100, while data in the second set is concentrated near the mean of 50.  A better way to quantify the spread is to compute the standard deviation.  Given a data set <m>\{x_1, x_2, \ldots, x_n\}</m> the <term>standard deviation</term> of this data set is
-        	<me>s = \sqrt{ \frac{(x_1 - \overline{x})^2 + (x_2 - \overline{x})^2 + \cdots (x_n - \overline{x})^2}{n}}</me>
-        Essentially, we are just averaging the squares of the <term>deviations</term> <m>x_1 - \overline{x}</m> and then taking the square root of this average.  A high standard deviation means that the data is spread out.  A low standard deviation means that the data is centered around the mean.</p>
+        	<me>s = \sqrt{ \frac{(x_1 - \overline{x})^2 + (x_2 - \overline{x})^2 + \cdots (x_n - \overline{x})^2}{n-1}}</me>
+        Essentially, we are just averaging the squares of the <term>deviations</term> <m>x_1 - \overline{x}</m> and then taking the square root of this average.  A high standard deviation means that the data is spread out.  A low standard deviation means that the data is centered around the mean.  Measuring the spread using the standard deviation works best if the data is distributed symmetrically.</p>
 
         <exercise>
 			<statement>
-				<p>In our definition of standard deviation, we averaged the squares of the deviations.  Wny don't we just average the devitations?</p>
+				<p>In our definition of standard deviation, we averaged the squares of the deviations.  Wny don't we just average the devitations and why do we divide by <m>n-1</m> instead of <m>n</m>?</p>
 			</statement>
+			<hint>
+				<p>What is the sum of <m>(x_1 - \overline{x}) + (x_n - \overline{x}) + \cdots + (x_n - \overline{x})</m>?</p>
+			</hint>
 		</exercise>
 
 
