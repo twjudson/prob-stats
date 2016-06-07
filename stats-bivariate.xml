@@ -40,10 +40,24 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </ul></p>
     </introduction>
 
-    <section xml:id="section-stats-bivariate">
-        <title>Examining Bivariate Data</title>
+    <section xml:id="section-stats-bivariate-scatter-plots">
+        <title>Scatter Plots</title>
 
-        <p>This is a section.</p>
+        <p>A <term>scatter plot</term> shows the relationship between two quanitative variable.  The values of one variable are on the horizontal axis, while the values of the second variable are on the vertical axis.  Each data pair is represented by a point determined by the values on each axis.  In a scatter plot, we look for patterns in the data as well as deviations.</p>
+
+        <example>
+        	<p>Consider the data set.</p>
+        </example>
+
+        <p>Two variables are <term>positively associated</term> if above average data of of one variable corresponds to above average data of the second variable. The variables are <term>negatively associated</term> if if above average data of of one variable corresponds to below average data of the second variable.</p>
+
+    </section>
+
+    <section xml:id="section-stats-bivariate-correlation">
+        <title>Correlation</title>
+
+        <p>Correlation describes the strength of the linear relationship between two quantitative variables.  More specifically, suppose that <m>x</m> and <m>y</m> are data for <m>n</m> individuals.  That is, we have data sets <m>\{x_1, x_2, \ldots, x_n \}</m> and <m>\{y_1, y_2, \ldots, y_n \}</m>.  Furthermore, suppose that <m>\overline{x}</m> and <m>s_x</m> are the mean and standard deviation for the variable <m>x</m>, while <m>\overline{y}</m> and <m>s_y</m> are the mean and standard deviation for the variable <m>y</m>.  We define the <term>correlation</term> <m>r</m> between <m>x</m> and <m>y</m> to be
+        	<me>r = \frac{1}{n - 1} \sum_{i=1}^n \left( \frac{x_i - \overline{x}}{s_x} \right) \left( \frac{y_i - \overline{y}}{s_y} \right).</me></p>
 
        	<exercise>
 			<statement>
@@ -56,7 +70,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 					<li>Does correlation imply causation?</li>
 
-				</ol></p>
+				</ol>
+				For other interesting correlations see <url href="http://tylervigen.com/spurious-correlations" />.</p>
 			</statement>
 		</exercise>
 
@@ -109,5 +124,19 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 
 	</section>
+
+	 <section xml:id="section-stats-least-squares">
+        <title>Least-Squares Regression</title>
+
+        <p>A straight line describing how a response variable <m>y</m> changes as an explanatory variable changes is called a <term>regression line</term>. We can use a regression line to make predictions.  The <term>least-squares regression line</term> is the straight line that minimizes the sum of the squares of vertical distances of the data points from the line.  The least-squares regression line is given by the equation
+        	<me>\hat{y} = a + bx,</me>
+        where the slope <m>b</m> is given by
+        	<me>b = r \frac{s_y}{s_x}</me>
+        and the intercept is 
+        	<me>a = \overline{y} - b \overline{x}.</me></p>
+
+    </section>
+
+
 
 </chapter>

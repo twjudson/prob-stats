@@ -58,7 +58,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-sampling-tech">
         <title>Technology</title>
 
-        <p>This is a section.</p>
+        <p>Many different types of technology can be used for the teaching and learning of statisitics<mdash />handheld calculators, spreadsheets, and dedicated statistics software.</p>
+
+        <sage>
+            <input>
+            k, t = var('k, t') #declare variables k and t
+            P = function('P', t) #declare P to be a function of t
+            de = diff(P, t) == k*P  #differential equation
+            #solve specifying initial conditions
+            #and independent variable solution
+            solution = desolve(de, P, ivar=t, ics=[0, 1000]) 
+            solution
+            </input>
+            <output>
+            1000*e^(k*t)
+            </output>
+        </sage>
 
     </section>
 
