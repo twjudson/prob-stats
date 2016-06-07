@@ -45,22 +45,69 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>This is a section.</p>
 
-    </section>
+       	<exercise>
+			<statement>
+				<p>Table<nbsp /><xref ref="table-stats-bivariate-phds-cheese" /> gives the number of civil engineering doctorates granted each year in the U.S. and the U.S. per capita consumption of mozzarella cheese (in pounds) for the years 2000 through 2009.
+				<ol>
 
-    <exercises>
-		<title>Exercises</title>
+					<li>Make a scatter plot of the data.</li>
 
-		<exercise number="1">
+					<li>What is the correlation of the two data sets?</li>
+
+					<li>Does correlation imply causation?</li>
+
+				</ol></p>
+			</statement>
+		</exercise>
+
+        <table xml:id="table-stats-bivariate-phds-cheese">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Year</cell><cell>Engineering Doctorates</cell><cell>Cheese Consumption</cell>
+                </row>
+                <row>
+                    <cell>2000</cell><cell>480</cell><cell>9.3</cell>
+                </row>                
+                <row>
+                    <cell>2001</cell><cell>501</cell><cell>9.7</cell>
+                </row>                
+                <row>
+                    <cell>2002</cell><cell>540</cell><cell>9.7</cell>
+                </row>                
+                <row>
+                    <cell>2003</cell><cell>552</cell><cell>9.7</cell>
+                </row>                
+                <row>
+                    <cell>2004</cell><cell>547</cell><cell>9.9</cell>
+                </row>                
+                <row>
+                    <cell>2005</cell><cell>622</cell><cell>10.2</cell>
+                </row>                
+                <row>
+                    <cell>2006</cell><cell>655</cell><cell>10.5</cell>
+                </row>                
+                <row>
+                    <cell>2007</cell><cell>701</cell><cell>11</cell>
+                </row>                
+                <row>
+                    <cell>2008</cell><cell>712</cell><cell>10.6</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>2009</cell><cell>708</cell><cell>10.6</cell>
+                </row>
+           </tabular>
+            <caption>Civil engineering doctorates and per capita cheese consumption</caption>
+        </table>
+
+
+
+		<exercise>
 			<statement>
 				<p>This is an exercise.</p>
 			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
 		</exercise>
-	</exercises>
+
+
+	</section>
 
 </chapter>
