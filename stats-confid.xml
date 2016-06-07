@@ -38,17 +38,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </ul></p>
     </introduction>
 
-    <section xml:id="section-stats-confid">
-        <title>Estimating with Confidence</title>
+    <section xml:id="section-stats-confid-interval">
+        <title></title>
 
-        <p>This is a section.</p>
+        <p>A <term>confidence interval</term> for a parameter such as a mean or a population proportion has two parts.
+    		<ul>
+    			<li>An interval calculated from that data that has the formm
+    				<me>\text{estimate} \pm \text{margin of error}</me></li>
 
-    </section>
+    				<li>A <term>confidence level</term> <m>C</m> that gives the probability that the interval will capture the value of the true parameter with repeated sampling.</li>
+    			</ul></p>
 
-    <exercises>
-		<title>Exercises</title>
-
-		<exercise number="1">
+		<exercise>
 			<statement>
 				<p>This is an exercise.</p>
 			</statement>
@@ -59,6 +60,31 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<p>This is a solution.</p>
 			</solution>
 		</exercise>
-	</exercises>
+
+		<p>Suppose that we choose a simple random sample of size <m>n</m> from a population where we know the standard deviation <m>\sigma</m> and we wish to estimate the mean <m>\mu</m>.  A level <m>C</m> confidence interval for <m>\mu</m> is
+			<me>\overline{x} \pm z^* \frac{\sigma}{\sqrt{n}}.</me>
+		The value of <m>z^*</m> is given in Table<nbsp /><xref ref="table-stats-confid-z-star" />.</p>
+
+		<table xml:id="table-stats-confid-z-star">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Confidence Level</cell><cell>Tail Area</cell><cell><m>z^*</m></cell>
+                </row>
+                <row>
+                    <cell>90<percent /></cell><cell>0.05</cell><cell>1.645</cell>
+                </row>
+                <row>
+                    <cell>95<percent /></cell><cell>0.025</cell><cell>1.960</cell>
+                </row>
+                <row bottom="medium">
+                    <cell>99<percent /></cell><cell>0.005</cell><cell>2.576</cell>
+                </row>
+           </tabular>
+            <caption>Random variable for the number of heads</caption>
+        </table>
+
+
+	</section>
+
 
 </chapter>

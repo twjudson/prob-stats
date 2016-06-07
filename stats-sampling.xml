@@ -62,17 +62,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <sage>
             <input>
-            k, t = var('k, t') #declare variables k and t
-            P = function('P', t) #declare P to be a function of t
-            de = diff(P, t) == k*P  #differential equation
-            #solve specifying initial conditions
-            #and independent variable solution
-            solution = desolve(de, P, ivar=t, ics=[0, 1000]) 
-            solution
+                2 + 2
             </input>
-            <output>
-            1000*e^(k*t)
-            </output>
         </sage>
 
     </section>

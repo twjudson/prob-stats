@@ -62,9 +62,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <xi:include href="./stats-sampling.xml" /> 			<!-- Sampling and Using Technology -->
 
-        <xi:include href="./stats-hypoth.xml" /> 			<!-- Hypothesis Testing -->
+        <xi:include href="./stats-hypoth.xml" />            <!-- Hypothesis Testing -->
 
-        <xi:include href="./stats-confid.xml" /> 			<!-- Estimating with Confidence -->
+        <xi:include href="./stats-confid.xml" />            <!-- Estimating with Confidence -->
 
         <xi:include href="./stats-bivariate.xml" /> 		<!-- Examining Bivariate Data -->
 

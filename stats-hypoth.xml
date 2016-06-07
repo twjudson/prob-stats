@@ -33,22 +33,31 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                 <li>To understand and be able apply tests of significance.</li>
 
-                <li>To understand and be able to find confidence intervals for a population mean.</li>
 
             </ul></p>
     </introduction>
 
-    <section xml:id="section-stats-hypoth">
-        <title>Hypothesis Testing</title>
+    <section xml:id="section-stats-hypoth-testing">
+        <title>Testing for Significance</title>
 
-        <p>This is a section.</p>
+        <p>The statement to be tested is called the <term>null hypothesis</term>.  We design the test to assess the strength of the evidence against the null hypothesis.</p>
+
+        <p>Assuming the null hypothesis is true, the probability that the observed outcome would take a value as extreme or more extreme than what we actually observe is called the <term><m>P</m>-value</term> of a test.  Small <m>P</m>-values tell us that the evidence against the null hypothesis is strong.</p>
 
     </section>
 
-    <exercises>
-		<title>Exercises</title>
 
-		<exercise number="1">
+
+    <section xml:id="section-stats-hypoth-population">
+        <title>Inference for a Population Proportion</title>
+
+        <p>Suppose that we have a large population that contains a proportion of <m>p</m> successes, we can estimate <m>p</m> with a sample proportion.  Suppose that we select a simple random sample of size <m>n</m> from the population.  The <term>sample proportion</term> of successes is defined to be
+        	<me>\hat{p} = \frac{\text{number of successes in the sample}}{n}.</me>
+    	As the sample size increases, the sampling distribution of <m>\hat{p}</m> is approximately the normal distribution.  The <term>mean</term> of the sampling distribution is <m>p</m> and the standard deviation is 
+    		<me>\sqrt{\frac{p(1- p)}{n}}.</me></p>
+
+
+		<exercise>
 			<statement>
 				<p>This is an exercise.</p>
 			</statement>
@@ -59,6 +68,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<p>This is a solution.</p>
 			</solution>
 		</exercise>
-	</exercises>
+
+	</section> 
 
 </chapter>
