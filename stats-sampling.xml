@@ -25,33 +25,94 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Copyright (C) 2016  Thomas W. Judson      					-->
 
 <chapter xml:id="stats-sampling" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Sampling and Using Technology</title>
+	<title>Sampling Distributions and Using Technology</title>
 
     <introduction>
         <p>The learning objectives for this chapter are:
             <ul>
 
-                <li>To understand and be able to use sampling.</li>
-
-                <li>To understand observations and experiments.</li>
+                <li>To understand and be able to apply the Central Limit Theorem.</li>
 
                 <li>To understand and be able to use sampling distributions.</li>
+
+                <li>To understand the technology that is available to support the teaching and learning of statistics.</li>
 
 
             </ul></p>
     </introduction>
 
-    <section xml:id="section-stats-sampling-samples">
-        <title>Sampling a Population</title>
-
-        <p>This is a section.</p>
-
-    </section>
-
     <section xml:id="section-stats-sampling-distributions">
         <title>Sampling Distributions</title>
 
-        <p>This is a section.</p>
+        <p>short section on the Central Limit Theorem.</p>
+
+        <paragraphs>
+            <title>Spinning Pennies</title>
+
+            <p>If you toss a penny, most of us would assume that there is a probability of 0.5 that the penny will land on haeds.  If you spin a penny on a flat surface and wait until the penny lands flat, is the probability of getting a heads the same?  For this activity you will need a penny and a Stirling recording sheet, both of which your instructor will provide.<fn>This activity can be found in <em>Activity-Based Statistics</em> by R. L. Scheaffer et. al., Spring-Verlag, New York, 1996.</fn></p>
+
+            <p>Place your penny on edge, with Lincoln's profile right side up and facing you.  Flick the edge of the penny with your index finger to get it to spin.  When the penny comes to a rest, record a win if you have a heads and a loss if you have a tails.  If the penny runs into something or falls off your desk, do not count the result.  Repeat this 50 times, recording on the Stirling recording sheet
+                <ol>
+
+                    <li>The number of heads</li>
+
+                    <li>The number of tails</li>
+
+                    <li>The order in which the heads and tails occur</li>
+
+                    <li>Record the sample proportion of heads, <m>\hat{p}</m> for the 50 observations</li>
+                </ol>
+            Once you have finished, write the value of <m>\hat{p}</m> on the board, then repeat the activity.</p>
+
+        </paragraphs>
+
+        <exercise>
+            <statement>
+                <p>What does the spinning pennies activity tell you about sampling distributions?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose each person in MATH S<ndash />304 conducts an opinion poll.  The poll will consist of asking 50 randomly chosen voters if think the process for choosing a Presidential nominee is fair.  If each person reports a sample proportion, what would a graph of the proportions look like?</p>
+            </statement>
+        </exercise>
+
+        <paragraphs>
+            <title>Pennies and the Central Limit Theorem</title>
+
+            <p>If you have a collection of pennies, some will be older and some will be newer.  It is a reasonable assumption that there are fewer old pennies in circulation than new pennies.  In fact, if we made a graph of the distribution of all pennies, you might expect that the graph would not be symmetric.<fn>This activity can be found in <em>Activity-Based Statistics</em> by R. L. Scheaffer et. al., Spring-Verlag, New York, 1996.</fn></p>
+
+            <p>For this activity you will need to collect a random sample of 25 pennies<mdash />you should be able to get a roll of 50 pennies from the bank.  Just make sure that you do not get a roll of freshly minted pennies.</p>
+               
+
+        </paragraphs>
+
+        <exercise>
+            <statement>
+                 <p><ol>
+
+                    <li>Make a list of the dates of the 25 pennies.</li>
+
+                    <li>Next to each date, write the age of the penny.</li>
+
+                    <li>Report the ages of your pennies on the board, so that we can make a class histogram.</li>
+
+                    <li>What is the mean and standard deviation of our population of pennies?</li>
+
+                    <li>Are the ages of the pennies normally distributed?</li>
+
+                    <li>Compute the mean and standard deviation of a random sample of <m>n = 5</m> of your pennies.  Report your results so that we can make a class histogram.</li>
+
+                    <li>Compute the mean and standard deviation of a random sample of <m>n = 10</m> of your pennies.  Report your results so that we can make a class histogram.</li>
+
+                    <li>Compute the mean and standard deviation of a random sample of <m>n = 25</m> of your pennies.  Report your results so that we can make a class histogram.</li>
+
+                    <li>Examine the four histograms created by the class.  What can you say about the distribution, center, and spread of the histogram as <m>n</m> increases.</li>
+
+                </ol></p>
+            </statement>
+        </exercise>
 
     </section>
 
@@ -62,26 +123,25 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <sage>
             <input>
-                2 + 2
+            <![CDATA[%r
+            # Create a vector. 
+            # create a data frame from scratch 
+            age <- c(25, 30, 56)
+            gender <- c("male", "female", "male")
+            weight <- c(160, 110, 220) 
+            mydata <- data.frame(age,gender,weight)
+            summary(mydata)
+            cor(mydata$age,mydata$weight)
+            mean(mydata$age)
+            sd(mydata$age)
+            plot(mydata$age,mydata$weight)]]>
             </input>
         </sage>
 
     </section>
 
-    <exercises>
-		<title>Exercises</title>
 
-		<exercise number="1">
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
-	</exercises>
+
+
 
 </chapter>

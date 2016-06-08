@@ -34,6 +34,10 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         		<li>To understand and be able to evaluate different design studies.</li>
 
+                <li>To understand and be able to use sampling.</li>
+
+                <li>To understand observations and experiments.</li>
+
         		<li>To understand and be able to analyze data using appropriate graphs and tables.</li>
 
         		<li>To understand how graphs and tables of data can sometimes be misleading.</li>
@@ -43,6 +47,32 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <section xml:id="section-stat-populations">
         <title>Populations and Samples</title>
+
+        <paragraphs>
+            <title>Random Rectangles</title>
+
+            <p>Why do we insist on random samples?  For this activity, you will see a page containing 100 rectangles of different areas.  Each rectangle is composed of small squares.  For example, a rectangle that is 4 squares wide and 3 squares wide has area 12.  The idea of this activity is to compare different methods of estimating the mean area of the 100 rectangles.<fn>This activity can be found in <em>Activity-Based Statistics</em> by R. L. Scheaffer et. al., Spring-Verlag, New York, 1996.</fn></p>
+              
+        </paragraphs>
+
+        <exercise>
+            <statement>
+                <p>Place your penny on edge, with Lincoln's profile right side up and facing you.  Flick the edge of the penny with your index finger to get it to spin.  When the penny comes to a rest, record a win if you have a heads and a loss if you have a tails.  If the penny runs into something or falls off your desk, do not count the result.  Repeat this 50 times, recording on the Stirling recording sheet
+                <ol>
+
+                    <li>The number of heads</li>
+
+                    <li>The number of tails</li>
+
+                    <li>The order in which the heads and tails occur</li>
+
+                    <li>Record the sample proportion of heads, <m>\hat{p}</m> for the 50 observations</li>
+                </ol>
+            Once you have finished, write the value of <m>\hat{p}</m> on the board, then repeat the activity.</p>
+
+            </statement>
+        </exercise>
+
 
         <exercise>
         	<statement>
