@@ -57,21 +57,22 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
             <statement>
-                <p>Place your penny on edge, with Lincoln's profile right side up and facing you.  Flick the edge of the penny with your index finger to get it to spin.  When the penny comes to a rest, record a win if you have a heads and a loss if you have a tails.  If the penny runs into something or falls off your desk, do not count the result.  Repeat this 50 times, recording on the Stirling recording sheet
-                <ol>
+                <p><ol>
 
-                    <li>The number of heads</li>
+                    <li>Your instructor will show you the sheet of random rectangles for a few moments.  Make a guess as to what the mean size of a rectangle is for all 100 rectangles.</li>
 
-                    <li>The number of tails</li>
+                    <li>Select 5 rectangles that you think are representative of the rectangles on the page.  Compute the mean of the 5 rectangles that you selected and report your computation.</li>
 
-                    <li>The order in which the heads and tails occur</li>
+                    <li>Using a random number table or a random number generator, select 5 distinct random numbers between 00 and 99.  Find the five corresponding rectangles on the sheet (use 00 for rectangle 100).  Compute the mean of these five rectangles and report your results.</li>
 
-                    <li>Record the sample proportion of heads, <m>\hat{p}</m> for the 50 observations</li>
-                </ol>
-            Once you have finished, write the value of <m>\hat{p}</m> on the board, then repeat the activity.</p>
+                    <li>How do the results in (1)<ndash />(3) compare?</li>
 
+                    <li>Which works best<mdash />a convenience sample, a random sample, or a wild guess?  Why?</li>
+                </ol></p>
             </statement>
         </exercise>
+
+        <!--The mean is 7.420 and the median is 6-->
 
 
         <exercise>

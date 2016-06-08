@@ -44,21 +44,28 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-sampling-distributions">
         <title>Sampling Distributions</title>
 
-        <p>short section on the Central Limit Theorem.</p>
+
+        <p>If we take repeated simple random samples from a population and calculate the mean for each sample, we can ask about the distribution of the all of the sample means.  It turns out that the sample means are normally distributed.  This is true even if the original population is not normally distributed.  We can summarize this with the Central Limit Theorem.</p>
+
+        <theorem>
+            <title>Central Limit Theorem</title>
+
+            <statement>
+                <p>Draw a simple random sample of size <m>n</m> from any population with mean <m>\mu</m> and finite standard deviation <m>\sigma</m>.  For large values of <m>n</m>, the sampling distribution of sample mean <m>\overline{x}</m> is approximately normal with mean <m>\mu</m> and standard deviation <m>\sigma/ \sqrt{n}</m>.</p>
+            </statement>
+        </theorem>
 
         <paragraphs>
             <title>Spinning Pennies</title>
 
-            <p>If you toss a penny, most of us would assume that there is a probability of 0.5 that the penny will land on haeds.  If you spin a penny on a flat surface and wait until the penny lands flat, is the probability of getting a heads the same?  For this activity you will need a penny and a Stirling recording sheet, both of which your instructor will provide.<fn>This activity can be found in <em>Activity-Based Statistics</em> by R. L. Scheaffer et. al., Spring-Verlag, New York, 1996.</fn></p>
+            <p>If you toss a penny, most of us would assume that there is a probability of 0.5 that the penny will land on haeds.  If you spin a penny on a flat surface and wait until the penny lands flat, is the probability of getting a heads the same?  For this activity you will need a penny, which your instructor will provide.<fn>This activity can be found in <em>Activity-Based Statistics</em> by R. L. Scheaffer et. al., Spring-Verlag, New York, 1996.</fn></p>
 
-            <p>Place your penny on edge, with Lincoln's profile right side up and facing you.  Flick the edge of the penny with your index finger to get it to spin.  When the penny comes to a rest, record a win if you have a heads and a loss if you have a tails.  If the penny runs into something or falls off your desk, do not count the result.  Repeat this 50 times, recording on the Stirling recording sheet
+            <p>Place your penny on edge, with Lincoln's profile right side up and facing you.  Flick the edge of the penny with your index finger to get it to spin.  When the penny comes to a rest, record a win if you have a heads and a loss if you have a tails.  If the penny runs into something or falls off your desk, do not count the result.  Repeat this 50 times, recording
                 <ol>
 
                     <li>The number of heads</li>
 
                     <li>The number of tails</li>
-
-                    <li>The order in which the heads and tails occur</li>
 
                     <li>Record the sample proportion of heads, <m>\hat{p}</m> for the 50 observations</li>
                 </ol>
