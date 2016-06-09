@@ -348,4 +348,42 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     </section>
 
+        <section>
+        <title>Using R in Sage Cells for Basic Statistics</title>
+
+        <p>As before, all you have to do is evaluate the cell.  You can change the data and evaluate the cell once again to get a new plot.  If you make a mistake, just reload the web page.  <em>Before evaluating the cell, make sure to select the language to be R from the pull down menu to the right and below the cell.</em></p>
+
+        <p>Suppose that we want the five-number summary for Babe Ruth's homeruns.</p>
+
+        <sage>
+            <input>
+            <![CDATA[ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+            summary(ruth)]]>
+            </input>
+        </sage>
+
+        <p>We can also compute the mean and standard deviation.</p>
+
+        <sage>
+            <input>
+            <![CDATA[ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+            mean(ruth)
+            sd(ruth)]]>
+            </input>
+        </sage>
+
+        <p>It's also possible to do side-by-side boxplots to compare data sets.</p>
+
+        <sage>
+            <input>
+            <![CDATA[ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+			bonds <- c(16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28)
+			dimaggio <- c(12, 14, 20, 21, 25, 29, 30, 30, 31, 32, 32, 39, 46)
+			boxplot(ruth, bonds, dimaggio)]]>
+            </input>
+        </sage>
+
+
+    </section>
+
 </chapter>

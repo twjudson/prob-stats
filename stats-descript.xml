@@ -48,6 +48,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stat-populations">
         <title>Populations and Samples</title>
 
+        <p>In statistics, we study an entire <term>population</term> by taking a subset of the population called a <term>sample</term>.  For example, we may wish to know the outcome of an election.  The population might be all likely voters.  Since it isn't practical to ask everyone how they will vote, we take a subset of likely voters and poll them.  To be useful, a sample must be carefully selected and represent the entire population.  For example, if we want to poll, all Harvard Summer School students on there experience with the 2016 Summer Session, we should probably do mre than just ask the opinion of all students enrolled in mathematics courses.  Students who are studying French or Chemistry might have an entirely different perception of their experience.</p>
+
+        <p>A better method of finding a representative sample would be to take a <term>simple random sample</term> of size <m>n</m>.  That is, we would put the names of all of the students in a hat and then draw <m>n</m> names.  Each sample of size <n>n</n> has an equal chance of being selected as well as each student.</p>
+
+        <p>A variation on the simple random sample is a <term>stratified random sample</term>.  For example, we might divide the population of summer school students into those studying science and mathematics, social sciences, humanities, business and economics, and the arts.  We would then take a simple random sample from each group.  This way we are assured that all groups are represented.</p>
+
+        <p>Of course, we could get a sample simply by asking the first <m>n</m> students that we see.  A sample obtained in this manner is called a <term>convenience sample</term>.  Or we could email everyone and ask them to fill out a questionnaire.  This type of sample is called a <term>volutnary response sample</term>.</p>
+
         <paragraphs>
             <title>Random Rectangles</title>
 
@@ -73,6 +81,17 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </exercise>
 
         <!--The mean is 7.420 and the median is 6-->
+
+                <p>It's also possible to do side-by-side boxplots to compare data sets.</p>
+
+        <sage>
+            <input>
+            <![CDATA[guess <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+            estimate <- c(16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28)
+            rand <- c(12, 14, 20, 21, 25, 29, 30, 30, 31, 32, 32, 39, 46)
+            boxplot(guess, estimate, rand)]]>
+            </input>
+        </sage>
 
 
         <exercise>
@@ -125,6 +144,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     		</statement>
     	</exercise>
 
+        <p>We also have to worry about <term>bias</term> when we sample.  In a biased sample, everyone does not have an equal chance of being selected.  Convenience and voluntary response samples are inherently biased.  Other sources of bias are <term>undercoverage</term> where some part of the population is excluded, <term>nonresponse</term> where someone in a survey refuses to participate, and <term>response</term> where someone in the sample give false or inaccurate information.</p>
+
     	<exercise>
         	<statement>
         		<p>A sample of 50 people is obtained to rate <em>Frosted-Chocolate Sugar Bombs</em>, a breakfast cereal.  Tell whether each of the following is an example of undercoverage, nonresponse, or response bias.
@@ -137,11 +158,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     		</statement>
     	</exercise>
 
-    	<exercises>
+    	<exercise>
     		<statement>
     			<p>A school finds that 75<percent /> of the students in detention are boys even though only 45<percent /> of the students are boys.  Does this show that the school is biased against boys?  Tell why or why not.</p>
     		</statement>
-    	</exercises>
+    	</exercise>
+
+        <p>We have two types of statistical studies<mdash />experiments and observations.  In an <term>observational study</term>, we simple observe an existing population.  For example, we may take a poll of likely voters.  In an <term>experimental study</term>, we actually do something to the sample.  For example, we might test a new drug.  For example, a researcher might treat a group of patients with a new drug and compare the result to a <term>control group</term>.  Patients in the control group would either recieve a placebo or the standard existing treatment.</p>
 
    		<exercise>
         	<statement>
@@ -150,10 +173,18 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         				<li>A researcher randomly assigns 30 people to a statistics class using the lecture method and 30 students to an online statistics class.  Their average scores on the final exam are compared.</li>
 
         				<li>A researcher finds 50 people who are overweight and 50 who are not.  She compares the average number of hours they spend each week watching television.</li>
+
+                        <li>A researcher finds 100 people who talk on their cell phones while driving and 100 people who do not.  The resercher compares the driving records for one year.</li>
         				
         			</ol></p>
     		</statement>
     	</exercise>
+
+        <exercise>
+            <statement>
+                <p>Suppose you want to know whether or not chicken soup cures the common cold.  How would you proceed?</p>
+            </statement>
+        </exercise>
 
 
     </section>
@@ -304,8 +335,53 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		</exercise>
 
 
-
-
 	</section>
+
+    <section>
+        <title>Using R in Sage Cells to Plot Graphs</title>
+
+        <p>R is an open source statisical programming language.  While R has a reputation of being difficult to learn, we can program R into Sage cells.  As before, all you have to do is evaluate the cell.  You can change the data and evaluate the cell once again to get a new plot.  If you make a mistake, just reload the web page.  <em>Before evaluating the cell, make sure to select the language to be R from the pull down menu to the right and below the cell.</em></p>
+
+        <p>Suppose that we want to a make a stem-and-leaf plot of Ruth's homeruns.</p>
+
+        <sage>
+            <input>
+            <![CDATA[ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
+            stem(ruth)]]>
+            </input>
+        </sage>
+
+        <p>We can create histograms. Note that R decides on the width of the bin.</p>
+
+        <sage>
+            <input>
+            <![CDATA[textbooks <- c( 35, 42, 37, 60, 50, 42, 50, 16, 58, 39, 33, 39, 23, 53, 51, 48, 41, 49, 62, 40, 45, 37, 62, 30, 23)
+            hist(textbooks)]]>
+            </input>
+        </sage>
+
+        <p>We can create pie charts.</p>
+
+        <sage>
+            <input>
+            <![CDATA[slices <- c(4, 10 , 37, 8, 1)
+            lbls <- c("A", "B", "C", "D", "F")
+            pie(slices, labels = lbls, main="Final Exam Grades for a Statistics Course")]]>
+            </input>
+        </sage>
+
+        <p>We can plot the time series for the 1918<ndash />1919 influenze epidemic.  The plot for the number of cases is in red, and the plot for 10 times the number of deaths is in blue.</p>
+
+        <sage>
+            <input>
+            <![CDATA[cases <- c(36, 531, 4233, 8682, 7164, 2229, 600, 164, 57, 722, 1517, 1828, 1539, 2416, 3148, 3465, 1440)
+            deaths <- c(0, 0, 130, 552, 738, 414, 198, 90, 56, 50, 71, 137, 178, 194, 290, 310, 149) 
+            plot(ts(cases), col="red", main="Influenza Epidemic")
+            lines(ts(10*deaths),col="blue")]]>
+            </input>
+        </sage>
+
+    </section>
+
 
 </chapter>
