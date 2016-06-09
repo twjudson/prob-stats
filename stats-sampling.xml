@@ -126,14 +126,11 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-sampling-tech">
         <title>Technology</title>
 
-        <p>Many different types of technology can be used for the teaching and learning of statisitics<mdash />handheld calculators, spreadsheets, and dedicated statistics software.</p>
+        <p>Many different types of technology can be used for the teaching and learning of statisitics<mdash />handheld calculators, smart phones and tablet apps, spreadsheets, and dedicated statistics software. These days, the default calculator is probably made by Texas Instruments.  TI calculators can certainly do all the necessary statistical computations for any middle or high school statistics course, provided the data set is not too big.  There are plenty of apps for statistical calculation available for smart phones and tablet, many of which are free.  You can use Google to find them.  Spreadsheets such as Microsoft Excel and Apple Numbers, have some limited statistical capability, but spreadsheets were not designed to do statistics.  Try doing a box plot in Excel.</p>
 
         <sage>
             <input>
-            <![CDATA[%r
-            # Create a vector. 
-            # create a data frame from scratch 
-            age <- c(25, 30, 56)
+            <![CDATA[age <- c(25, 30, 56)
             gender <- c("male", "female", "male")
             weight <- c(160, 110, 220) 
             mydata <- data.frame(age,gender,weight)
