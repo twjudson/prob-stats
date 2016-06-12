@@ -339,6 +339,32 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         and the intercept is 
         	<me>a = \overline{y} - b \overline{x}.</me></p>
 
+        <example>
+            <p>Let us compute the least-squares regression line for work and training stress score in Example<nbsp /><xref ref="example-stats-bivariate-cycling" />.  Here, work is the explanatory variable (<m>x</m>) and the training stress score is the response variable (<m>y</m>).  This computation is a bit tedious to do by hand or even with a calculator that does not have statistical functions, so we will use R to make life easier.  Of course a good calculator or any other statistical software will probably do the job.  In any case, we obtain <m>a = -7.6823</m> and <m>b = 0.0923</m>; hence,
+                <me>\hat{y} = 0.0923 x -7.6823.</me></p>
+        </example>
+
+        <sage>
+            <input>
+            <![CDATA[work <- c(557, 1227, 337, 2073, 388, 1647, 348, 1241, 1583, 349, 1155)
+            tss <- c(40, 107, 25, 178, 29, 139, 21, 119, 144, 23, 97) 
+            fit <- lm(tss~work)
+            fit]]>
+            </input>
+        </sage>
+
+        <exercise>
+            <statement>
+                <p>Dr. J. goes for a 100 mile ride. After the ride, he downloads his power data and finds that he has done 3591 kj of work.  What was his predicted training stress score?</p>
+            </statement>
+            <hint>
+                <p>The actual TSS was 346.</p>
+            </hint>
+        </exercise>
+
+
+
+
     </section>
 
     <section xml:id="section-stats-sampling-tech">
