@@ -43,6 +43,23 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-bivariate-scatter-plots">
         <title>Scatter Plots</title>
 
+        <paragraphs>
+            <title>Activity: Height and Shoe Size</title>
+
+            <p>What is the relationship between your height and shoe size?  Is this relationship different for men and women?  How sort of data do we need to collect, and how do we analyze the data once we have it?  How could we use this information?</p>
+
+        </paragraphs>
+
+        <sage>
+            <input>
+            <![CDATA[height <- c(73, 65)
+            shoesize <- c(12, 10) 
+            plot(height, shoesize)]]>
+            </input>
+        </sage>
+
+
+
         <p>A <term>scatter plot</term> shows the relationship between two quanitative variable.  The values of one variable are on the horizontal axis, while the values of the second variable are on the vertical axis.  Each data pair is represented by a point determined by the values on each axis.  In a scatter plot, we look for patterns in the data as well as deviations.</p>
 
         <example xml:id="example-stats-bivariate-cycling">
@@ -367,7 +384,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     </section>
 
-    <section xml:id="section-stats-sampling-tech">
+    <section xml:id="section-stats-bivariate-r">
         <title>R Code</title>
 
         <p>Here is the R code for Example<nbsp /><xref ref="example-stats-bivariate-cycling" /></p>
