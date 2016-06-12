@@ -45,12 +45,167 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>A <term>scatter plot</term> shows the relationship between two quanitative variable.  The values of one variable are on the horizontal axis, while the values of the second variable are on the vertical axis.  Each data pair is represented by a point determined by the values on each axis.  In a scatter plot, we look for patterns in the data as well as deviations.</p>
 
-        <example>
-        	<p>Consider the data set.</p>
+        <example xml:id="example-stats-bivariate-cycling">
+        	<p>Dr. J. is an avid cyclist.  On a recent trip to Colorado, he recorded the work that he did on the bike (kilo joules), the intensity factor (IF), and the training stress score (TSS) for each ride that he did over a two week period (see Table<nbsp /><xref ref="table-stats-bivariate-cycling" />).  Roughly speaking, the intensity factor is the ratio of power to threshold power.  That is, an intensity factor of 0.600 for a one-hour ride says that you are going at a rate of 60<percent /> of what you are capable of doing for one hour.  The TSS is a number that tells you how hard you worked on that particular ride.  We would like to predict both the IF and TSS from the work done.  The scatter plot of work and TSS is in Figure<nbsp /><xref ref="figure-stats-bivariate-cycling" />.</p>
         </example>
 
-        <p>Two variables are <term>positively associated</term> if above average data of of one variable corresponds to above average data of the second variable. The variables are <term>negatively associated</term> if if above average data of of one variable corresponds to below average data of the second variable.</p>
+        <table xml:id="table-stats-bivariate-cycling">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Day</cell><cell>IF</cell><cell>Work (kj)</cell><cell>TSS</cell>
+                </row>
+                <row>
+                    <cell>May 25</cell><cell>0.532</cell><cell>557</cell><cell>40</cell>
+                </row>                
+                <row>
+                    <cell>May 26</cell><cell>0.621</cell><cell>1227</cell><cell>107</cell>
+                </row>                
+                <row>
+                    <cell>May 27</cell><cell>0.532</cell><cell>337</cell><cell>25</cell>
+                </row>                
+                <row>
+                    <cell>May 28</cell><cell>0.600</cell><cell>2037</cell><cell>178</cell>
+                </row>                
+                <row>
+                    <cell>May 29</cell><cell>0.473</cell><cell>388</cell><cell>29</cell>
+                </row>                
+                <row>
+                    <cell>May 30</cell><cell>0.556</cell><cell>1647</cell><cell>139</cell>
+                </row>                
+                <row>
+                    <cell>May 31</cell><cell>0.438</cell><cell>348</cell><cell>21</cell>
+                </row>                
+                <row>
+                    <cell>June 1</cell><cell>0.628</cell><cell>1241</cell><cell>119</cell>
+                </row>
+                <row>
+                    <cell>June 2</cell><cell>0.577</cell><cell>1583</cell><cell>144</cell>
+                </row>                
+                <row>
+                    <cell>June 3</cell><cell>0.419</cell><cell>349</cell><cell>23</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>June 4</cell><cell>0.632</cell><cell>1155</cell><cell>97</cell>
+                </row>
+           </tabular>
+            <caption>Power data for cycling</caption>
+        </table>
 
+        <figure xml:id="figure-stats-bivariate-cycling">
+            <caption>Normal distributions</caption>
+            <image width="350" source="images/stats-bivariate-cycling.png" />
+        </figure>
+
+        <p>A <term>response variable</term> measures the outcome of a study.  An <term>explanatory variable</term> explains the response variable.  In Example<nbsp /><xref ref="example-stats-bivariate-cycling" />, the explanatory variable is work, while the response variables are the training stress score and intensity factor.</p> 
+
+        <exercise xml:id="exercise-stats-bivariate-1">
+            <statement>
+                <p>For each of the following situations, state which variable is the explanatory variable and which is the response variable.  If there is no clear choice, state why. 
+                    <ol>
+
+                        <li>The amount of time a student spends studying for a math exam and the grade on the math exam.</li>
+
+                        <li>The height and wieght of a person.</li>
+
+                        <li>A student's grades in math and in statistics.</li>
+
+                        <li>Average annual income and years of education.</li>
+
+                        <li>A person's age and maximum heart rate.</li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+
+        <p>Two variables are <term>positively associated</term> if above average data of of one variable corresponds to above average data of the second variable. The variables are <term>negatively associated</term> if if above average data of of one variable corresponds to below average data of the second variable.  The data (work and TSS) in Figure<nbsp /><xref ref="figure-stats-bivariate-cycling" /> are positively associated.</p>
+
+        <exercise>
+            <statement>
+                <p>In Exercise<nbsp /><xref ref="exercise-stats-bivariate-1" />, which variables are postively assoicated and which are negatively assoicated?</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>Table<nbsp /><xref ref="table-stats-bivariate-metabolic" /> gives data on lean body mass and resting metabolic rate for 12 women and 7 mean.  Metabolic rate is the rate at which a body consumes energy.  This rate is important to researchers who study weight gain, exercise, and dieting.  Lean body mass (in kilograms) is the weight of a person without the fat.  If a person weighs 100 kg and is 20<percent /> fat, then their lean body mass is 80 kg.  We measure metabolic rate by the number of calories burned in 24 hours.
+                    <ol>
+
+                        <li>Make a scatter plot of the data for the female sujects.  Which is the explanatory variable?</li>
+
+                        <li>Is the association of the variables postive or negative?  What is the relationship?  Is the relationship strong?</li>
+
+                        <li>Add the male subjects to your graph using a different plotting symbol.  Does the pattern in (2) repeated?  Do the male subjects differ from the female subjects as a group?</li>
+
+                    </ol></p>
+            </statement>
+        </exercise>
+
+        <table xml:id="table-stats-bivariate-metabolic">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>subject</cell><cell>Gender</cell><cell>Mass (kg)</cell><cell>Rate (cal)</cell>
+                </row>
+                <row>
+                    <cell>1</cell><cell>M</cell><cell>557</cell><cell>40</cell>
+                </row>                
+                <row>
+                    <cell>2</cell><cell>M</cell><cell>1227</cell><cell>107</cell>
+                </row>                
+                <row>
+                    <cell>3</cell><cell>F</cell><cell>337</cell><cell>25</cell>
+                </row>                
+                <row>
+                    <cell>4</cell><cell>F</cell><cell>2037</cell><cell>178</cell>
+                </row>                
+                <row>
+                    <cell>5</cell><cell>F</cell><cell>388</cell><cell>29</cell>
+                </row>                
+                <row>
+                    <cell>6</cell><cell>F</cell><cell>1647</cell><cell>139</cell>
+                </row>                
+                <row>
+                    <cell>7</cell><cell>M</cell><cell>348</cell><cell>21</cell>
+                </row>                
+                <row>
+                    <cell>8</cell><cell>F</cell><cell>1241</cell><cell>119</cell>
+                </row>
+                <row>
+                    <cell>9</cell><cell>F</cell><cell>1583</cell><cell>144</cell>
+                </row>                
+                <row>
+                    <cell>10</cell><cell>M</cell><cell>349</cell><cell>23</cell>
+                </row>
+                <row>
+                    <cell>11</cell><cell>F</cell><cell>557</cell><cell>40</cell>
+                </row>                
+                <row>
+                    <cell>12</cell><cell>F</cell><cell>1227</cell><cell>107</cell>
+                </row>                
+                <row>
+                    <cell>13</cell><cell>M</cell><cell>337</cell><cell>25</cell>
+                </row>                
+                <row>
+                    <cell>14</cell><cell>F</cell><cell>2037</cell><cell>178</cell>
+                </row>                
+                <row>
+                    <cell>15</cell><cell>F</cell><cell>388</cell><cell>29</cell>
+                </row>                
+                <row>
+                    <cell>16</cell><cell>F</cell><cell>1647</cell><cell>139</cell>
+                </row>                
+                <row>
+                    <cell>17</cell><cell>F</cell><cell>348</cell><cell>21</cell>
+                </row>                
+                <row>
+                    <cell>18</cell><cell>M</cell><cell>1241</cell><cell>119</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>19</cell><cell>M</cell><cell>1155</cell><cell>97</cell>
+                </row>
+           </tabular>
+            <caption>Lean body mass and metabolic rate</caption>
+        </table>
     </section>
 
     <section xml:id="section-stats-bivariate-correlation">
@@ -136,6 +291,27 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         	<me>a = \overline{y} - b \overline{x}.</me></p>
 
     </section>
+
+    <section xml:id="section-stats-sampling-tech">
+        <title>R Code</title>
+
+        <p>Here is the R code for Example<nbsp /><xref ref="example-stats-bivariate-cycling" /></p>
+
+        <sage>
+            <input>
+            <![CDATA[date <- c("May 25", "May 26", "May 27", "May 28", "May 29", "May 30", "May 31", "June 1", "June 2", "June 3", "June 4")
+            work <- c(557, 1227, 337, 2073, 388, 1647, 348, 1241, 1583, 349, 1155)
+            intensity <- c(0.523, 0.621, 0.532, 0.600, 0.473, 0.566, 0.438, 0.628, 0.577, 0.419, 0.632) 
+            tss <- c(40, 107, 25, 178, 29, 139, 21, 119, 144, 23, 97) 
+            mydata <- data.frame(date, work, intensity, tss)
+            cor(mydata$work,mydata$intensity)
+            plot(mydata$work,mydata$intensity)
+            cor(mydata$work,mydata$tss)
+            plot(mydata$work,mydata$tss)]]>
+            </input>
+        </sage>
+
+    </section>    
 
 
 
