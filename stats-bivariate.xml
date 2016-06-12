@@ -44,7 +44,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <title>Scatter Plots</title>
 
         <paragraphs>
-            <title>Activity: Height and Shoe Size</title>
+            <title>Activity: Height and shoe size</title>
 
             <p>What is the relationship between your height and shoe size?  Is this relationship different for men and women?  How sort of data do we need to collect, and how do we analyze the data once we have it?  How could we use this information?</p>
 
@@ -379,8 +379,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </hint>
         </exercise>
 
+        <paragraphs>
+            <title>Some facts about least-squares regression</title>
 
+            <p>Least-squares regression is the most common way pf fitting a line to data.
+                <ul>
 
+                    <li>It is important to keep track of the explanatory and response variables.  If we interchange the roles of the two variables, we will get a different regression line.</li>
+
+                    <li>There is a close relationship between the slope of the regression line and correlation,
+                        <me>b = r \frac{s_y}{s_x}.</me></li>
+
+                    <li>The point <m>(\overline{x}, \overline{y})</m> will always line the regression line.</li>
+
+                </ul></p>
+        </paragraphs>
 
     </section>
 

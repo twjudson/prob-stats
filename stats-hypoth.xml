@@ -42,33 +42,179 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>The statement to be tested is called the <term>null hypothesis</term>.  We design the test to assess the strength of the evidence against the null hypothesis.</p>
 
-        <p>Assuming the null hypothesis is true, the probability that the observed outcome would take a value as extreme or more extreme than what we actually observe is called the <term><m>P</m>-value</term> of a test.  Small <m>P</m>-values tell us that the evidence against the null hypothesis is strong.</p>
+        <p>Assuming the null hypothesis is true, the probability that the observed outcome would take a value as extreme or more extreme than what we actually observe is called the <term><m>P</m>-value</term> of a test.  Small <m>P</m>-values tell us that the evidence against the null hypothesis is strong and we accept the <term>alternative hypothesis</term>.</p>
+
+        <paragraphs>
+            <title>Activity: Spinning pennies</title>
+
+            <p>If you spin a penny, is it more likely to land on tails than if you toss it?  If so, how much more likely?
+                <ul>
+
+                    <li>Step 1.  Collect data and calculate
+                        <me>\hat{p} = \frac{\text{number of tails}}{\text{total number of spins}}.</me></li>
+
+                    <li>Step 2. Formulate the hypothesis. If we assume that the probability that a coin will land on tails is <m>0.5</m>, then our null hypothesis is 
+                        <me>H_0: p = 0.5,</me>
+                    where <m>p</m> is the probability that a coin will land on tails if it is spun.  The <term>alternative hypothesis</term> is 
+                        <me>H_a: p \lt 0.5.</me>
+                    The null hypothesis give <m>p</m> the value <m>p_0 = 0.5</m>.</li>
+
+                    <li>Calculate the test statistic.  The <m>z</m> test statistic is 
+                        <me>z = \frac{\hat{p} - p_0}{\sqrt{\dfrac{p_0(1 - p_0)}{n}}},</me>
+                    where <m>n</m> is the number of spins.</li>
+
+                    <li>Find the <m>P</m>-value.  This is the area under the standard normal curve that is more than <m>z</m> away in the negative direction.</li>
+
+                    <li>Conclusion.  The <m>P</m>-value is the probability that the observed outcome would take a value as extreme or more extreme assuming the null hypothesis is true.  Low <m>P</m>-values favor the alternative hypothesis.</li>
+
+                </ul></p>
+
+        </paragraphs>
 
     </section>
 
 
-
-    <section xml:id="section-stats-hypoth-population">
+    <section xml:id="section-stats-hypoth-proportion">
         <title>Inference for a Population Proportion</title>
 
         <p>Suppose that we have a large population that contains a proportion of <m>p</m> successes, we can estimate <m>p</m> with a sample proportion.  Suppose that we select a simple random sample of size <m>n</m> from the population.  The <term>sample proportion</term> of successes is defined to be
         	<me>\hat{p} = \frac{\text{number of successes in the sample}}{n}.</me>
     	As the sample size increases, the sampling distribution of <m>\hat{p}</m> is approximately the normal distribution.  The <term>mean</term> of the sampling distribution is <m>p</m> and the standard deviation is 
-    		<me>\sqrt{\frac{p(1- p)}{n}}.</me></p>
+    		<me>\sqrt{\frac{p(1- p)}{n}}.</me>
+        This is a consequence of the Central Limit Theorem.  Thus, when we calculate the test statistic,
+            <me>z = \frac{\hat{p} - p_0}{\sqrt{\dfrac{p_0(1 - p_0)}{n}}},</me>
+        we are simply calculating the <m>z</m>-score.</p>
+
+        <exercise>
+            <statement>
+                <p><ol>
+
+                    <li>Harley Davidson motorcycles had 35<percent /> of the market in the U.S. in 2014.<fn>See <url href="http://www.statista.com/statistics/252210/market-share-of-major-motorcycle-manufacturers-in-the-us/" /></fn>  Out of 42,856 reported motorcycle thefts in the U.S. in 2014, Harley Davidson motor cycles accounted for 4,146 of the thefts.<fn>2014 Motorcycle Theft and Recovery Report, National Insurance Crime Bureau.</fn>  If you own a Harley Davidson motorcycle, is it more likely to be stolen than a different brand of motor cycle?</li>
+
+                    <li>Honda motorcycles had 15<percent /> of the market in the U.S. in 2014, yet they accounted  for 8,045 reported motorcycle thefts in the U.S. in 2014.  If you own a Honda, is it more likely to be stolen than some other brand?</li>
+
+                    <li>What assumptions must we make in this problem.</li>
+
+                </ol></p>
+            </statement>
+        </exercise>
+
+        <p>We do need to make some assumptions when dealing with popluation proportions.
+            <ul>
+
+                <li>The population is at least 10 times as large as the sample.</li>
+
+                <li><m>np</m> and <m>n(1-p)</m> are at lest 10.</li>
+
+            </ul></p>
 
 
-		<exercise>
-			<statement>
-				<p>This is an exercise.</p>
-			</statement>
-			<hint>
-				<p>This is a hint.</p>
-			</hint>
-			<solution>
-				<p>This is a solution.</p>
-			</solution>
-		</exercise>
 
 	</section> 
+
+
+    <section xml:id="section-stats-hypoth-mean">
+        <title>Inference for a Population Mean</title>
+
+        <example>
+            <p>Cans of <em>Jolt Cola</em> are supposed to contain 300 ml of cola.  There is some variation from bottle to bottle because the filling machinery is not perfectly precise.  The distribution of the contents is normal with standard deviation <m>\sigma = 3</m> ml.  An inspector suspects that the company is underfilling the bottles and takes a simple random sample of 6 bottles.  She measures the amount of cola in the bottle to obtain the following data,
+                <me>299.4, 297.7, 301.0, 298.9, 300.2, 297.0.</me>
+            We wish to know if there is convincing evidence that Jolt customers are not getting their full 300 ml?
+                <ul>
+
+                    <li>Step 1.  Calculate <m>\overline{x} = 299.0333</m></li>
+
+                    <li>Step 2. Formulate the hypothesis.  
+                        <me>H_0: \mu = 300,</me>
+                    where <m>p</m> is the probability that a coin will land on tails if it is spun.  The <term>alternative hypothesis</term> is 
+                        <me>H_a: \mu \lt 300.</me>
+                    The null hypothesis give <m>\mu</m> the value <m>\mu_0 = 300</m>.</li>
+
+                    <li>Calculate the test statistic.  The <m>z</m> test statistic is 
+                        <me>z = \frac{\overline{x} - \mu_0}{\sigma\sqrt{n}} = \frac{299.0333 - 400}{3\sqrt{6}} = -0.78928,</me>
+                    where <m>n</m> is the sample size.</li>
+
+                    <li>Find the <m>P</m>-value.  This is the area under the standard normal curve that is more than <m>z</m> away in the negative direction.  In this case <m>P = 0.2149742.</m>  We could use tables, but we will let R do our work.</li>
+
+                    <li>Conclusion.  The <m>P</m>-value is the probability that the observed outcome would take a value as extreme or more extreme assuming the null hypothesis is true.  Low <m>P</m>-values favor the alternative hypothesis.  For <m>P = 0.2149742.</m>, 21<percent /> of the observed outcomes would be this low or lower.  This is not enough evidence to reject the null hypothesis.</li>
+
+                </ul></p>
+            </example>
+
+        <sage>
+            <input>
+            <![CDATA[jolt <- c(299.4, 297.7, 301.0, 298.9, 300.2, 297.0)
+            xbar = mean(jolt)   #sample mean
+            muO = 300           # hypothesized value
+            sigma = 3           # population standard deviation
+            n = 6               # sample size
+            z = (xbar - muO)/(sigma/sqrt(n))
+            z                   # test statistic
+            pval = pnorm(z)     # lower tail p−value 
+            pval]]>
+            </input>
+        </sage>
+
+
+        <paragraphs>
+            <title><m>z</m> test for a population mean</title>
+        
+            <p>To test the hypothesis <m>H_0: \mu = \mu_0</m> for a simple random sample of size <m>n</m> with unknown mean <m>\mu</m> and known standard deviation <m>\sigma</m>, we compute the one-sample <m>z</m> statistic
+                <me>z = \frac{\overline{x} - \mu_0}{\sigma\sqrt{n}}</me>.
+            In terms of a variable <m>Z</m> having the standard normal distribution, the <m>P</m>-value for a test of <m>H_0</m> against
+                <ul>
+
+                    <li><m>H_a: \mu \gt \mu_0</m> is <m>P(Z \geq z)</m> (upper tail)</li>
+
+                    <li><m>H_a: \mu \lt \mu_0</m> is <m>P(Z \leq z)</m> (lower tail)</li>
+
+                    <li><m>H_a: \mu \neq \mu_0</m> is <m>2P(Z \geq |z|)</m> (two-tailed)</li>
+
+                </ul>
+            In R we use <c>pval = pnorm(z)</c> for a lower tail test, <c>pval = pnorm(z, lower.tail=FALSE)</c> for an upper tail test, and <c>pval = 2 ∗ pnorm(z)</c> for a two-tailed test.</p>
+
+        </paragraphs>
+
+        <exercise>
+            <statement>
+                <p>Table<nbsp /><xref ref="table-stats-hypoth-iq" /> the IQ test scores for 31 seventh-grade girls in a Midwest school district.  If we treat the 31 students as a simple random sample of all seventh-grade girls in the district, is there significant evidence at the 5<percent /> level that the mean IQ score of all girls in the district differs from 100?  Assume that the population standard deviation is <m>\sigma = 15</m>.</p>
+            </statement>
+        </exercise>
+
+        <table xml:id="table-stats-hypoth-iq">
+           <tabular halign="center" top="medium">
+                <row>
+                    <cell>114</cell><cell>100</cell><cell>104</cell><cell>89</cell>
+                </row>                
+                <row>
+                    <cell>102</cell><cell>91</cell><cell>114</cell><cell>114</cell>
+                </row>                
+                <row>
+                    <cell>103</cell><cell>105</cell><cell>108</cell><cell>130</cell>
+                </row>                
+                <row>
+                    <cell>120</cell><cell>132</cell><cell>111</cell><cell>128</cell>
+                </row>                
+                <row>
+                    <cell>118</cell><cell>119</cell><cell>86</cell><cell>72</cell>
+                </row>                
+                <row>
+                    <cell>111</cell><cell>103</cell><cell>74</cell><cell>112</cell>
+                </row>                
+                <row>
+                    <cell>107</cell><cell>103</cell><cell>98</cell><cell>96</cell>
+                </row>
+               
+                <row bottom="medium">
+                    <cell>112</cell><cell>112</cell><cell>93</cell><cell></cell>
+                </row>
+           </tabular>
+            <caption>IQ scores</caption>
+        </table>
+
+        <p>What happens if you do not know the population standard deviation, <m>\sigma</m>.  If this is the case, then we can use what is called a <m>t</m>-test.  Many other situations also occur.  For example, we might want to compare the means of two populations.  These are topics for further study.</p>
+
+    </section> 
+
 
 </chapter>
