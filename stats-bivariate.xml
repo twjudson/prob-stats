@@ -105,7 +105,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                         <li>The amount of time a student spends studying for a math exam and the grade on the math exam.</li>
 
-                        <li>The height and wieght of a person.</li>
+                        <li>The height and weight of a person.</li>
 
                         <li>A student's grades in math and in statistics.</li>
 
@@ -227,6 +227,21 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </input>
         </sage>
 
+        <p>Correlation does not make a distinction between an explanatory and a response variable.  As the following exercise demonstrates, there may be no relationship at all even if the correlation is strong.  Furthermore:
+            <ul>
+
+                <li>Positive values for <m>r</m> indicate positive association and negative values a negative association.</li>
+
+                <li><m>-1 \leq r \leq 1</m></li>
+
+                <li><m>r</m> does not change if we change the units.  E.g., if the two variables are height and wieght for a group of people, <m>r</m> is unaffected if we change from the English system (inches and pounds) to the metric system (centimeters and kilograms).</li>
+
+                <li>Correlation only measures the strength of a linear relationship.  It sheds no light on a curved relatinship.</li>
+
+                <li><m>r</m> is not affected by a few outliers.</li>
+
+            </ul></p>
+
        	<exercise>
 			<statement>
 				<p>Table<nbsp /><xref ref="table-stats-bivariate-phds-cheese" /> gives the number of civil engineering doctorates granted each year in the U.S. and the U.S. per capita consumption of mozzarella cheese (in pounds) for the years 2000 through 2009.
@@ -282,14 +297,35 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <caption>Civil engineering doctorates and per capita cheese consumption</caption>
         </table>
 
-
-
 		<exercise>
 			<statement>
-				<p>This is an exercise.</p>
+				<p>The data in Table<nbsp /><xref ref="table-stats-bivariate-mph" /> gives the gas mileage of a car as speed increases.  Make a scatter plot of the data.  What do you see?  Compute the correlation of the two variables.  Explain your results.</p>
 			</statement>
 		</exercise>
 
+        <table xml:id="table-stats-bivariate-mph">
+           <tabular halign="center" top="medium">
+                <row bottom="medium">
+                    <cell>Speed (mph)</cell><cell>Mileage (mpg)</cell>
+                </row>
+                <row>
+                    <cell>20</cell><cell>24</cell>
+                </row>
+                <row>
+                    <cell>30</cell><cell>28</cell>
+                </row>
+                <row>
+                    <cell>40</cell><cell>30</cell>
+                </row>
+                <row>
+                    <cell>50</cell><cell>28</cell>
+                </row>                
+                <row bottom="medium">
+                    <cell>60</cell><cell>24</cell>
+                </row>
+           </tabular>
+            <caption>Car mileage</caption>
+        </table>
 
 	</section>
 
