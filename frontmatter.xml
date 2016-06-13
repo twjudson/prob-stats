@@ -67,7 +67,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
     <preface>
 
-        <p>These notes were written for a <em>MATH S<ndash />304. Inquiries into Probability and Statistics</em>, a course for middle and high school teachers in the 2016 Harvard University Summer School.</p>
+        <p>These notes were written for a <em>MATH S<ndash />304. Inquiries into Probability and Statistics</em>, a course for middle and high school teachers in the 2016 Harvard University Summer School.  The primary sources for this material are listed in the references.</p>
 
 
         <!-- RAB 2014/08/18 Should move flush right with some vertical spacing -->
@@ -77,6 +77,8 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </attribution>
 
     </preface>
+
+        
 
 
 </frontmatter>

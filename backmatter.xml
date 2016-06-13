@@ -28,7 +28,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <title>Back Matter</title> <!-- mostly for HTML sectioning -->
 
 
-    <xi:include href="./gfdl-mathbook.xml" />           <!-- GFDL License text -->
+<!--    <xi:include href="./gfdl-mathbook.xml" />    -->       <!-- GFDL License text -->
+
+    <xi:include href="./references.xml" />
 
     <colophon>
         <p>This book was authored in MathBook XML.</p>

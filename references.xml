@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is part of the book                            	   -->
+<!--                                                          	   -->
+<!--    Ordinary Differential Equations Project      		  	   -->
+<!--                                                         	   -->
+<!-- Copyright (C) 2013-2016 Theron J. Hitchman, Thomas W. Judson  -->
+<!-- See the file COPYING for copying conditions.             	   -->
+
+<references id="references" xmlns:xi="http://www.w3.org/2001/XInclude">
+  
+    <title>References</title>
+
+        <biblio type="raw" xml:id="moore-2000">D. Moore. <title>The Basic Practice of Statistics</title>, Second edition. W. H. Freeman, New York, 2000.</biblio>
+
+        <biblio type="raw" xml:id="scheaffer-1996a">R. Scheaffer et. al. <title>Activity-Based Statistics: Instructor Resources</title> Springer-Verlag, New York, 1996.</biblio>
+
+        <biblio type="raw" xml:id="scheaffer-1996b">R. Scheaffer et. al. <title>Activity-Based Statistics: Student Guide</title> Springer-Verlag, New York, 1996.</biblio>
+
+        <biblio type="raw" xml:id="spiegel-1975">M. Spiegel <title>Probability and Statistics</title>. Schaum's Outline Series in Mathematics. McGraw-Hill, New York, 1975.</biblio>
+
+</references>
+
