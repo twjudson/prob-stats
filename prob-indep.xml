@@ -83,7 +83,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
             <statement>
-                <p>Assume that the probability is $1/2$ that a child will be born a boy.  If a family has 4 children, what is the probability that they are all boys?</p>
+                <p>Assume that the probability is <m>1/2</m> that a child will be born a boy. If a family has 4 children, what is the probability that they are all boys?</p>
              </statement>
          </exercise>
 
