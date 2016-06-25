@@ -89,7 +89,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <exercise>
             <statement>
-                <p>In recent decades, home pregnancy tests have become quite popular.  The tests have become very accurate, but occassionally these tests give wrong results.  The test could come back negative while a woman is actually pregnant or postive if a woman is not pregant.    Suppose a particular brand of home pregnancy test kits has a rate of 3 per cent of false negatives.  That is, there is  probability of 0.03 that a woman could have a negative test and actually be pregnant.  Suppose 150 women are tested and all the results come up negative.  What is the probability that at least one of the women is actually pregnant?
+                <p>In recent decades, home pregnancy tests have become quite popular. The tests have become very accurate, but occassionally these tests give wrong results. The test could come back negative while a woman is actually pregnant or postive if a woman is not pregant. Suppose a particular brand of home pregnancy test kits has a rate of 3 per cent of false negatives. That is, there is  probability of 0.03 that a woman could have a negative test and actually be pregnant. Suppose 150 women are tested and all the results come up negative. What is the probability that at least one of the women is actually pregnant?
                 	<ol>
 
                 		<li><p>What is the probability that one woman will accurately test as negative?</p></li>
@@ -106,7 +106,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </p>
              </statement>
              <hint>
-             	<p><m>P(\text{at least one pregnancy}) = 1 - P(\text{no pregnancies}) = 1 - (0.97)^150 \approx 0.98963</m></p>
+             	<p><m>P(\text{at least one pregnancy}) = 1 - P(\text{no pregnancies}) = 1 - (0.97)^{150} \approx 0.98963</m></p>
              </hint>
          </exercise>
 

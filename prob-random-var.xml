@@ -191,7 +191,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </ul></p>
         </paragraphs>
 
-        <example>The distribution of heights of American women between the ages of 18 and 24 is approximately normal with mean <m>\mu = 64.5</m> inches and standard deviation <m>\sigma = 2.5</m> inches. The 68<ndash />95<ndash />99.7 rule tells us that 68<percent /> of American women between the ages of 18 and 24 will be between 62 inches tall and 67 inches tall.</example>
+        <example>
+            <p>The distribution of heights of American women between the ages of 18 and 24 is approximately normal with mean <m>\mu = 64.5</m> inches and standard deviation <m>\sigma = 2.5</m> inches. The 68<ndash />95<ndash />99.7 rule tells us that 68<percent /> of American women between the ages of 18 and 24 will be between 62 inches tall and 67 inches tall.</p>
+        </example>
 
         <exercise>
             <statement>
