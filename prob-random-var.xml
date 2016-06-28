@@ -106,9 +106,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <p>Suppose that you want to insure the bicycles of college students against theft.  After careful research, you decide that there are basically four types of theft<mdash />cheap bicycles that are locked outside, cheap bicycles that kept inside, expensive bicycles that are kept locked outside, and expensive bicycles that are kept inside.  Cheap bicycles can be insured for <dollar />200 per semester and expensive bicycles can be insured for <dollar />1000.  After much research, you decide that the probability that a bicycle kept inside is stolen is 0.001.  The probability that a bicycle that is kept outside will be stolen is 0.2 if it is an inexpensive bicycle but 0.5 if it is expensive.  What is your expected payout over the course of a semester?  What should you charge if you want to make a profit of <dollar />30 per policy?  Should you offer two different types of policies<mdash />one for bicycles stored outside and one for bicycles stored inside?</p>
             </statement>
             <hint>
-                <p>Suppose that we are simply insuring inexpensive bicycles.  If we want to make a profit of <dollar />30 per policy, then our expected value should be that amount.  Thus, if we were to charge <m>x</m> dollars to insure a bicycle, our expected value should be
-                    <me>E(X) = 30 = 0.999x + 0.001(-200 + x) + 0.8x + 0.2 (-200 + x).</me>
-                Solving for <m>x</m>, we should charge <dollar />35.10 to insure an inexpensive bicycle.</p>
+                <p>We should really consider four different policies.  Low risk insurees will not want to subsidize those who are high risk.  Also, if an insuree wants more coverage, they should be expected to pay more.  Suppose that we are simply insuring inexpensive bicycles that are stored inside.  If we want to make a profit of <dollar />30 per policy, then our expected value should be that amount.  Thus, if we were to charge <m>x</m> dollars to insure a bicycle, our expected value should be
+                    <me>E(X) = 30 = 0.999x + 0.001(-200 + x).</me>
+                Solving for <m>x</m>, we should charge <dollar />30.20 to insure an inexpensive bicycle that is kept inside.</p>
             </hint>
         </exercise>
 
