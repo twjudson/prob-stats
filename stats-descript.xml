@@ -84,7 +84,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                 <p>It's also possible to do side-by-side boxplots to compare data sets.</p>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[guess <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
             estimate <- c(16, 25, 24, 19, 33, 25, 34, 46, 37, 33, 42, 40, 37, 34, 49, 73, 46, 45, 45, 5, 26, 28)
@@ -344,7 +344,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>Suppose that we want to a make a stem-and-leaf plot of Ruth's homeruns.</p>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[ruth <- c(22, 25, 34, 35, 41, 41, 46, 46, 46, 47, 49, 54, 54, 59, 60)
             stem(ruth)]]>
@@ -353,7 +353,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>We can create histograms. Note that R decides on the width of the bin.</p>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[textbooks <- c( 35, 42, 37, 60, 50, 42, 50, 16, 58, 39, 33, 39, 23, 53, 51, 48, 41, 49, 62, 40, 45, 37, 62, 30, 23)
             hist(textbooks)]]>
@@ -362,7 +362,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>We can create pie charts.</p>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[slices <- c(4, 10 , 37, 8, 1)
             lbls <- c("A", "B", "C", "D", "F")
@@ -372,7 +372,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>We can plot the time series for the 1918<ndash />1919 influenze epidemic.  The plot for the number of cases is in red, and the plot for 10 times the number of deaths is in blue.</p>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[cases <- c(36, 531, 4233, 8682, 7164, 2229, 600, 164, 57, 722, 1517, 1828, 1539, 2416, 3148, 3465, 1440)
             deaths <- c(0, 0, 130, 552, 738, 414, 198, 90, 56, 50, 71, 137, 178, 194, 290, 310, 149) 

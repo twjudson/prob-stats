@@ -141,7 +141,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 </ul></p>
             </example>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[jolt <- c(299.4, 297.7, 301.0, 298.9, 300.2, 297.0)
             xbar = mean(jolt)   #sample mean

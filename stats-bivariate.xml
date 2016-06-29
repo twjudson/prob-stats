@@ -50,7 +50,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         </paragraphs>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[height <- c(73, 65)
             shoesize <- c(12, 10) 
@@ -236,7 +236,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <p>The correlation between work and training stress score in Example<nbsp /><xref ref="example-stats-bivariate-cycling" /> is <m>r = 0.9958</m>, indicating a strong linear relationship between the two variables.</p>
         </example>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[work <- c(557, 1227, 337, 2073, 388, 1647, 348, 1241, 1583, 349, 1155)
             tss <- c(40, 107, 25, 178, 29, 139, 21, 119, 144, 23, 97) 
@@ -361,7 +361,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                 <me>\hat{y} = 0.0923 x -7.6823.</me></p>
         </example>
 
-        <sage>
+        <sage language="r">
             <input>
             <![CDATA[work <- c(557, 1227, 337, 2073, 388, 1647, 348, 1241, 1583, 349, 1155)
             tss <- c(40, 107, 25, 178, 29, 139, 21, 119, 144, 23, 97) 
@@ -403,7 +403,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         <p>Here is the R code for Example<nbsp /><xref ref="example-stats-bivariate-cycling" /></p>
 
         <sage>
-            <input>
+            <input language="r">
             <![CDATA[date <- c("May 25", "May 26", "May 27", "May 28", "May 29", "May 30", "May 31", "June 1", "June 2", "June 3", "June 4")
             work <- c(557, 1227, 337, 2073, 388, 1647, 348, 1241, 1583, 349, 1155)
             intensity <- c(0.523, 0.621, 0.532, 0.600, 0.473, 0.566, 0.438, 0.628, 0.577, 0.419, 0.632) 

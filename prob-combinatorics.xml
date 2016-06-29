@@ -126,18 +126,16 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>We might need a little help from technology to compute <m>{}_n P_r</m> and <m>{}_n C_r</m> for large values of <m>n</m>.  Below is a Sage interact that you can use to make these computations.  Sage is an open source computer algebra system that can do numerical and sybolic computations.  If you want to program in Sage, you will need to spend some time learning the language.  However, if you use a Sage interact, all you will need to do is to evaluate the Sage cell and enter the appropriate items in the menu.  No programming skills are needed.  If you alter the Sage code by mistake, just reload the web page.</p>
 
-        <sage>
+        <sage language="sage">
             <input>
-        <input>
-        @interact
-        def _(n = input_box(default=5), r=input_box(default=2)):
-            P = factorial(n)/factorial(n - r)
-            C = P/factorial(r)
-            pretty_print(html(r"$n = %s$" % latex(n)))
-            pretty_print(html(r"$r = %s$" % latex(r)))
-            pretty_print(html(r"${}_n P_r  = %s$" % latex(P)))
-            pretty_print(html(r"${}_n C_r  = %s$" % latex(C)))
-        </input>
+            @interact
+            def _(n = input_box(default=5), r=input_box(default=2)):
+                P = factorial(n)/factorial(n - r)
+                C = P/factorial(r)
+                pretty_print(html(r"$n = %s$" % latex(n)))
+                pretty_print(html(r"$r = %s$" % latex(r)))
+                pretty_print(html(r"${}_n P_r  = %s$" % latex(P)))
+                pretty_print(html(r"${}_n C_r  = %s$" % latex(C)))
             </input>
         </sage>
 
