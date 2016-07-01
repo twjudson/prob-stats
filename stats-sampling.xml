@@ -121,6 +121,15 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </statement>
         </exercise>
 
+        <p>It takes a bit of work to prove the following result, but the sample proportions are approximately nomally distributed for large <m>n</m>.</p>
+
+        <theorem>
+            <title>Sampling Distribution of <m>\hat{p}</m></title>
+            <statement>
+                <p>Given both <m>np \gt 10</m> and <m>n(1-p) \gt 10</m>, the sampling distribution of <m>\hat{p}</m> is approximately normally distributed with a mean of <m>\mu p</m> and standard deviation <m>\sqrt{p(1- p)/n}</m>.</p>
+            </statement>
+        </theorem>
+
     </section>
 
     <section xml:id="section-stats-sampling-tech">

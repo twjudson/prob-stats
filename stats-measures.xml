@@ -89,8 +89,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 		</exercise>
 
 
-\end{parts}
-
 		<paragraphs>
 			<title>The Mode</title>
 
@@ -296,7 +294,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<p>In our definition of standard deviation, we averaged the squares of the deviations.  Wny don't we just average the devitations and why do we divide by <m>n-1</m> instead of <m>n</m>?</p>
 			</statement>
 			<hint>
-				<p>What is the sum of <m>(x_1 - \overline{x}) + (x_n - \overline{x}) + \cdots + (x_n - \overline{x})</m>?</p>
+				<p>What is the sum of <m>(x_1 - \overline{x}) + (x_2 - \overline{x}) + \cdots + (x_n - \overline{x})</m>?</p>
 			</hint>
 		</exercise>
 

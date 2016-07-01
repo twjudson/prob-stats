@@ -86,6 +86,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                      </ol></p>
              </statement>
+             <hint>
+                <p>Decide what rolling a 3 means when you roll a pair of dice.</p>
+            </hint>
          </exercise>
 
          

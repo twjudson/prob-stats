@@ -121,7 +121,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
          <exercise>
             <statement>
-                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 red balls.  If a ball is drawn at random, what is the probability that
+                <p>Suppose that a box contains 6 red balls, 4 white balls, and 5 blue balls.  If a ball is drawn at random, what is the probability that
                     <ol>
                         <li>The ball is white?</li>
 

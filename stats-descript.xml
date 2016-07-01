@@ -54,7 +54,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
         <p>A variation on the simple random sample is a <term>stratified random sample</term>.  For example, we might divide the population of summer school students into those studying science and mathematics, social sciences, humanities, business and economics, and the arts.  We would then take a simple random sample from each group.  This way we are assured that all groups are represented.</p>
 
-        <p>Of course, we could get a sample simply by asking the first <m>n</m> students that we see.  A sample obtained in this manner is called a <term>convenience sample</term>.  Or we could email everyone and ask them to fill out a questionnaire.  This type of sample is called a <term>volutnary response sample</term>.</p>
+        <p>Of course, we could get a sample simply by asking the first <m>n</m> students that we see.  A sample obtained in this manner is called a <term>convenience sample</term>.  Or we could email everyone and ask them to fill out a questionnaire.  This type of sample is called a <term>voluntary response sample</term>.</p>
 
         <paragraphs>
             <title>Random Rectangles</title>
