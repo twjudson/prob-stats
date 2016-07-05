@@ -116,7 +116,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-hypoth-mean">
         <title>Inference for a Population Mean</title>
 
-        <example>
+        <example xml:id="example-stats-hypoth-mean-jolt">
             <p>Cans of <em>Jolt Cola</em> are supposed to contain 300 ml of cola.  There is some variation from bottle to bottle because the filling machinery is not perfectly precise.  The distribution of the contents is normal with standard deviation <m>\sigma = 3</m> ml.  An inspector suspects that the company is underfilling the bottles and takes a simple random sample of 6 bottles.  She measures the amount of cola in the bottle to obtain the following data,
                 <me>299.4, 297.7, 301.0, 298.9, 300.2, 297.0.</me>
             We wish to know if there is convincing evidence that Jolt customers are not getting their full 300 ml?
@@ -171,7 +171,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <li><m>H_a: \mu \neq \mu_0</m> is <m>2P(Z \geq |z|)</m> (two-tailed)</li>
 
                 </ul>
-            In R we use <c>pval = pnorm(z)</c> for a lower tail test, <c>pval = pnorm(z, lower.tail=FALSE)</c> for an upper tail test, and <c>pval = 2 * pnorm(z) - 1</c> for a two-tailed test.</p>
+
+        In R we use <c>pval = pnorm(z)</c> for a lower tail test, <c>pval = pnorm(z, lower.tail=FALSE)</c> for an upper tail test, and <c>pval = 1 - 2 * pnorm(z)</c> for a two-tailed test.</p>
+
 
         </paragraphs>
 
@@ -212,7 +214,28 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <caption>IQ scores</caption>
         </table>
 
-        <p>What happens if you do not know the population standard deviation, <m>\sigma</m>.  If this is the case, then we can use what is called a <m>t</m>-test.  Many other situations also occur.  For example, we might want to compare the means of two populations.  These are topics for further study.</p>
+        <sage language="r">
+            <input>
+                <![CDATA[iq_data <- c(114, 102, 103, 120, 118, 111, 107, 112, 100, 91, 105, 132, 119, 103, 103, 112, 104, 114, 108, 111, 86, 74, 98, 93, 89, 114, 130, 128, 72, 112, 96)
+                xbar = mean(iq_data)    #sample mean
+                muO = 100               # hypothesized value
+                sigma = 15              # population standard deviation
+                n = length(iq_data)     # sample size
+                z = (xbar - muO)/(sigma/sqrt(n))
+                z                       # test statistic
+                pval = 2*pnorm(z) - 1   # two tail p−value 
+                pval]]>
+            </input>
+        </sage>
+
+        <p>What happens if you do not know the population standard deviation, <m>\sigma</m>.  If this is the case, then we can use what is called a <m>t</m>-test.  Many other situations also occur.  For example, we might want to compare the means of two populations.  These are topics for further study.  Here is the R code for a <m>t</m>-test for Example<nbsp /><xref ref="example-stats-hypoth-mean-jolt" />.</p>
+
+        <sage language="r">
+            <input>
+            <![CDATA[jolt <- c(299.4, 297.7, 301.0, 298.9, 300.2, 297.0)
+            t.test(jolt, mu = 300, alternative="less")]]>
+            </input>
+        </sage>
 
     </section> 
 
