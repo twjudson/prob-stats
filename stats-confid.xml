@@ -41,7 +41,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <section xml:id="section-stats-confid-interval-mean">
         <title>Confidence Intervals for Population Means</title>
 
-        <example>
+        <example xml:id="example-stats-confid-sharks">
             <p>Anyone who has ever seen the move <em>Jaws</em> knows that great white sharks are really big and really hungry.  They are at the top of the food chain<mdash />well almost, orcas (AKA killer whales) have been known to prey on great whites.  Your friend Brian has seen Jaws 25 times as well as all of the sequels.  He claims that the average length of a great white is 20 feet.  As evidence, he tells you that a 37 ft shark was trapped in a herring weir in New Brunswick, Canada, in the 1930s. Table<nbsp /><xref ref="table-stats-confid-shark" /> gives the lengths in feet of 44 great whites.  Two questions:
                 <ol>
                     <li>Is your friend Brian correct?</li>
@@ -133,7 +133,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </table>
 
         <example>
-            <p>Our goal is the calculate a 95<percent /> confidence interval for the length of a great white shark from the data in Table<nbsp /><xref ref="table-stats-confid-shark" />.  We will assume that the population standard deviation is known and is <m>\sigma = 2.55</m> feet.
+            <p>Our goal is the calculate a 95<percent /> confidence interval for the average length of a great white shark from the data in Table<nbsp /><xref ref="table-stats-confid-shark" />.  We will assume that the population standard deviation is known and is <m>\sigma = 2.55</m> feet.
                 <ul>
 
                     <li>Calculate the mean.  <m>\overline{x} = 15.59</m>.</li>
@@ -197,6 +197,14 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             </hint>
         </exercise>
 
+        <p>Here is the R code for Example<nbsp /><xref ref="example-stats-confid-sharks" /> if we use a <m>t</m>-test.</p>
+
+        <sage language="r">
+            <input>
+            <![CDATA[sharks <- c(18.7, 16.4, 13.2, 19.2, 12.3, 16.7, 15.8, 16.2, 18.6, 17.8, 14.3, 22.8, 16.4, 16.2, 16.6, 16.8, 15.7, 12.6, 9.4, 13.6, 18.3, 17.8, 18.2, 13.2, 14.6, 13.8, 13.2, 15.7, 15.8, 12.2, 13.6, 19.7, 14.9, 15.2, 15.3, 18.7, 17.6, 14.7, 16.1, 13.2, 12.1, 12.4, 13.5, 16.8)
+            t.test(sharks, mu=20)]]>
+            </input>
+        </sage>
     </section>
 
 
