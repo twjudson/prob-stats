@@ -131,7 +131,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     The null hypothesis give <m>\mu</m> the value <m>\mu_0 = 300</m>.</li>
 
                     <li>Calculate the test statistic.  The <m>z</m> test statistic is 
-                        <me>z = \frac{\overline{x} - \mu_0}{\sigma\sqrt{n}} = \frac{299.0333 - 400}{3\sqrt{6}} = -0.78928,</me>
+                        <me>z = \frac{\overline{x} - \mu_0}{\sigma/\sqrt{n}} = \frac{299.0333 - 300}{3/\sqrt{6}} = -0.78928,</me>
                     where <m>n</m> is the sample size.</li>
 
                     <li>Find the <m>P</m>-value.  This is the area under the standard normal curve that is more than <m>z</m> away in the negative direction.  In this case <m>P = 0.2149742.</m>  We could use tables, but we will let R do our work.</li>
@@ -160,7 +160,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
             <title><m>z</m> test for a population mean</title>
         
             <p>To test the hypothesis <m>H_0: \mu = \mu_0</m> for a simple random sample of size <m>n</m> with unknown mean <m>\mu</m> and known standard deviation <m>\sigma</m>, we compute the one-sample <m>z</m> statistic
-                <me>z = \frac{\overline{x} - \mu_0}{\sigma\sqrt{n}}</me>.
+                <me>z = \frac{\overline{x} - \mu_0}{\sigma/\sqrt{n}}</me>.
             In terms of a variable <m>Z</m> having the standard normal distribution, the <m>P</m>-value for a test of <m>H_0</m> against
                 <ul>
 
@@ -171,7 +171,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
                     <li><m>H_a: \mu \neq \mu_0</m> is <m>2P(Z \geq |z|)</m> (two-tailed)</li>
 
                 </ul>
-            In R we use <c>pval = pnorm(z)</c> for a lower tail test, <c>pval = pnorm(z, lower.tail=FALSE)</c> for an upper tail test, and <c>pval = 2 ∗ pnorm(z)</c> for a two-tailed test.</p>
+            In R we use <c>pval = pnorm(z)</c> for a lower tail test, <c>pval = pnorm(z, lower.tail=FALSE)</c> for an upper tail test, and <c>pval = 2 * pnorm(z) - 1</c> for a two-tailed test.</p>
 
         </paragraphs>
 
